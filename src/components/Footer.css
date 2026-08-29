@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ /* font-family: "Poppins", sans-serif; */
+ /* font-family: "Inter", sans-serif; */
+
+
+.site-footer {
+  width: 100%;
+  background: #eef0f2;
+  padding: 60px 7% 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   FOOTER TOP
+========================= */
+
+.footer-top {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
+  gap: 50px;
+
+  padding-bottom: 50px;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand {
+  max-width: 350px;
+}
+
+.footer-brand .logo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.footer-brand .logo-main {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2f6fed;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.footer-brand .logo-sub {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #2f6fed;
+  margin-top: 3px;
+}
+
+.footer-brand p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+}
+
+
+/* =========================
+   FOOTER COLUMNS
+========================= */
+
+.footer-col h4 {
+  margin: 0 0 22px;
+   font-family: "Poppins", sans-serif;
+  color: #F59E0B;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer-col ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-col ul li a {
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+
+  transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #2f6fed;
+}
+
+
+/* =========================
+   HEADQUARTERS
+========================= */
+
+.hq-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 11px;
+  color: #374151;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+.hq-item:last-child {
+  margin-bottom: 0;
+}
+
+.hq-item svg {
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  color: #F59E0B;
+}
+
+.hq-item span {
+  min-width: 0;
+}
+
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.footer-bottom {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  border-top: 1px solid #dcdfe3;
+
+  padding: 22px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #6b7280;
+  font-size: 12px;
+  line-height: 1.5;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #6b7280;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #2f6fed;
+}
+
+
+/* =========================
+   LARGE TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+  .site-footer {
+    padding: 50px 5% 0;
+  }
+
+  .footer-top {
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-headquarters {
+    grid-column: 1 / -1;
+    max-width: 500px;
+  }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .site-footer {
+    padding: 45px 30px 0;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+
+    padding-bottom: 40px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    max-width: 550px;
+  }
+
+  .footer-headquarters {
+    grid-column: auto;
+    max-width: 100%;
+  }
+
+  .footer-col h4 {
+    margin-bottom: 18px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px 0;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+    gap: 18px 24px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .site-footer {
+    padding: 40px 20px 0;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+
+    gap: 32px;
+    padding-bottom: 35px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-brand .logo {
+    margin-bottom: 15px;
+  }
+
+  .footer-brand .logo-main {
+    font-size: 27px;
+  }
+
+  .footer-brand .logo-sub {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+  }
+
+  .footer-brand p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .footer-col h4 {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 12px;
+  }
+
+  .footer-col ul li a {
+    font-size: 14px;
+  }
+
+  .hq-item {
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .hq-item svg {
+    flex-shrink: 0;
+  }
+
+  .footer-bottom {
+    gap: 16px;
+    padding: 20px 0;
+  }
+
+  .footer-bottom p {
+    font-size: 13px;
+  }
+
+  .footer-links {
+    width: 100%;
+
+    justify-content: flex-start;
+    gap: 12px 20px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .site-footer {
+    padding: 35px 16px 0;
+  }
+
+  .footer-top {
+    gap: 28px;
+  }
+
+  .footer-brand p {
+    font-size: 13px;
+  }
+
+  .footer-col h4 {
+    font-size: 12px;
+  }
+
+  .footer-col ul li a {
+    font-size: 13px;
+  }
+
+  .hq-item {
+    font-size: 13px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

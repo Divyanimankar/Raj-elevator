@@ -1,0 +1,37 @@
+.pageHero {
+  min-height:290px;
+  padding:72px 24px;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  color:#fff;
+  background:linear-gradient(rgba(5,56,39,.88),rgba(5,56,39,.88)),var(--hero-image) center/cover
+}
+.pageHeroInner {
+  max-width:900px
+}
+.pageHero span {
+  font-size:11px;
+  background:rgba(255,255,255,.12);
+  padding:7px 13px;
+  border-radius:20px
+}
+.pageHero h1 {
+  font-size:42px;
+  margin:20px 0 12px;
+  color:#fff
+}
+.pageHero p {
+  margin:0;
+  color:#e5ece8;
+  font-size:15px
+}
+@media(max-width:600px) {
+  .pageHero {
+    min-height:240px;
+    padding:50px 20px
+  }
+  .pageHero h1 {
+    font-size:32px
+  }
+}

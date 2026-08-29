@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap');
+:root {
+  font-family:Inter,Arial,sans-serif;
+  color:#263443;
+  background:#fff
+}
+* {
+  box-sizing:border-box
+}
+body {
+  margin:0
+}
+img {
+  display:block;
+  max-width:100%
+}
+a {
+  text-decoration:none;
+  color:inherit
+}
+h1,h2,h3,h4 {
+  font-family:Poppins,Inter,sans-serif;
+  line-height:1.2;
+  color:#273443
+}
+p {
+  line-height:1.7
+}
+button,input,select,textarea {
+  font:inherit
+}

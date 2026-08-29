@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* font-family: "Poppins", sans-serif; */
+
+
+.siteHeader {
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#fff;
+  border-bottom:1px solid #e6e8eb
+}
+.headerWrap {
+  height:72px;
+  max-width:1280px;
+  margin:auto;
+  padding:0 32px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px
+}
+.brand {
+  display:flex;
+  align-items:center;
+  gap:10px
+}
+.brandRaj {
+  font-size:26px;
+  line-height:.72;
+  font-weight:700;
+  color:#2f69ad;
+  letter-spacing:-1px
+}
+.brandRaj small {
+  display:block;
+  font-size:7px;
+  letter-spacing:2px;
+  margin-top:8px
+}
+.brandNidec {
+  background:#216a45;
+  color:#fff;
+  padding:5px 9px;
+  font-size:10px;
+  font-style:italic;
+  font-weight:700;
+  clip-path:polygon(0 0,100% 0,90% 100%,0 100%)
+}
+.brandNidec small {
+  display:block;
+  font-size:6px;
+  text-align:center;
+  font-style:normal
+}
+.nav {
+  display:flex;
+  gap:28px
+}
+.nav a {
+  font-family: "Poppins", sans-serif;
+  font-size:14px;
+  font-weight:600;
+  color:#354153
+}
+.nav a.active,.nav a:hover {
+  /* color:#1b7249 */
+  color: #009B4A;
+}
+.quoteBtn {
+   font-family: "Poppins", sans-serif;
+  background:#009B4A;
+  color:#fff;
+  padding:12px 22px;
+  border-radius:5px;
+  font-size:12px;
+  font-weight:700
+}
+.menuBtn {
+  display:none;
+  background:none;
+  border:0;
+  font-size:28px
+}
+@media(max-width:820px) {
+  .headerWrap {
+    padding:0 18px;
+    height:64px
+  }
+  .menuBtn {
+    display:block;
+    order:2
+  }
+  .quoteBtn {
+    display:none
+  }
+  .nav {
+    display:none
+  }
+  .nav.open {
+    display:flex;
+    position:absolute;
+    left:0;
+    right:0;
+    top:64px;
+    background:#fff;
+    padding:18px;
+    flex-direction:column;
+    border-bottom:1px solid #ddd
+  }
+  .brand {
+    order:1
+  }
+  .menuBtn {
+    margin-left:auto
+  }
+  .nav.open {
+    order:4
+  }
+}

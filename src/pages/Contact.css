@@ -1,0 +1,152 @@
+.contactInfo {
+  max-width:1200px;
+  margin:auto;
+  padding:55px 28px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px
+}
+.contactInfo article {
+  border:1px solid #dce2e6;
+  border-radius:12px;
+  padding:25px;
+  background:#fff;
+  position:relative
+}
+.contactInfo i {
+  position:absolute;
+  right:20px;
+  top:20px;
+  color:#16834b;
+  font-style:normal;
+  font-size:22px
+}
+.contactInfo h3 {
+  font-size:21px
+}
+.contactInfo p {
+  font-size:12px;
+  color:#71808a
+}
+.contactMain {
+  max-width:1200px;
+  margin:auto;
+  padding:20px 28px 70px;
+  display:grid;
+  grid-template-columns:1.3fr .85fr;
+  gap:40px
+}
+.contactMain form {
+  border:1px solid #dce2e6;
+  border-radius:14px;
+  padding:35px;
+  background:#fff
+}
+.contactMain h2 {
+  font-size:28px
+}
+.contactGrid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px
+}
+.contactGrid label {
+  font-size:11px;
+  font-weight:700
+}
+.contactGrid input {
+  width:100%;
+  display:block;
+  margin-top:6px;
+  padding:12px;
+  border:1px solid #dce2e6;
+  background:#f5f6f7;
+  border-radius:6px;
+  font-size:11px
+}
+.contactGrid .wide {
+  grid-column:1/-1
+}
+.contactMain form button {
+  width:100%;
+  margin-top:20px;
+  background:#0e914d;
+  border:0;
+  border-radius:5px;
+  color:#fff;
+  padding:13px;
+  font-size:11px;
+  font-weight:800
+}
+.contactMain aside article {
+  border:1px solid #dce2e6;
+  border-radius:10px;
+  padding:20px;
+  margin-bottom:14px
+}
+.contactMain aside h3 {
+  font-size:18px
+}
+.contactMain aside p {
+  font-size:11px;
+  color:#77818b;
+  display:flex;
+  justify-content:space-between
+}
+.contactMain aside strong {
+  color:#d15858
+}
+.whatsapp {
+  background:#ddf5e7;
+  border-color:#9bd4ae!important
+}
+.map {
+  height:220px;
+  border-radius:10px;
+  background:linear-gradient(135deg,#dce6ea,#f3f1ea);
+  display:grid;
+  place-items:center;
+  align-content:center;
+  color:#43586c
+}
+.map span {
+  font-size:45px
+}
+.map b {
+  font-size:12px
+}
+.regional {
+  background:#f2f4f6;
+  padding:65px max(28px,calc((100% - 1200px)/2))
+}
+.regional h2 {
+  text-align:center;
+  font-size:28px
+}
+.regional>div {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px
+}
+.regional article {
+  background:#fff;
+  border:1px solid #dce2e6;
+  border-radius:10px;
+  padding:22px
+}
+.regional h3 {
+  color:#167b49;
+  font-size:16px
+}
+.regional p {
+  font-size:11px;
+  color:#77818a
+}
+@media(max-width:750px) {
+  .contactInfo,.contactMain,.regional>div {
+    grid-template-columns:1fr
+  }
+  .contactGrid {
+    grid-template-columns:1fr
+  }
+}

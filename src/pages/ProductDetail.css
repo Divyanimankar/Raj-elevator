@@ -1,0 +1,245 @@
+.detailTop {
+  max-width:1200px;
+  margin:auto;
+  padding:40px 28px 60px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px
+}
+.mainImg {
+  width:100%;
+  height:390px;
+  object-fit:cover;
+  border-radius:9px
+}
+.gallery>div {
+  display:flex;
+  gap:10px;
+  margin-top:10px
+}
+.gallery>div img {
+  width:75px;
+  height:55px;
+  object-fit:cover;
+  border-radius:4px;
+  cursor:pointer
+}
+.detailInfo>span {
+  font-size:10px;
+  color:#75818b
+}
+.detailInfo h1 {
+  font-size:36px
+}
+.detailInfo p {
+  font-size:12px;
+  color:#73808a
+}
+.detailInfo article {
+  background:#f5f6f7;
+  border:1px solid #dfe3e6;
+  padding:15px;
+  border-radius:8px
+}
+.detailInfo article>b {
+  font-size:11px;
+  color:#137a47
+}
+.detailInfo article>div {
+  display:flex;
+  justify-content:space-between;
+  margin-top:12px
+}
+.detailInfo small {
+  font-size:9px;
+  color:#77818a
+}
+.detailInfo strong {
+  font-size:10px;
+  color:#253342
+}
+.detailInfo button,.otherUnits button {
+  border:0;
+  background:#108a4b;
+  color:#fff;
+  padding:11px 16px;
+  border-radius:4px;
+  font-size:10px;
+  font-weight:800;
+  margin:16px 8px 0 0
+}
+.detailInfo button.outline,.otherUnits button {
+  background:#fff;
+  color:#167647;
+  border:1px solid #167647
+}
+.techSpecs {
+  background:#f2f4f6;
+  padding:50px max(28px,calc((100% - 1200px)/2))
+}
+.techSpecs>span {
+  border:1px solid #93b9d8;
+  padding:8px 14px;
+  color:#2d689c;
+  font-size:10px
+}
+.techSpecs h2 {
+  font-size:22px;
+  margin-top:30px
+}
+.techSpecs>div {
+  border:1px solid #d7dde1;
+  border-radius:8px;
+  overflow:hidden
+}
+.techSpecs article {
+  display:grid;
+  grid-template-columns:1fr 3fr;
+  padding:12px 16px;
+  border-bottom:1px solid #dde2e5
+}
+.techSpecs article:last-child {
+  border:0
+}
+.techSpecs b,.techSpecs p {
+  font-size:10px;
+  margin:0
+}
+.techSpecs p {
+  color:#74808a
+}
+.smartFeatures,.verticals,.benefitList,.otherUnits {
+  padding:60px max(28px,calc((100% - 1200px)/2))
+}
+.smartFeatures {
+  background:#f2f4f6
+}
+.smartFeatures h2,.verticals h2,.benefitList h2,.otherUnits h2 {
+  text-align:center;
+  font-size:27px
+}
+.smartFeatures>div {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px
+}
+.smartFeatures article {
+  background:#fff;
+  border:1px solid #dde2e6;
+  border-radius:9px;
+  padding:20px
+}
+.smartFeatures i {
+  font-style:normal;
+  color:#13824b
+}
+.smartFeatures h3 {
+  font-size:15px
+}
+.smartFeatures p {
+  font-size:10px;
+  color:#76818b
+}
+.verticals>div {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px
+}
+.verticals article {
+  height:180px;
+  border-radius:8px;
+  overflow:hidden;
+  position:relative
+}
+.verticals img {
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+.verticals span {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:9px;
+  color:#fff;
+  background:linear-gradient(transparent,rgba(0,0,0,.7));
+  font-size:11px
+}
+.benefitList {
+  background:#f2f4f6
+}
+.benefitList article {
+  max-width:900px;
+  margin:14px auto;
+  display:flex;
+  gap:18px
+}
+.benefitList article>b {
+  color:#d2941a;
+  background:#fff1d4;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:11px
+}
+.benefitList h3 {
+  font-size:14px;
+  margin:0
+}
+.benefitList p {
+  font-size:10px;
+  margin:3px 0;
+  color:#77818b
+}
+.otherUnits>div {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px
+}
+.otherUnits article {
+  border:1px solid #dfe3e6;
+  border-radius:7px;
+  padding:10px
+}
+.otherUnits img {
+  width:100%;
+  height:110px;
+  object-fit:cover;
+  border-radius:4px
+}
+.otherUnits h3 {
+  font-size:13px;
+  margin:8px 0
+}
+.otherUnits p {
+  font-size:9px;
+  color:#76818a
+}
+@media(max-width:800px) {
+  .detailTop {
+    grid-template-columns:1fr
+  }
+  .smartFeatures>div {
+    grid-template-columns:1fr 1fr
+  }
+  .verticals>div {
+    grid-template-columns:repeat(2,1fr)
+  }
+  .otherUnits>div {
+    grid-template-columns:repeat(2,1fr)
+  }
+}
+@media(max-width:520px) {
+  .smartFeatures>div,.otherUnits>div {
+    grid-template-columns:1fr
+  }
+  .techSpecs article {
+    grid-template-columns:1fr
+  }
+  .mainImg {
+    height:280px
+  }
+}

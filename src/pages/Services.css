@@ -1,0 +1,200 @@
+.serviceCards,.serviceProcess,.plans,.network,.serviceFaq {
+  padding:65px max(28px,calc((100% - 1200px)/2));
+  background:#f2f4f6
+}
+.serviceCards h2,.serviceProcess h2,.plans h2,.serviceFaq h2 {
+  text-align:center;
+  font-size:28px
+}
+.serviceCards>div {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px
+}
+.serviceCards article {
+  background:#fff;
+  border:1px solid #dce2e6;
+  border-radius:9px;
+  padding:22px
+}
+.serviceCards i {
+  font-style:normal;
+  color:#13804a
+}
+.serviceCards h3 {
+  font-size:15px
+}
+.serviceCards p,.serviceCards li {
+  font-size:10px;
+  color:#76818b
+}
+.serviceCards ul {
+  list-style:none;
+  padding:0
+}
+.serviceProcess {
+  background:#fff
+}
+.serviceProcess>div {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px
+}
+.serviceProcess b {
+  font-size:22px;
+  color:#8ba89b
+}
+.serviceProcess h3 {
+  font-size:13px
+}
+.serviceProcess p {
+  font-size:10px;
+  color:#78828b
+}
+.plans>div {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+  max-width:1050px;
+  margin:auto
+}
+.plans article {
+  background:#fff;
+  padding:24px;
+  border:1px solid #dce1e5;
+  border-radius:10px
+}
+.plans article.featured {
+  background:#0c8750;
+  color:#fff
+}
+.plans span {
+  font-size:8px;
+  color:#d79b1a
+}
+.plans h3 {
+  font-size:18px
+}
+.plans p,.plans li {
+  font-size:10px
+}
+.plans article.featured p,.plans article.featured li {
+  color:#d9efe3
+}
+.plans ul {
+  list-style:none;
+  padding:0
+}
+.plans button {
+  width:100%;
+  padding:10px;
+  background:#fff;
+  border:1px solid #16804b;
+  color:#16804b;
+  border-radius:4px;
+  font-size:10px;
+  font-weight:700
+}
+.plans .featured button {
+  background:#ffa20b;
+  border:0;
+  color:#26313c
+}
+.network {
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:40px
+}
+.network h2 {
+  font-size:27px
+}
+.network p {
+  font-size:11px;
+  color:#77818b
+}
+.network article {
+  background:#d9f0e2;
+  color:#187b49;
+  padding:12px;
+  margin:8px 0;
+  border-radius:5px;
+  font-size:11px
+}
+.network small {
+  color:#71807a
+}
+.mapBox {
+  background:#182334;
+  color:#b8d4e2;
+  border-radius:10px;
+  min-height:220px;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  font-size:40px
+}
+.mapBox b {
+  font-size:15px
+}
+.mapBox small {
+  font-size:10px;
+  color:#8aa1af
+}
+.hotline {
+  background:#098b4c;
+  color:#fff;
+  padding:18px 5%;
+  font-size:11px;
+  font-weight:700;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:center
+}
+.hotline button {
+  background:#1c2c3b;
+  color:#fff;
+  border:0;
+  padding:8px 14px;
+  border-radius:4px;
+  font-size:9px
+}
+.serviceFaq {
+  background:#f2f4f6
+}
+.serviceFaq details {
+  max-width:1000px;
+  margin:9px auto;
+  background:#fff;
+  border:1px solid #dde2e6;
+  padding:14px;
+  border-radius:5px
+}
+.serviceFaq summary {
+  font-size:11px;
+  font-weight:700;
+  cursor:pointer
+}
+.serviceFaq p {
+  font-size:10px;
+  color:#77818a
+}
+@media(max-width:800px) {
+  .serviceCards>div,.plans>div {
+    grid-template-columns:1fr
+  }
+  .serviceProcess>div {
+    grid-template-columns:1fr 1fr
+  }
+  .network {
+    grid-template-columns:1fr
+  }
+  .hotline {
+    flex-wrap:wrap
+  }
+}
+@media(max-width:500px) {
+  .serviceProcess>div {
+    grid-template-columns:1fr
+  }
+}
