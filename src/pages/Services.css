@@ -1,145 +1,1230 @@
-.serviceCards,.serviceProcess,.plans,.network,.serviceFaq {
-  padding:65px max(28px,calc((100% - 1200px)/2));
-  background:#f2f4f6
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+
+/* font-family: "Poppins", sans-serif; */
+ /* font-family: "Inter", sans-serif; */
+
+
+/* =========================================
+   RAJ ELEVATORS - ENGINEERING SUPPORT
+========================================= */
+
+.raj-support-section {
+  width: 100%;
+  background: #f7f8f9;
+  padding: 80px 24px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.serviceCards h2,.serviceProcess h2,.plans h2,.serviceFaq h2 {
-  text-align:center;
-  font-size:28px
+
+.raj-support-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
 }
-.serviceCards>div {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px
+
+/* Heading */
+
+.raj-support-title {
+  margin: 0 auto 48px;
+  /* max-width: 900px; */
+  text-align: center;
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #1E293B;
 }
-.serviceCards article {
-  background:#fff;
-  border:1px solid #dce2e6;
-  border-radius:9px;
-  padding:22px
+
+/* Grid */
+
+.raj-support-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
 }
-.serviceCards i {
-  font-style:normal;
-  color:#13804a
+
+/* Card */
+
+.raj-support-card {
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #e7e9ec;
+  border-radius: 14px;
+  padding: 32px 30px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.035);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
-.serviceCards h3 {
-  font-size:15px
+
+.raj-support-card:hover {
+  transform: translateY(-5px);
+  border-color: #d8dde2;
+  box-shadow: 0 14px 30px rgba(22, 35, 61, 0.08);
 }
-.serviceCards p,.serviceCards li {
-  font-size:10px;
-  color:#76818b
+
+/* Icon */
+
+.raj-support-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  background: #eef2f3;
+  border-radius: 11px;
 }
-.serviceCards ul {
-  list-style:none;
-  padding:0
+
+.raj-support-icon svg {
+  width: 23px;
+  height: 23px;
+  fill: none;
+  stroke: #009B4A;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
-.serviceProcess {
-  background:#fff
+
+/* Card Heading */
+
+.raj-support-card h3 {
+  margin: 0 0 12px;
+  color: #16233d;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.35;
+  font-weight: 700;
 }
-.serviceProcess>div {
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px
+
+/* Description */
+
+.raj-support-card > p {
+  margin: 0 0 20px;
+  color: #64748B;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  font-weight: 400;
 }
-.serviceProcess b {
-  font-size:22px;
-  color:#8ba89b
+
+/* List */
+
+.raj-support-card ul {
+  margin: 0;
+  padding: 18px 0 0;
+  list-style: none;
+  border-top: 1px solid #dae2f2;
 }
-.serviceProcess h3 {
-  font-size:13px
+
+.raj-support-card ul li {
+  position: relative;
+  margin: 0 0 11px;
+  padding-left: 18px;
+  font-family: "Inter", sans-serif;
+  color: #1E293B;
+  font-size: 13px;
+  line-height: 1.5;
 }
-.serviceProcess p {
-  font-size:10px;
-  color:#78828b
+
+.raj-support-card ul li:last-child {
+  margin-bottom: 0;
 }
-.plans>div {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
-  max-width:1050px;
-  margin:auto
+
+.raj-support-card ul li::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 8px;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+  background: #f5a524;
 }
-.plans article {
-  background:#fff;
-  padding:24px;
-  border:1px solid #dce1e5;
-  border-radius:10px
+
+/* =========================================
+   LARGE TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+  .raj-support-section {
+    padding: 70px 24px;
+  }
+
+  .raj-support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .raj-support-title {
+    font-size: 31px;
+    margin-bottom: 40px;
+  }
 }
-.plans article.featured {
-  background:#0c8750;
-  color:#fff
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+  .raj-support-section {
+    padding: 60px 20px;
+  }
+
+  .raj-support-title {
+    max-width: 650px;
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 36px;
+  }
+
+  .raj-support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .raj-support-card {
+    padding: 27px 24px;
+  }
+
+  .raj-support-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 18px;
+  }
+
+  .raj-support-card h3 {
+    font-size: 18px;
+  }
+
+  .raj-support-card > p {
+    font-size: 14px;
+  }
 }
-.plans span {
-  font-size:8px;
-  color:#d79b1a
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 560px) {
+  .raj-support-section {
+    padding: 50px 16px;
+  }
+
+  .raj-support-title {
+    font-size: 24px;
+    line-height: 1.35;
+    margin-bottom: 30px;
+  }
+
+  .raj-support-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .raj-support-card {
+    padding: 25px 22px;
+    border-radius: 12px;
+  }
+
+  .raj-support-card:hover {
+    transform: none;
+  }
+
+  .raj-support-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+  }
+
+  .raj-support-icon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .raj-support-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .raj-support-card > p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+
+  .raj-support-card ul {
+    padding-top: 15px;
+  }
+
+  .raj-support-card ul li {
+    font-size: 13.5px;
+    margin-bottom: 9px;
+  }
 }
-.plans h3 {
-  font-size:18px
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .raj-support-section {
+    padding: 42px 14px;
+  }
+
+  .raj-support-title {
+    font-size: 22px;
+  }
+
+  .raj-support-card {
+    padding: 22px 18px;
+  }
 }
-.plans p,.plans li {
-  font-size:10px
+
+/* ----------------------------------- Third Section ------------------------------------ */
+
+/* =========================================
+   RAJ ELEVATORS - SERVICE PROCESS
+========================================= */
+
+.raj-process-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 85px 24px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.plans article.featured p,.plans article.featured li {
-  color:#d9efe3
+
+.raj-process-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
 }
-.plans ul {
-  list-style:none;
-  padding:0
+
+/* =========================================
+   TITLE
+========================================= */
+
+.raj-process-title {
+  /* max-width: 900px; */
+  margin: 0 auto 80px;
+  text-align: center;
+  color: #1E293B;
+  font-family: "Poppins", sans-serif; 
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 700;
 }
-.plans button {
-  width:100%;
-  padding:10px;
-  background:#fff;
-  border:1px solid #16804b;
-  color:#16804b;
-  border-radius:4px;
-  font-size:10px;
-  font-weight:700
+
+/* =========================================
+   STEPS GRID
+========================================= */
+
+.raj-process-steps {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  column-gap: 40px;
 }
-.plans .featured button {
-  background:#ffa20b;
-  border:0;
-  color:#26313c
+
+/* =========================================
+   STEP
+========================================= */
+
+.raj-process-step {
+  position: relative;
+  min-width: 0;
+
+  padding: 8px 10px 25px;
+
+  border-radius: 16px;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
-.network {
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:40px
+
+/* =========================================
+   STEP HOVER
+========================================= */
+
+.raj-process-step:hover {
+  background: #f7faf8;
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(22, 35, 61, 0.08);
 }
-.network h2 {
-  font-size:27px
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.raj-process-number {
+  display: inline-block;
+
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: #0D3B20;
+  opacity: 0.4;;
+  margin-bottom: 26px;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
-.network p {
-  font-size:11px;
-  color:#77818b
+
+.raj-process-step:hover .raj-process-number {
+  /* color: #1eab5c; */
+  transform: translateX(4px);
 }
-.network article {
-  background:#d9f0e2;
-  color:#187b49;
-  padding:12px;
-  margin:8px 0;
-  border-radius:5px;
-  font-size:11px
+
+/* =========================================
+   CONNECTING DOTS
+========================================= */
+
+/* .raj-process-dots {
+  position: absolute;
+
+  top: 38px;
+  left: calc(100% + 10px);
+
+  width: calc(100% - 10px);
+  max-width: 130px;
+
+  border-top: 3px dotted #d6dfd9;
+
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
+} */
+
+/* .raj-process-step:hover .raj-process-dots {
+  border-color: #1eab5c;
+} */
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.raj-process-content {
+  transition: transform 0.3s ease;
 }
-.network small {
-  color:#71807a
+
+.raj-process-step:hover .raj-process-content {
+  transform: translateX(3px);
 }
-.mapBox {
-  background:#182334;
-  color:#b8d4e2;
-  border-radius:10px;
-  min-height:220px;
-  display:grid;
-  place-items:center;
-  text-align:center;
-  font-size:40px
+
+/* =========================================
+   STEP HEADING
+========================================= */
+
+.raj-process-content h3 {
+  margin: 0 0 14px;
+  color: #1E293B;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 700;
+  transition: color 0.3s ease;
 }
-.mapBox b {
-  font-size:15px
+
+/* .raj-process-step:hover .raj-process-content h3 {
+  color: #1eab5c;
+} */
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.raj-process-content p {
+  max-width: 280px;
+  margin: 0;
+  color: #64748B;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  line-height: 1.65;
+  transition: color 0.3s ease;
 }
-.mapBox small {
-  font-size:10px;
-  color:#8aa1af
+
+.raj-process-step:hover .raj-process-content p {
+  color: #5f6979;
 }
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+  .raj-process-section {
+    padding: 70px 24px;
+  }
+
+  .raj-process-title {
+    font-size: 34px;
+    margin-bottom: 65px;
+  }
+
+  .raj-process-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 45px;
+    column-gap: 25px;
+  }
+
+  .raj-process-dots {
+    display: none;
+  }
+
+  .raj-process-step {
+    padding: 20px;
+  }
+
+  .raj-process-content p {
+    max-width: 100%;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  .raj-process-section {
+    padding: 55px 18px;
+  }
+
+  .raj-process-title {
+    font-size: 27px;
+    line-height: 1.35;
+    margin-bottom: 42px;
+  }
+
+  .raj-process-steps {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+
+  .raj-process-step {
+    padding: 22px 20px;
+    border: 1px solid #edf0ee;
+    border-radius: 14px;
+  }
+
+  .raj-process-number {
+    font-size: 46px;
+    margin-bottom: 18px;
+  }
+
+  .raj-process-content h3 {
+    font-size: 18px;
+    margin-bottom: 9px;
+  }
+
+  .raj-process-content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .raj-process-step:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .raj-process-section {
+    padding: 45px 14px;
+  }
+
+  .raj-process-title {
+    font-size: 23px;
+  }
+
+  .raj-process-step {
+    padding: 20px 17px;
+  }
+
+  .raj-process-number {
+    font-size: 42px;
+  }
+
+  .raj-process-content h3 {
+    font-size: 17px;
+  }
+
+  .raj-process-content p {
+    font-size: 13.5px;
+  }
+}
+
+
+
+/* ------------------------------------------ Fourth Section --------------------------------- */
+
+.raj-pricing-section {
+  width: 100%;
+  padding: 80px 24px;
+  background: #f8faf9;
+  font-family: "Poppins", sans-serif;
+}
+
+.raj-pricing-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.raj-pricing-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #1E293B;
+  margin: 0 0 55px;
+  line-height: 1.4;
+}
+
+/* GRID */
+
+.raj-pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.08fr 1fr;
+  gap: 26px;
+  align-items: start;
+}
+
+/* CARD */
+
+.raj-pricing-card {
+  position: relative;
+  padding: 40px 34px 34px;
+  background: #ffffff;
+  border: 1px solid #edeef0;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+
+  transition:
+    background 0.5s ease,
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.5s ease,
+    border-color 0.5s ease;
+}
+
+/* MIDDLE DEFAULT HIGHLIGHT */
+
+.raj-pricing-middle {
+  /* background: linear-gradient(160deg, #17a061, #0f8a52); */
+  background: #009B4A;
+  border-color: transparent;
+  transform: translateY(-14px);
+  box-shadow: 0 22px 40px rgba(15, 138, 82, 0.28);
+}
+
+/* HEADING */
+
+.raj-pricing-card h3 {
+  text-align: center;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 16px;
+  transition: color 0.45s ease;
+}
+
+/* DESCRIPTION */
+
+.raj-pricing-desc {
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: #64748B;
+  margin: 0 0 22px;
+  transition: color 0.45s ease;
+}
+
+/* HR */
+
+.raj-pricing-card hr {
+  border: none;
+  border-top: 1px solid #e4e7eb;
+  margin: 0 0 22px;
+
+  transition: border-color 0.45s ease;
+}
+
+/* LIST */
+
+.raj-pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.raj-pricing-card ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1E293B;
+  margin-bottom: 16px;
+  transition: color 0.45s ease;
+}
+
+/* SVG */
+
+.raj-pricing-card ul li svg {
+  flex-shrink: 0;
+
+  width: 18px;
+  height: 18px;
+
+  margin-top: 2px;
+
+  stroke: #1eab5c;
+  fill: none;
+  stroke-width: 2;
+
+  transition:
+    stroke 0.45s ease,
+    transform 0.45s ease;
+}
+
+/* BADGE */
+
+.raj-pricing-badge {
+  display: inline-block;
+
+  background: #F59E0B;
+  color: #1E293B;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+font-family: "Inter", sans-serif;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    opacity 0.4s ease,
+    max-height 0.4s ease,
+    margin 0.4s ease;
+}
+
+/* BUTTON */
+
+.raj-pricing-btn {
+  display: block;
+  width: 100%;
+
+  padding: 15px 0;
+
+  border-radius: 8px;
+  border: 2px solid #009B4A;
+
+  background: transparent;
+  color: #009B4A;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.45s ease,
+    color 0.45s ease,
+    border-color 0.45s ease,
+    transform 0.3s ease;
+}
+
+.raj-pricing-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   DEFAULT MIDDLE CARD
+========================= */
+
+.raj-pricing-middle h3,
+.raj-pricing-middle .raj-pricing-desc,
+.raj-pricing-middle ul li {
+  color: #ffffff;
+}
+
+.raj-pricing-middle hr {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.raj-pricing-middle ul li svg {
+  stroke: #f59e0b;
+}
+
+.raj-pricing-middle .raj-pricing-badge {
+  opacity: 1;
+  max-height: 40px;
+}
+
+.raj-pricing-middle .raj-pricing-btn {
+  background: #f5a524;
+  border-color: #f5a524;
+  color: #16233d;
+}
+
+/* =========================
+   SIDE CARD HOVER
+========================= */
+
+.raj-pricing-card:not(.raj-pricing-middle):hover {
+  /* background: linear-gradient(160deg, #17a061, #0f8a52); */
+  background-color: #009B4A;
+  border-color: transparent;
+
+  transform: translateY(-14px);
+
+  box-shadow: 0 22px 40px rgba(15, 138, 82, 0.28);
+}
+
+/* Hovered side card content */
+
+.raj-pricing-card:not(.raj-pricing-middle):hover h3,
+.raj-pricing-card:not(.raj-pricing-middle):hover .raj-pricing-desc,
+.raj-pricing-card:not(.raj-pricing-middle):hover ul li {
+  color: #ffffff;
+}
+
+.raj-pricing-card:not(.raj-pricing-middle):hover hr {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* HIGHLIGHTED CARD SVG = #F59E0B */
+
+.raj-pricing-card:not(.raj-pricing-middle):hover ul li svg {
+  stroke: #f59e0b;
+  transform: scale(1.08);
+}
+
+/* Hovered badge */
+
+.raj-pricing-card:not(.raj-pricing-middle):hover .raj-pricing-badge {
+  opacity: 1;
+  max-height: 40px;
+  margin-bottom: 18px;
+}
+
+/* Hovered button */
+
+.raj-pricing-card:not(.raj-pricing-middle):hover .raj-pricing-btn {
+  background: #f5a524;
+  border-color: #f5a524;
+  color: #16233d;
+}
+
+/* =========================
+   WHEN SIDE CARD IS HOVERED
+   MIDDLE CARD BECOMES NORMAL
+========================= */
+
+.raj-pricing-grid:has(
+  .raj-pricing-card:not(.raj-pricing-middle):hover
+) .raj-pricing-middle {
+  background: #ffffff;
+  border-color: #edeef0;
+
+  transform: translateY(0);
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+/* Middle card text */
+
+.raj-pricing-grid:has(
+  .raj-pricing-card:not(.raj-pricing-middle):hover
+) .raj-pricing-middle h3,
+.raj-pricing-grid:has(
+  .raj-pricing-card:not(.raj-pricing-middle):hover
+) .raj-pricing-middle .raj-pricing-desc,
+.raj-pricing-grid:has(
+  .raj-pricing-card:not(.raj-pricing-middle):hover
+) .raj-pricing-middle ul li {
+  color: #16233d;
+}
+
+.raj-pricing-grid:has(
+  .raj-pricing-card:not(.raj-pricing-middle):hover
+) .raj-pricing-middle .raj-pricing-desc {
+  color: #7b8598;
+}
+
+/* Middle hr */
+
+.raj-pricing-grid:has(
+  .raj-pricing-card:not(.raj-pricing-middle):hover
+) .raj-pricing-middle hr {
+  border-color: #e4e7eb;
+}
+
+/* Middle SVG normal */
+
+.raj-pricing-grid:has(
+  .raj-pricing-card:not(.raj-pricing-middle):hover
+) .raj-pricing-middle ul li svg {
+  stroke: #1eab5c;
+}
+
+/* Middle badge hide */
+
+.raj-pricing-grid:has(
+  .raj-pricing-card:not(.raj-pricing-middle):hover
+) .raj-pricing-middle .raj-pricing-badge {
+  opacity: 0;
+  max-height: 0;
+  margin-bottom: 0;
+}
+
+/* Middle button normal */
+
+.raj-pricing-grid:has(
+  .raj-pricing-card:not(.raj-pricing-middle):hover
+) .raj-pricing-middle .raj-pricing-btn {
+  background: transparent;
+  border-color: #1eab5c;
+  color: #1eab5c;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1050px) {
+  .raj-pricing-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .raj-pricing-middle {
+    transform: none;
+  }
+
+  .raj-pricing-card:not(.raj-pricing-middle):hover {
+    transform: translateY(-8px);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .raj-pricing-section {
+    padding: 55px 18px;
+  }
+
+  .raj-pricing-title {
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+
+  .raj-pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .raj-pricing-card {
+    padding: 30px 24px;
+  }
+
+  .raj-pricing-middle {
+    transform: none;
+  }
+
+  .raj-pricing-card:not(.raj-pricing-middle):hover {
+    transform: translateY(-5px);
+  }
+
+  .raj-pricing-card h3 {
+    font-size: 23px;
+  }
+
+  .raj-pricing-desc {
+    font-size: 14px;
+  }
+
+  .raj-pricing-card ul li {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 420px) {
+  .raj-pricing-section {
+    padding: 45px 14px;
+  }
+
+  .raj-pricing-card {
+    padding: 26px 20px;
+    border-radius: 14px;
+  }
+
+  .raj-pricing-title {
+    font-size: 21px;
+  }
+
+  .raj-pricing-card h3 {
+    font-size: 21px;
+  }
+
+  .raj-pricing-card ul li {
+    font-size: 13.5px;
+  }
+
+  .raj-pricing-btn {
+    font-size: 14px;
+  }
+}
+
+
+/* --------------------------------- Fifth Section ------------------------------------- */
+
+/* ================================
+   MAIN SECTION
+================================ */
+
+.support-network-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: #fbfbfb;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.support-network-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.18fr 0.82fr;
+  align-items: center;
+  gap: 80px;
+}
+
+
+/* ================================
+   LEFT SIDE
+================================ */
+
+.support-network-content {
+  width: 100%;
+  max-width: 700px;
+}
+
+.support-network-title {
+  margin: 0;
+  font-size: clamp(32px, 3vw, 32px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #1d273a;
+}
+
+.support-network-description {
+  margin: 28px 0 0;
+  max-width: 690px;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(14px, 1.5vw, 14px);
+  line-height: 1.55;
+  color: #64748B;
+}
+
+.support-depots {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.support-depot {
+  padding: 22px 24px;
+  border-radius: 10px;
+  background: #cdf7dd;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.support-depot:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.support-depot h2 {
+  margin: 0;
+  font-size: clamp(16px, 1.3vw, 15px);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #009B4A;
+}
+
+.support-depot p {
+  margin: 4px 0 0;
+
+  font-size: clamp(14px, 1.1vw, 12px);
+  font-family: "Inter", sans-serif;
+  color: #64748B;
+}
+
+
+/* ================================
+   RIGHT SIDE IMAGE
+================================ */
+
+.rightIndiaImage {
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightIndiaImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: 22px;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.rightIndiaImage img:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 40px rgba(17, 24, 39, 0.18);
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 950px) {
+
+  .support-network-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .support-network-content {
+    max-width: 100%;
+  }
+
+  .rightIndiaImage {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .support-network-section {
+    padding: 55px 16px;
+  }
+
+  .support-network-title {
+    font-size: 32px;
+    letter-spacing: -0.8px;
+  }
+
+  .support-network-description {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .support-depots {
+    margin-top: 24px;
+    gap: 14px;
+  }
+
+  .support-depot {
+    padding: 18px 20px;
+  }
+
+  .rightIndiaImage {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .rightIndiaImage img {
+    width: 100%;
+    border-radius: 18px;
+  }
+
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+  .support-network-title {
+    font-size: 28px;
+  }
+
+  .support-network-description {
+    font-size: 14px;
+  }
+
+  .support-depot {
+    padding: 16px 18px;
+  }
+
+  .rightIndiaImage img {
+    border-radius: 16px;
+  }
+
+}
+
+/* ------------------------------------------ sIXTH -------------------------------------- */
 .hotline {
   background:#098b4c;
   color:#fff;
@@ -159,42 +1244,5 @@
   border-radius:4px;
   font-size:9px
 }
-.serviceFaq {
-  background:#f2f4f6
-}
-.serviceFaq details {
-  max-width:1000px;
-  margin:9px auto;
-  background:#fff;
-  border:1px solid #dde2e6;
-  padding:14px;
-  border-radius:5px
-}
-.serviceFaq summary {
-  font-size:11px;
-  font-weight:700;
-  cursor:pointer
-}
-.serviceFaq p {
-  font-size:10px;
-  color:#77818a
-}
-@media(max-width:800px) {
-  .serviceCards>div,.plans>div {
-    grid-template-columns:1fr
-  }
-  .serviceProcess>div {
-    grid-template-columns:1fr 1fr
-  }
-  .network {
-    grid-template-columns:1fr
-  }
-  .hotline {
-    flex-wrap:wrap
-  }
-}
-@media(max-width:500px) {
-  .serviceProcess>div {
-    grid-template-columns:1fr
-  }
-}
+
+/* ------------------------------------------------ Seventh Section FAQ-------------------------------- */

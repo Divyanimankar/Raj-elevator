@@ -11,20 +11,21 @@
   max-width:900px
 }
 .pageHero span {
-  font-size:11px;
+  font-size:12px;
   background:rgba(255,255,255,.12);
   padding:7px 13px;
   border-radius:20px
 }
 .pageHero h1 {
-  font-size:42px;
+  font-size:48px;
   margin:20px 0 12px;
   color:#fff
 }
 .pageHero p {
   margin:0;
   color:#e5ece8;
-  font-size:15px
+  font: size 18px;
+  font-weight: 300;
 }
 @media(max-width:600px) {
   .pageHero {
