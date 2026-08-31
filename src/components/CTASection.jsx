@@ -17,7 +17,6 @@ export default function CTA() {
           </p>
 
           <div className="cta-info">
-
             <div className="cta-info-block">
               <span className="label">
                 Toll Free Helpline

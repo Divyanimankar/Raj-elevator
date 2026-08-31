@@ -200,7 +200,7 @@
 
 .sectionLight {
   background: #f2f4f6;
-  /* padding: 45px 0; */
+  padding: 45px 0;
 }
 
 /* 4 CARDS IN ONE ROW */
@@ -322,7 +322,7 @@
   }
 }
 /* ----------------------------- Fifth Section ------------------------------------- */
-.advantage {
+/* .advantage {
   background:#092f20;
   color:#fff;
   padding:70px 0
@@ -378,8 +378,548 @@
 }
 .advImage small {
   font-size:8px
+} */
+
+
+/* =========================================
+   RAJ ELEVATOR ADVANTAGE SECTION
+========================================= */
+
+.raj-advantage-section {
+  --raj-bg-dark: #071b12;
+  --raj-bg-dark-2: #0c2d1d;
+  --raj-green: #16a34a;
+  --raj-green-light: #49d17d;
+  --raj-white: #ffffff;
+  --raj-text-body: #cbd5cf;
+  --raj-divider: rgba(255, 255, 255, 0.14);
+  --raj-icon-bg: rgba(22, 163, 74, 0.18);
+
+  width: 100%;
+  padding: 80px 24px;
+
+  background:
+    linear-gradient(
+      150deg,
+      var(--raj-bg-dark) 0%,
+      var(--raj-bg-dark-2) 70%,
+      #1a4a30 100%
+    );
+
+  box-sizing: border-box;
 }
-.signatureGrid {
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.raj-advantage-inner {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.raj-advantage-content {
+  width: 100%;
+  min-width: 0;
+}
+
+
+.raj-advantage-heading {
+  margin: 0 0 22px;
+  color: var(--raj-white);
+  font-size: clamp(1.9rem, 3.6vw, 2.3rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+.raj-advantage-intro {
+  max-width: 600px;
+
+  margin: 0 0 34px;
+
+  color: var(--raj-text-body);
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   FEATURE LIST
+========================================= */
+
+.raj-advantage-feature-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.raj-advantage-feature-row {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 20px;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid var(--raj-divider);
+}
+
+
+.raj-advantage-feature-row:first-child {
+  padding-top: 0;
+}
+
+
+.raj-advantage-feature-row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+
+/* =========================================
+   FEATURE ICON
+========================================= */
+
+.raj-advantage-feature-icon {
+  width: 52px;
+  height: 52px;
+
+  flex: 0 0 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: var(--raj-icon-bg);
+}
+
+
+.raj-advantage-feature-icon svg {
+  width: 24px;
+  height: 24px;
+
+  fill: none;
+  stroke: #ffffff;
+
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* Star icon needs fill */
+.raj-advantage-feature-row:first-child
+.raj-advantage-feature-icon svg {
+  fill: none;
+}
+
+
+/* =========================================
+   FEATURE TEXT
+========================================= */
+
+.raj-advantage-feature-title {
+  margin: 6px 0 8px;
+
+  color: var(--raj-white);
+
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+
+.raj-advantage-feature-desc {
+  max-width: 620px;
+
+  margin: 0;
+
+  color: var(--raj-text-body);
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   RIGHT IMAGE AREA
+========================================= */
+
+.raj-advantage-media {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.raj-advantage-media-frame {
+  position: relative;
+
+  width: 100%;
+  max-width: 520px;
+
+  aspect-ratio: 1 / 1;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      155deg,
+      #8a6a45 0%,
+      #5c4630 35%,
+      #2b2620 65%,
+      #171512 100%
+    );
+
+  box-shadow:
+    0 24px 50px rgba(0, 0, 0, 0.4);
+}
+
+
+.raj-advantage-media-frame img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================
+   IMAGE GLOW
+========================================= */
+
+.raj-advantage-media-glow {
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(255, 255, 255, 0.18),
+      transparent 55%
+    );
+}
+
+
+/* =========================================
+   22+ BADGE
+========================================= */
+
+.raj-advantage-badge {
+  position: absolute;
+  left: 100px;
+  bottom: 17px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--raj-bg-dark);
+  border: 3px solid var(--raj-green-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 3;
+  box-sizing: border-box;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.35);
+    animation: dropIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+   cursor:pointer;
+  transition:transform 0.25s ease;
+}
+
+
+.raj-advantage-badge:hover{
+  transform:scale(1.1) rotate(-4deg);
+  /* box-shadow:0 20px 40px rgba(46,204,113,0.35);   */
+}
+
+.raj-advantage-badge-number {
+  margin-bottom: 6px;
+
+  color: #ffffff;
+
+  font-size: 2rem;
+  font-weight: 800;
+
+  line-height: 1;
+}
+
+
+.raj-advantage-badge-label {
+  color: #ffffff;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+
+  line-height: 1.35;
+}
+
+
+/* =========================================
+   LARGE TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .raj-advantage-inner {
+    grid-template-columns: 1fr 0.9fr;
+    gap: 40px;
+  }
+
+  .raj-advantage-heading {
+    font-size: 2.2rem;
+  }
+
+  .raj-advantage-feature-row {
+    gap: 16px;
+  }
+
+  .raj-advantage-media-frame {
+    max-width: 460px;
+  }
+
+  .raj-advantage-badge {
+    left: 20px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 960px) {
+
+  .raj-advantage-section {
+    padding: 70px 24px;
+  }
+
+  .raj-advantage-inner {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  /*
+    Image first on tablet/mobile
+  */
+  .raj-advantage-media {
+    order: -1;
+
+    justify-content: center;
+  }
+
+  .raj-advantage-media-frame {
+    max-width: 500px;
+  }
+
+  .raj-advantage-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .raj-advantage-intro {
+    max-width: 100%;
+  }
+}
+
+
+/* =========================================
+   SMALL TABLET / MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+
+  .raj-advantage-section {
+    padding: 56px 18px;
+  }
+
+  .raj-advantage-inner {
+    gap: 40px;
+  }
+
+  .raj-advantage-heading {
+    font-size: 2rem;
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+  }
+
+  .raj-advantage-intro {
+    font-size: 0.95rem;
+    line-height: 1.65;
+
+    margin-bottom: 26px;
+  }
+
+
+  /* IMAGE */
+
+  .raj-advantage-media {
+    width: 100%;
+  }
+
+  .raj-advantage-media-frame {
+    width: 100%;
+    max-width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 18px;
+  }
+
+
+  /* BADGE */
+
+  .raj-advantage-badge {
+    width: 110px;
+    height: 110px;
+
+    left: 12px;
+    bottom: 12px;
+
+    border-width: 2px;
+  }
+
+  .raj-advantage-badge-number {
+    font-size: 1.5rem;
+  }
+
+  .raj-advantage-badge-label {
+    font-size: 0.55rem;
+  }
+
+
+  /* FEATURES */
+
+  .raj-advantage-feature-row {
+    gap: 14px;
+    padding: 18px 0;
+  }
+
+  .raj-advantage-feature-icon {
+    width: 44px;
+    height: 44px;
+
+    flex: 0 0 44px;
+
+    border-radius: 11px;
+  }
+
+  .raj-advantage-feature-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .raj-advantage-feature-title {
+    margin-top: 3px;
+
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .raj-advantage-feature-desc {
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .raj-advantage-section {
+    padding: 48px 15px;
+  }
+
+  .raj-advantage-heading {
+    font-size: 1.75rem;
+  }
+
+  .raj-advantage-intro {
+    font-size: 0.9rem;
+  }
+
+  .raj-advantage-feature-row {
+    gap: 12px;
+  }
+
+  .raj-advantage-feature-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-basis: 40px;
+
+    border-radius: 10px;
+  }
+
+  .raj-advantage-feature-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .raj-advantage-feature-title {
+    font-size: 0.95rem;
+  }
+
+  .raj-advantage-feature-desc {
+    font-size: 0.82rem;
+  }
+
+  .raj-advantage-badge {
+    width: 96px;
+    height: 96px;
+
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .raj-advantage-badge-number {
+    font-size: 1.3rem;
+  }
+
+  .raj-advantage-badge-label {
+    font-size: 0.5rem;
+  }
+}
+/* ------------------------------ End ------------------------------- */
+/* .signatureGrid {
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:18px
@@ -413,9 +953,485 @@
 .center {
   text-align:center;
   margin-top:25px
+} */
+
+/* ----------------------------------- six Section---------------------------------------------- */
+/* =========================================
+   RAJ ELEVATORS - PROJECTS SECTION
+========================================= */
+
+.raj-projects-section {
+  width: 100%;
+  background: #f1f3f5;
+  padding: 75px 20px 90px;
+  box-sizing: border-box;
 }
 
-/* ----------------------------------- Seven Section---------------------------------------------- */
+.raj-projects-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.raj-projects-title {
+  margin: 0 0 58px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #1f2a3d;
+  font-size: clamp(30px, 3.2vw, 38px);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.raj-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.raj-project-card {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  height: 520px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #101923;
+  box-shadow: 0 12px 30px rgba(25, 35, 50, 0.14);
+  isolation: isolate;
+}
+
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+.raj-project-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: transform 0.5s ease;
+}
+
+
+/* Online images - replace these later
+   with your own image URLs/files
+*/
+
+.raj-project-image-tower {
+  background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85");
+}
+
+.raj-project-image-atrium {
+  background-image: url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85");
+}
+
+.raj-project-image-campus {
+  background-image: url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85");
+}
+
+
+.raj-project-card:hover .raj-project-image {
+  transform: scale(1.04);
+}
+
+
+/* =========================================
+   DARK GRADIENT
+========================================= */
+
+.raj-project-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(7, 15, 25, 0.04) 15%,
+      rgba(7, 15, 25, 0.18) 35%,
+      rgba(7, 15, 25, 0.76) 70%,
+      rgba(5, 12, 22, 0.97) 100%
+    );
+}
+
+
+/* =========================================
+   BADGE
+========================================= */
+
+.raj-project-badge {
+  position: absolute;
+  top: 25px;
+  left: 32px;
+
+  display: inline-flex;
+  align-items: center;
+
+  max-width: calc(100% - 50px);
+
+  padding: 7px 13px;
+
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.raj-project-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 32px 31px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   LOCATION
+========================================= */
+
+.raj-project-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 7px;
+  color: #F59E0B;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.raj-project-location svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  color: #F59E0B;
+}
+
+
+/* =========================================
+   PROJECT NAME
+========================================= */
+
+.raj-project-name {
+  margin: 0 0 17px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(22px, 2vw, 26px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.3px;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.raj-project-divider {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 13px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.raj-project-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.45;
+  opacity: 0.7;
+}
+
+.raj-project-feature:last-child {
+  margin-bottom: 0;
+}
+
+.raj-project-feature svg {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  margin-top: 2px;
+  stroke: #ffffff;
+}
+
+.raj-project-feature strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.raj-projects-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+
+.raj-projects-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 282px;
+  padding: 16px 29px;
+  border: none;
+  border-radius: 999px;
+  background: #009B4A;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 10px 24px rgba(0, 155, 74, 0.27);
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.raj-projects-button:hover {
+  background: #00843f;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 155, 74, 0.32);
+}
+
+
+.raj-projects-button svg {
+  width: 18px;
+  height: 18px;
+
+  flex-shrink: 0;
+
+  transition: transform 0.25s ease;
+}
+
+
+.raj-projects-button:hover svg {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .raj-projects-section {
+    padding: 65px 25px 75px;
+  }
+
+  .raj-projects-title {
+    margin-bottom: 45px;
+  }
+
+  .raj-projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .raj-project-card {
+    height: 500px;
+  }
+
+  .raj-project-card:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: 620px;
+    width: 100%;
+    justify-self: center;
+  }
+
+  .raj-project-content {
+    padding: 0 27px 28px;
+  }
+
+  .raj-project-badge {
+    left: 27px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .raj-projects-section {
+    padding: 50px 16px 60px;
+  }
+
+  .raj-projects-title {
+    margin-bottom: 34px;
+
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+
+  .raj-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .raj-project-card,
+  .raj-project-card:nth-child(3) {
+    grid-column: auto;
+
+    width: 100%;
+    max-width: none;
+
+    height: 480px;
+
+    aspect-ratio: 4 / 5;
+  }
+
+  .raj-project-content {
+    padding: 0 22px 23px;
+  }
+
+  .raj-project-badge {
+    top: 19px;
+    left: 21px;
+
+    font-size: 9px;
+    padding: 6px 10px;
+  }
+
+  .raj-project-location {
+    font-size: 13px;
+  }
+
+  .raj-project-name {
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+
+  .raj-project-feature {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .raj-projects-cta {
+    margin-top: 38px;
+  }
+
+  .raj-projects-button {
+    width: 100%;
+    max-width: 300px;
+
+    min-width: 0;
+
+    padding: 15px 22px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+  .raj-projects-section {
+    padding: 42px 13px 52px;
+  }
+
+  .raj-projects-title {
+    margin-bottom: 28px;
+    font-size: 26px;
+  }
+
+  .raj-project-card,
+  .raj-project-card:nth-child(3) {
+    height: 450px;
+  }
+
+  .raj-project-content {
+    padding: 0 18px 20px;
+  }
+
+  .raj-project-badge {
+    top: 16px;
+    left: 17px;
+  }
+
+  .raj-project-name {
+    font-size: 20px;
+  }
+
+  .raj-project-feature {
+    font-size: 12.5px;
+  }
+
+  .raj-projects-button {
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* ----------------------------------- Seven  Section---------------------------------------------- */
 .workflow-section {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
@@ -592,6 +1608,8 @@
     font-size: 13px;
   }
 }
+
+
 /* -------------------------------------------- Eight Section ----------------------------------------- */
 
 .clients-section {
@@ -782,8 +1800,9 @@
 .nidec-section {
   width: 100%;
   box-sizing: border-box;
-  padding: 70px 40px;
-  background: #ffffff;
+  padding: 70px 7%;
+  /* background: #ffffff; */
+  background: #f2f4f6;
 }
 
 
@@ -795,11 +1814,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
   max-width: 1400px;
-
   margin: 0 auto;
-
   gap: 60px;
 }
 
@@ -816,22 +1832,18 @@
 
 .nidec-left h1 {
   margin: 0 0 25px;
-
-  font-size: 42px;
-  font-weight: 800;
-
-  color: #1a1a1a;
-
+  font-size: 34px;
+  font-weight: 700;
+  color: #0F172A;
+font-family: "Poppins", sans-serif;
   line-height: 1.2;
 }
 
 .nidec-left > p {
   margin: 0 0 30px;
-
-  font-size: 17px;
-
-  color: #444;
-
+  font-size: 14px;
+  font-family: "Inter", sans-serif; 
+  color: #475569;
   line-height: 1.7;
 }
 
@@ -843,7 +1855,6 @@
 .nidec-feature-list {
   display: flex;
   flex-direction: column;
-
   gap: 20px;
 }
 
@@ -858,23 +1869,16 @@
 
 .nidec-check-icon {
   flex-shrink: 0;
-
-  width: 26px;
-  height: 26px;
-
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-
-  background-color: #16a34a;
-
+  background-color: #009B4A;
   color: #fff;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 14px;
   font-weight: bold;
-
   margin-top: 2px;
 }
 
@@ -883,21 +1887,18 @@
 }
 
 .nidec-feature-title {
-  font-size: 17px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
-
-  color: #1a1a1a;
-
+  color: #0F172A;
   line-height: 1.45;
 }
 
 .nidec-feature-subtitle {
-  font-size: 14.5px;
-
-  color: #6b6b6b;
-
+   font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #64748B;
   margin-top: 2px;
-
   line-height: 1.5;
 }
 
@@ -908,23 +1909,16 @@
 
 .nidec-right {
   flex: 1 1 400px;
-
   width: 100%;
-
-  max-width: 600px;
-
+  max-width: 550px;
   min-width: 0;
 }
 
 .nidec-card {
   width: 100%;
-
-  background-color: #29abe2;
-
+  background-color: #28ABE2;
   border-radius: 16px;
-
   overflow: hidden;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
@@ -939,13 +1933,10 @@
 
 .nidec-official-partner {
   color: #ffffff;
-
-  font-size: 13px;
-
-  font-weight: 700;
-
-  letter-spacing: 1.5px;
-
+font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
   margin-bottom: 20px;
 }
 
@@ -1005,13 +1996,10 @@
 
 .nidec-partner-name {
   color: #ffffff;
-
-  font-size: 18px;
-
-  font-weight: 600;
-
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
   margin-bottom: 25px;
-
   line-height: 1.4;
 }
 
@@ -1030,13 +2018,10 @@
 
 .nidec-quote-box p {
   margin: 0;
-
-  font-size: 15px;
-
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
   color: #333;
-
   line-height: 1.6;
-
   font-style: italic;
 }
 
@@ -1047,17 +2032,13 @@
 
 .nidec-stats-grid {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
   background-color: #ffffff;
 }
 
 .nidec-stat-box {
   padding: 30px 40px;
-
   border-top: 1px solid #e5e5e5;
-
   min-width: 0;
 }
 
@@ -1071,22 +2052,18 @@
 }
 
 .nidec-stat-number {
-  font-size: 32px;
-
-  font-weight: 800;
-
-  color: #16a34a;
-
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #009B4A;
   margin-bottom: 8px;
-
   line-height: 1;
 }
 
 .nidec-stat-label {
-  font-size: 14px;
-
-  color: #555;
-
+  font-size: 12px;
+font-family: "Inter", sans-serif;
+  color: #64748B;
   line-height: 1.4;
 }
 

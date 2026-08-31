@@ -250,7 +250,7 @@ export default function Home(){return (
 </section>
 
   {/* -------------------------------- Fifth  Section------------------------------------- */}
-  <section className="advantage">
+  {/* <section className="advantage">
     <div className="wrap advantageGrid">
       <div>
         <h2>
@@ -280,39 +280,420 @@ export default function Home(){return (
         </em>
       </div>
     </div>
-  </section>
+  </section> */}
 
-  {/* -------------------------------- Sixth Section------------------------------------- */}
-  <section className="signature sectionLight">
-    <div className="wrap">
-      <h2>
-        Our Signature Landmark Installations
-      </h2>
-      <div className="signatureGrid">
-        {projects.slice(0,3).map(p=>
-        <article key={p.name}>
-          <img src={p.image} alt=""/>
-          <div>
-            <span>
-              {p.type}
-            </span>
-            <h3>
-              {p.name}
-            </h3>
-            <small>
-              ⌖ {p.location}
-            </small>
+
+ <section className="raj-advantage-section">
+      <div className="raj-advantage-inner">
+
+        {/* LEFT CONTENT */}
+        <div className="raj-advantage-content">
+
+          <h2 className="raj-advantage-heading">
+            The Raj Elevator Advantage
+          </h2>
+
+          <p className="raj-advantage-intro">
+            The only elevator company in Mumbai combining 22+ years of local
+            expertise with Nidec Japan&apos;s world-leading engineering -
+            so every ride is silent, safe, and seamless.
+          </p>
+
+          <div className="raj-advantage-feature-list">
+
+            {/* FEATURE 1 */}
+            <div className="raj-advantage-feature-row">
+              <div className="raj-advantage-feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+              </div>
+
+              <div>
+                <h3 className="raj-advantage-feature-title">
+                  Nidec Japan-Grade Safety
+                </h3>
+
+                <p className="raj-advantage-feature-desc">
+                  Every elevator uses Nidec&apos;s certified gearless traction
+                  systems - meeting the most stringent global safety standards,
+                  localised for Indian building codes.
+                </p>
+              </div>
+            </div>
+
+            {/* FEATURE 2 */}
+            <div className="raj-advantage-feature-row">
+              <div className="raj-advantage-feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+
+              <div>
+                <h3 className="raj-advantage-feature-title">
+                  2-Hour Emergency Response
+                </h3>
+
+                <p className="raj-advantage-feature-desc">
+                  Our 60-strong team of certified technicians across Mumbai
+                  guarantees a 2-hour on-site response for any emergency
+                  breakdown - 365 days a year.
+                </p>
+              </div>
+            </div>
+
+            {/* FEATURE 3 */}
+            <div className="raj-advantage-feature-row">
+              <div className="raj-advantage-feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z" />
+                </svg>
+              </div>
+
+              <div>
+                <h3 className="raj-advantage-feature-title">
+                  Transparent, Fixed Pricing
+                </h3>
+
+                <p className="raj-advantage-feature-desc">
+                  No hidden charges. Detailed written quotations, fixed-cost
+                  AMC contracts, and EMI-friendly payment options for
+                  residential and commercial projects.
+                </p>
+              </div>
+            </div>
+
+            {/* FEATURE 4 */}
+            <div className="raj-advantage-feature-row">
+              <div className="raj-advantage-feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
+              </div>
+
+              <div>
+                <h3 className="raj-advantage-feature-title">
+                  4.9 / 5 Google Rating
+                </h3>
+
+                <p className="raj-advantage-feature-desc">
+                  320+ verified Google reviews from builders, housing
+                  societies, corporates and homeowners across Mumbai, Thane,
+                  and Navi Mumbai.
+                </p>
+              </div>
+            </div>
+
           </div>
-        </article>
-        )}
+        </div>
+
+        {/* RIGHT IMAGE */}
+        <div className="raj-advantage-media">
+
+          <div className="raj-advantage-media-frame">
+
+            <img
+              src="https://images.unsplash.com/photo-1631248979010-6775b0c88180?fm=jpg&q=60&w=1200&auto=format&fit=crop"
+              alt="Modern elevator interior"
+              loading="lazy"
+              referrerPolicy="no-referrer"
+            />
+
+            <div className="raj-advantage-media-glow"></div>
+
+          </div>
+
+          {/* EXPERIENCE BADGE */}
+          <div className="raj-advantage-badge">
+
+            <div className="raj-advantage-badge-number">
+              22+
+            </div>
+
+            <div className="raj-advantage-badge-label">
+              Years of
+              <br />
+              Excellence
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-      <div className="center">
-        <Link className="primary" to="/projects">
-          View All Projects →
-        </Link>
-      </div>
+    </section>
+  {/* -------------------------------- Sixth Section------------------------------------- */}
+
+  <section className="raj-projects-section">
+  <div className="raj-projects-container">
+
+    <h2 className="raj-projects-title">
+      Our Signature Landmark Installations
+    </h2>
+
+    <div className="raj-projects-grid">
+
+      {/* Card 1 */}
+      <article className="raj-project-card">
+
+        <div
+          className="raj-project-image raj-project-image-tower"
+          role="img"
+          aria-label="Modern skyscraper"
+        />
+
+        <div className="raj-project-overlay"></div>
+
+        <span className="raj-project-badge">
+          Commercial Landmark
+        </span>
+
+        <div className="raj-project-content">
+
+          <div className="raj-project-location">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+
+            <span>Singapore</span>
+          </div>
+
+          <h3 className="raj-project-name">
+            The Pinnacle Plaza
+          </h3>
+
+          <div className="raj-project-divider"></div>
+
+          <div className="raj-project-feature">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+              />
+            </svg>
+
+            <span>
+              24 High-Speed Smart Elevators
+            </span>
+          </div>
+
+          <div className="raj-project-feature">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+
+            <span>
+              Operating at peak speed of 8.0 m/s with AI dispatch
+            </span>
+          </div>
+
+        </div>
+      </article>
+
+
+      {/* Card 2 */}
+      <article className="raj-project-card">
+
+        <div
+          className="raj-project-image raj-project-image-atrium"
+          role="img"
+          aria-label="Luxury hotel atrium"
+        />
+
+        <div className="raj-project-overlay"></div>
+
+        <span className="raj-project-badge">
+          Hospitality &amp; Leisure
+        </span>
+
+        <div className="raj-project-content">
+
+          <div className="raj-project-location">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+
+            <span>Sydney, Australia</span>
+          </div>
+
+          <h3 className="raj-project-name">
+            Grand Marina Atrium
+          </h3>
+
+          <div className="raj-project-divider"></div>
+
+          <div className="raj-project-feature">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+              />
+            </svg>
+
+            <span>
+              8 Panoramic Glass Observation Lifts
+            </span>
+          </div>
+
+          <div className="raj-project-feature">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+
+            <span>
+              Custom gold-anodized aesthetic steel frames
+            </span>
+          </div>
+
+        </div>
+      </article>
+
+
+      {/* Card 3 */}
+      <article className="raj-project-card">
+
+        <div
+          className="raj-project-image raj-project-image-campus"
+          role="img"
+          aria-label="Modern corporate campus"
+        />
+
+        <div className="raj-project-overlay"></div>
+
+        <span className="raj-project-badge">
+          Corporate Campus
+        </span>
+
+        <div className="raj-project-content">
+
+          <div className="raj-project-location">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+
+            <span>Silicon Valley, USA</span>
+          </div>
+
+          <h3 className="raj-project-name">
+            Nexus Tech Headquarters
+          </h3>
+
+          <div className="raj-project-divider"></div>
+
+          <div className="raj-project-feature">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+              />
+            </svg>
+
+            <span>
+              <strong>14</strong> Touchless Smart Transit Elevators
+            </span>
+          </div>
+
+          <div className="raj-project-feature">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+
+            <span>
+              <strong>40%</strong> energy reduction via premium regenerative drives
+            </span>
+          </div>
+
+        </div>
+      </article>
+
     </div>
-  </section>
+
+
+    {/* CTA */}
+    <div className="raj-projects-cta">
+
+      <button
+        className="raj-projects-button"
+        type="button"
+      >
+        <span>View All Global Projects</span>
+
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </button>
+
+    </div>
+
+  </div>
+</section>
 
   {/* -------------------------------- Seven Section------------------------------------- */}
 <section className="workflow-section">
@@ -543,7 +924,8 @@ export default function Home(){return (
 </section>
 
    {/* --------------------------------Done  Ten Section------------------------------------- */}
-  <section className="faqTeaser sectionLight">
+  <section className="faqTeaser sectionLight"  >
+    {/* style={{ backgroundColor: "#E2E8F0" }} */}
     <div className="wrap">
       <h2>
         Clearing Your Doubts on Elevator Technology
