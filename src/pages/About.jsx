@@ -67,22 +67,22 @@ export default function About(){return (
           <p className="eyebrow">Our Story</p>
 
           <h2 className="story-heading">
-            Crafting Safe Transit <span>Since 1998</span>
+            Crafting Safe Transit Since 1998
           </h2>
 
           <p className="story-text">
             Founded in Pune as a small specialized technical workshop, Raj
             Elevators has spent over two decades pioneering safe, efficient
-            vertical transport infrastructure.
-          </p>
-
-          <p className="story-text story-text-small">
-            From residential passenger systems to high-speed commercial
+            vertical transport infrastructure.  From residential passenger systems to high-speed commercial
             elevators, we have consistently pushed engineering boundaries.
             Our defining breakthrough came with our alliance with Nidec
             Corporation, integrating advanced magnetic control technology
             into our national portfolio.
           </p>
+
+          {/* <p className="story-text story-text-small"> */}
+           
+          {/* </p> */}
 
           {/* Stats */}
           <div className="stats-row">
@@ -120,7 +120,7 @@ export default function About(){return (
           Our Vision
         </h3>
         <p>
-          To be India's most trusted and technologically advanced vertical transportation partner.
+          To be recognized as India's most trusted and technologically advanced vertical transportation partner, powering smart architectural skylines with seamless energy efficiency..
         </p>
       </article>
       <article>
@@ -128,7 +128,7 @@ export default function About(){return (
           <img src={mission} alt="Mission Icon" />
         </div>
         <h3>Our Mission</h3>
-        <p>Delivering world-class, ISO-compliant elevator systems backed by strict quality and service standards.</p>
+        <p>Delivering world-class, ISO-compliant elevator systems driven by Japanese Nidec precision gearless controls, backed by strict rapid AMC assistance for total lifetime safety..</p>
         </article>
         </div>
         </section>

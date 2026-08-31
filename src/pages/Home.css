@@ -447,12 +447,11 @@
 
 .raj-advantage-intro {
   max-width: 600px;
-
   margin: 0 0 34px;
-
-  color: var(--raj-text-body);
-
-  font-size: 1.05rem;
+ color: #fff;
+font-family: "Poppins", sans-serif;
+  font-size: 15px;
+ font-weight: 300;
   line-height: 1.7;
 }
 
@@ -472,11 +471,8 @@
 .raj-advantage-feature-row {
   display: flex;
   align-items: flex-start;
-
   gap: 20px;
-
   padding: 22px 0;
-
   border-bottom: 1px solid var(--raj-divider);
 }
 
@@ -499,15 +495,11 @@
 .raj-advantage-feature-icon {
   width: 52px;
   height: 52px;
-
   flex: 0 0 52px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 14px;
-
   background: var(--raj-icon-bg);
 }
 
@@ -515,12 +507,9 @@
 .raj-advantage-feature-icon svg {
   width: 24px;
   height: 24px;
-
   fill: none;
   stroke: #ffffff;
-
   stroke-width: 2;
-
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -539,24 +528,22 @@
 
 .raj-advantage-feature-title {
   margin: 6px 0 8px;
-
   color: var(--raj-white);
-
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   line-height: 1.35;
 }
 
 
 .raj-advantage-feature-desc {
   max-width: 620px;
-
   margin: 0;
-
-  color: var(--raj-text-body);
-
-  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 13px;
   line-height: 1.6;
+  font-weight: 300;
 }
 
 
@@ -566,9 +553,7 @@
 
 .raj-advantage-media {
   position: relative;
-
   width: 100%;
-
   display: flex;
   justify-content: flex-end;
 }
@@ -576,14 +561,10 @@
 
 .raj-advantage-media-frame {
   position: relative;
-
   width: 100%;
   max-width: 520px;
-
   aspect-ratio: 1 / 1;
-
   overflow: hidden;
-
   border-radius: 22px;
 
   background:
@@ -636,12 +617,13 @@
 
 .raj-advantage-badge {
   position: absolute;
-  left: 100px;
-  bottom: 17px;
-  width: 150px;
-  height: 150px;
+  left: 90px;
+  bottom: 6px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  background: var(--raj-bg-dark);
+  /* background: var(--raj-bg-dark); */
+  background-color: #08421E;
   border: 3px solid var(--raj-green-light);
   display: flex;
   flex-direction: column;
@@ -667,9 +649,9 @@
   margin-bottom: 6px;
 
   color: #ffffff;
-
-  font-size: 2rem;
-  font-weight: 800;
+font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
 
   line-height: 1;
 }
@@ -678,8 +660,8 @@
 .raj-advantage-badge-label {
   color: #ffffff;
 
-  font-size: 0.62rem;
-  font-weight: 700;
+  font-size: 0.52rem;
+  font-weight: 500;
 
   letter-spacing: 0.04em;
 
