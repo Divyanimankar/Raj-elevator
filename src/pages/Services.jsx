@@ -36,7 +36,7 @@ const services=['Heavy-Duty Installation','Modernization Upgrade','Preventive AM
     },
   ];
 
-const depots = [
+  const depots = [
   {
     title: "Western Zone Depot",
     cities: "Mumbai, Pune, Surat, Ahmedabad",
@@ -47,19 +47,76 @@ const depots = [
   },
 ];
 
-const hubs = [
-  { name: "MUMBAI", x: 22, y: 53 },
-  { name: "NEW DELHI NCR", x: 53, y: 25 },
-  { name: "HYDERABAD", x: 50, y: 63 },
-  { name: "BENGALURU", x: 72, y: 52 },
+
+// const [activeFaq, setActiveFaq] = useState(0);
+const faqs = [
+  {
+    question: "How often are scheduled preventive maintenance visits performed?",
+    answer:
+      "Standard AMC plans include 12 monthly visits per year where our technicians audit safety systems, lubricate guide rails, check VVVF acceleration logs, and verify level accuracy settings.",
+  },
+  {
+    question:
+      "What happens if a passenger gets trapped inside the cabin during a power failure?",
+    answer:
+      "Every passenger elevator is standard fitted with an Automatic Rescue Device (ARD). If main power drops, the ARD instantly engages, powering the VVVF control grid to land safety-cabin to the nearest deck and release doors. Our toll-free emergency desk is also active 24/7.",
+  },
+  {
+    question:
+      "Are genuine spare parts covered under the standard AMC contract plans?",
+    answer:
+      "Yes, our Comprehensive Guard and Platinum Corporate plans fully cover all high-wear spare parts including original Nidec motors, VVVF motherboard electronics, and door curtain sensors.",
+  },
+  {
+    question:
+      "How quickly does an AMC breakdown engineer arrive on site?",
+    answer:
+      "For emergency critical trapping calls, our response is immediate with a target transit time under 45 minutes inside major metropolitan zone coverages.",
+  },
 ];
 
-
-
-export default function Services(){return (
-<>
-  <PageHero image={IMG.service} title="Complete Elevator Lifespan Services" text="From precision mechanical installation by certified engineers to certified preventive maintenance and rapid breakdown support."/>
+export default function Services(){
   
+  const [activeFaq, setActiveFaq] = useState(0);
+  return (
+<>
+  {/* <PageHero image={IMG.service} title="Complete Elevator Lifespan Services" text="From precision mechanical installation by certified engineers to certified preventive maintenance and rapid breakdown support."/> */}
+  
+
+  {/* ------------------------------------ First Section ------------------------------------ */}
+
+  <section className="serviceHero">
+  <div className="serviceHero__content">
+
+    <div className="serviceHero__badge">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <polygon points="12 2 15 9 22 9.5 16.5 14.5 18 22 12 18 6 22 7.5 14.5 2 9.5 9 9" />
+      </svg>
+
+      <span>ISO 9001:2015 Certified Service Maintenance Operations</span>
+    </div>
+
+    <h1 className="serviceHero__title">
+      Complete Elevator Lifespan Services
+    </h1>
+
+    <p className="serviceHero__subtitle">
+      From precision mechanical installation by certified engineers to certified
+      preventive maintenance contracts and fast 24/7 breakdown emergency dispatch.
+    </p>
+
+    <div className="serviceHero__actions">
+      <a href="#" className="serviceHero__btn serviceHero__btn--primary">
+        Inquire Service Visit
+      </a>
+
+      <a href="#" className="serviceHero__btn serviceHero__btn--outline">
+        Emergency Breakdown Helpline
+      </a>
+    </div>
+
+  </div>
+</section>
   {/* ----------------------------------- SECOND SECTION -------------------------------------------- */}
  <section className="raj-support-section">
       <div className="raj-support-container">
@@ -459,40 +516,62 @@ export default function Services(){return (
     </main>
 
   {/* -------------------------------------- Sixth Section ---------------------------------------- */}
-  <section className="hotline">
-    ☎ Emergency Passenger Trapping & Breakdown Hotline
-    <b>
+<div className="emergency-bar">
+  <div className="emergency-bar__left">
+    <div className="emergency-bar__icon">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+      </svg>
+    </div>
+
+    <div className="emergency-bar__text">
+      Emergency Passenger Trapping &amp; Breakdown Hotline
+    </div>
+  </div>
+
+  <div className="emergency-bar__right">
+    <div className="emergency-bar__number">
       1800-123-5678
-    </b>
-    <button>
+    </div>
+
+    <button
+      className="emergency-bar__button"
+      type="button"
+      onClick={() => {
+        window.location.href = "tel:18001235678";
+      }}
+    >
       Call Now
     </button>
-  </section>
+  </div>
+</div>
 
   {/* ------------------------------------ Seventh Section ------------------------------------------------------- */}
-{/* <main className="faq-section">
+
+
+<section className="faq-section">
   <div className="faq-container">
 
-    <h1 className="faq-title">
+    <h2 className="faq-title">
       Elevator AMC Maintenance FAQs
-    </h1>
+    </h2>
 
     <div className="faq-list">
 
       {faqs.map((faq, index) => {
-        const isOpen = openFaq === index;
+        const isOpen = activeFaq === index;
 
         return (
           <div
             className={`faq-item ${isOpen ? "active" : ""}`}
-            key={faq.question}
+            key={index}
           >
 
             <button
               type="button"
               className="faq-question"
               onClick={() =>
-                setOpenFaq(isOpen ? null : index)
+                setActiveFaq(isOpen ? null : index)
               }
               aria-expanded={isOpen}
             >
@@ -509,7 +588,6 @@ export default function Services(){return (
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                aria-hidden="true"
               >
                 <polyline points="6 9 12 15 18 9" />
               </svg>
@@ -527,8 +605,10 @@ export default function Services(){return (
       })}
 
     </div>
+
   </div>
-</main> */}
+</section>
+
 
   {/* ---------------------------------------- Eight Section ----------------------------------------- */}
   <CTASection/>

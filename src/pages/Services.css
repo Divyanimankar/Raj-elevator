@@ -7,6 +7,314 @@
  /* font-family: "Inter", sans-serif; */
 
 
+ /* -------------------------------------------- First Section -------------------------------------------- */
+
+/* =========================================
+   SERVICE HERO
+========================================= */
+
+.serviceHero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 24px;
+  text-align: center;
+  color: #ffffff;
+
+  background-image:
+    linear-gradient(
+      135deg,
+      rgba(4, 45, 30, 0.92) 0%,
+      rgba(8, 92, 59, 0.78) 48%,
+      rgba(3, 42, 29, 0.92) 100%
+    ),
+    url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1800&auto=format&fit=crop");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.serviceHero__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   BADGE
+========================================= */
+
+.serviceHero__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 10px 22px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.serviceHero__badge svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  fill: #F59E0B;
+  stroke: #F59E0B;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.serviceHero__title {
+  max-width: 1050px;
+
+  margin: 0 auto 26px;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -1.8px;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.serviceHero__subtitle {
+  max-width: 780px;
+  margin: 0 auto 42px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #e4eee9;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.serviceHero__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.serviceHero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Primary */
+
+.serviceHero__btn--primary {
+  background: #F59E0B;
+  border: 2px solid #F59E0B;
+  color: #1E293B;
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.22);
+}
+
+.serviceHero__btn--primary:hover {
+  background: #1E293B;
+  border-color: #1E293B;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(245, 158, 11, 0.3);
+}
+
+
+/* Outline */
+
+.serviceHero__btn--outline {
+  background: rgba(255, 255, 255, 0.04);
+  border: 2px solid #0B4EA2;
+  color: #ffffff;
+}
+
+.serviceHero__btn--outline:hover {
+  background: rgba(47, 111, 237, 0.18);
+  border-color: #0B4EA2;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(47, 111, 237, 0.18);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .serviceHero {
+    min-height: 500px;
+
+    padding: 85px 24px;
+  }
+
+  .serviceHero__title {
+    font-size: 48px;
+
+    letter-spacing: -1.2px;
+  }
+
+  .serviceHero__subtitle {
+    font-size: 17px;
+
+    max-width: 700px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .serviceHero {
+    min-height: auto;
+
+    padding: 70px 18px;
+
+    background-position: center;
+  }
+
+  .serviceHero__content {
+    max-width: 100%;
+  }
+
+  .serviceHero__badge {
+    max-width: 100%;
+
+    padding: 8px 14px;
+
+    gap: 7px;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+  }
+
+  .serviceHero__badge svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .serviceHero__title {
+    font-size: 32px;
+
+    line-height: 1.18;
+
+    letter-spacing: -0.7px;
+
+    margin-bottom: 20px;
+  }
+
+  .serviceHero__subtitle {
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+  }
+
+  .serviceHero__actions {
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 12px;
+  }
+
+  .serviceHero__btn {
+    width: 100%;
+
+    max-width: 320px;
+
+    min-height: 50px;
+
+    padding: 13px 20px;
+
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .serviceHero {
+    padding: 55px 15px;
+  }
+
+  .serviceHero__title {
+    font-size: 29px;
+  }
+
+  .serviceHero__subtitle {
+    font-size: 14px;
+  }
+
+  .serviceHero__badge {
+    font-size: 11px;
+  }
+
+}
+
+
+
+
+ /* -------------------------------------------- Second Section -------------------------------------------- */
+
 /* =========================================
    RAJ ELEVATORS - ENGINEERING SUPPORT
 ========================================= */
@@ -1225,24 +1533,479 @@ font-family: "Inter", sans-serif;
 }
 
 /* ------------------------------------------ sIXTH -------------------------------------- */
-.hotline {
-  background:#098b4c;
-  color:#fff;
-  padding:18px 5%;
-  font-size:11px;
-  font-weight:700;
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  align-items:center
+/* ================================
+   EMERGENCY BAR
+================================ */
+
+.emergency-bar {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #009B4A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 8%;
+ 
 }
-.hotline button {
-  background:#1c2c3b;
-  color:#fff;
-  border:0;
-  padding:8px 14px;
-  border-radius:4px;
-  font-size:9px
+
+
+/* ================================
+   LEFT
+================================ */
+
+.emergency-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  min-width: 0;
+}
+
+.emergency-bar__icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background-color: #fde3e0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emergency-bar__icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: #e94b3c;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.emergency-bar__text {
+  color: #ffffff;
+  font-size: 18px;
+   font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+
+/* ================================
+   RIGHT
+================================ */
+
+.emergency-bar__right {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  flex-shrink: 0;
+}
+
+.emergency-bar__number {
+  color: #ffffff;
+font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.emergency-bar__button {
+  background-color: #0F172A;
+  color: #ffffff;
+font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 8px;
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  white-space: nowrap;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.emergency-bar__button:hover {
+  background-color: #16273b;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.emergency-bar__button:active {
+  transform: translateY(0);
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+
+  .emergency-bar {
+    padding: 16px 24px;
+    gap: 16px;
+  }
+
+  .emergency-bar__text {
+    font-size: 18px;
+  }
+
+  .emergency-bar__number {
+    font-size: 20px;
+  }
+
+  .emergency-bar__button {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .emergency-bar {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 22px 18px;
+
+    text-align: center;
+  }
+
+  .emergency-bar__left {
+    width: 100%;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .emergency-bar__text {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+  .emergency-bar__right {
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 14px;
+  }
+
+  .emergency-bar__number {
+    font-size: 19px;
+  }
+
+  .emergency-bar__button {
+    padding: 12px 22px;
+  }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+  .emergency-bar {
+    padding: 20px 14px;
+  }
+
+  .emergency-bar__icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+
+  .emergency-bar__icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .emergency-bar__text {
+    font-size: 15px;
+  }
+
+  .emergency-bar__right {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .emergency-bar__number {
+    font-size: 18px;
+  }
+
+  .emergency-bar__button {
+    width: 100%;
+    max-width: 220px;
+
+    padding: 12px 20px;
+  }
 }
 
 /* ------------------------------------------------ Seventh Section FAQ-------------------------------- */
+
+/* =========================================
+   FAQ SECTION
+========================================= */
+
+.faq-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: #fbfbfb;
+  font-family: "Poppins", sans-serif;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  margin: 0 0 55px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #1E293B;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+  transition:
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 25px 30px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  color: #1E293B;
+  
+
+  transition: color 0.3s ease;
+}
+
+/* .faq-question:hover {
+  color: #008a39;
+} */
+
+.faq-question-text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.faq-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #008a39;
+  transition: transform 0.35s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+
+/* =========================================
+   FAQ ANSWER ANIMATION
+========================================= */
+
+.faq-answer-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+
+  transition:
+    grid-template-rows 0.4s ease;
+}
+
+.faq-item.active .faq-answer-wrapper {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer {
+  overflow: hidden;
+  padding: 0 30px;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: "Inter", sans-serif;
+  color: #64748B;
+
+  transition:
+    padding 0.4s ease,
+    opacity 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  padding: 0 30px 25px;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.faq-question:focus {
+  outline: none;
+}
+
+.faq-question:focus-visible {
+  outline: 2px solid #008a39;
+  outline-offset: -2px;
+  border-radius: 14px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+  .faq-section {
+    padding: 60px 18px;
+  }
+
+  .faq-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .faq-question {
+    padding: 22px 22px;
+  }
+
+  .faq-question-text {
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    padding: 0 22px;
+    font-size: 15px;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 0 22px 22px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .faq-section {
+    padding: 50px 15px;
+  }
+
+  .faq-title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .faq-list {
+    gap: 14px;
+  }
+
+  .faq-question {
+    padding: 18px 16px;
+    gap: 12px;
+  }
+
+  .faq-question-text {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .faq-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .faq-answer {
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 0 16px 18px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+  .faq-title {
+    font-size: 25px;
+  }
+
+  .faq-question {
+    padding: 16px 14px;
+  }
+
+  .faq-question-text {
+    font-size: 14px;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+  }
+
+}
