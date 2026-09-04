@@ -62,7 +62,7 @@ export default function Products(){return (
             leveling accuracy.
           </p>
 
-          <a href="#">
+          <a href="products/product-details">
             VIEW SPECIFICATIONS
           </a>
         </div>
