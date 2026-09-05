@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import PageHero from '../components/PageHero.jsx';
 import ProductCard from '../components/ProductCard.jsx';
 import CTASection from '../components/CTASection.jsx';
@@ -62,9 +64,13 @@ export default function Products(){return (
             leveling accuracy.
           </p>
 
-          <a href="products/product-details">
+          {/* <a href="products/product-details">
             VIEW SPECIFICATIONS
-          </a>
+          </a> */}
+
+          <Link to="/products/passenger-elevator">
+  VIEW SPECIFICATIONS
+</Link>
         </div>
       </article>
 
@@ -89,9 +95,9 @@ export default function Products(){return (
             structural steel walls.
           </p>
 
-          <a href="#">
-            VIEW SPECIFICATIONS
-          </a>
+          <Link to="/products/freight-elevator">
+  VIEW SPECIFICATIONS
+</Link>
         </div>
       </article>
 
@@ -117,9 +123,9 @@ export default function Products(){return (
             anti-microbial trims.
           </p>
 
-          <a href="#">
-            VIEW SPECIFICATIONS
-          </a>
+          <Link to="/products/hospital-elevator">
+  VIEW SPECIFICATIONS
+</Link>
         </div>
       </article>
 
@@ -145,14 +151,14 @@ export default function Products(){return (
             deep pits or headrooms.
           </p>
 
-          <a href="#">
-            VIEW SPECIFICATIONS
-          </a>
+         <Link to="/products/home-lift">
+  VIEW SPECIFICATIONS
+</Link>
         </div>
       </article>
 
 
-      {/* Passenger Elevator - Repeat */}
+      {/* Panoramic Elevator - Repeat */}
       <article className="rep-products-card">
         <div className="rep-products-image-wrap">
           <img
@@ -173,14 +179,14 @@ export default function Products(){return (
             leveling accuracy.
           </p>
 
-          <a href="#">
-            VIEW SPECIFICATIONS
-          </a>
+         <Link to="/products/panoramic-elevator">
+  VIEW SPECIFICATIONS
+</Link>
         </div>
       </article>
 
 
-      {/* Freight Elevator - Repeat */}
+      {/* highSpeedLift Elevator - Repeat */}
       <article className="rep-products-card">
         <div className="rep-products-image-wrap">
           <img
@@ -201,14 +207,14 @@ export default function Products(){return (
             structural steel walls.
           </p>
 
-          <a href="#">
-            VIEW SPECIFICATIONS
-          </a>
+          <Link to="/products/high-speed-elevator">
+  VIEW SPECIFICATIONS
+</Link>
         </div>
       </article>
 
 
-      {/* Hospital Elevator - Repeat */}
+      {/* Car Elevator - Repeat */}
       <article className="rep-products-card">
         <div className="rep-products-image-wrap">
           <img
@@ -229,14 +235,14 @@ export default function Products(){return (
             anti-microbial trims.
           </p>
 
-          <a href="#">
-            VIEW SPECIFICATIONS
-          </a>
+          <Link to="/products/car-lift">
+  VIEW SPECIFICATIONS
+</Link>
         </div>
       </article>
 
 
-      {/* Home Lift - Repeat */}
+      {/* Capsule - Repeat */}
       <article className="rep-products-card">
         <div className="rep-products-image-wrap">
           <img
@@ -258,9 +264,9 @@ export default function Products(){return (
             deep pits or headrooms.
           </p>
 
-          <a href="#">
-            VIEW SPECIFICATIONS
-          </a>
+         <Link to="/products/capsule-lift">
+  VIEW SPECIFICATIONS
+</Link>
         </div>
       </article>
 
