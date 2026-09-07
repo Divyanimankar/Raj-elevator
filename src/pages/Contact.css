@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
- /* font-family: "Poppins", sans-serif; */
- /* font-family: "Inter", sans-serif; */
+/* font-family: "Poppins", sans-serif; */
+/* font-family: "Inter", sans-serif; */
 
- /* ------------------------------------- First Section ---------------------------------- */
+/* ------------------------------------- First Section ---------------------------------- */
 .contactHero {
   position: relative;
   min-height: 500px;
@@ -17,7 +17,7 @@
   background-image:
     linear-gradient(
       135deg,
-      rgba(6, 61, 41, 0.90) 0%,
+      rgba(6, 61, 41, 0.9) 0%,
       rgba(10, 80, 55, 0.76) 50%,
       rgba(6, 46, 33, 0.92) 100%
     ),
@@ -31,7 +31,6 @@
   overflow: hidden;
 }
 
-
 /* Content */
 
 .contactHeroContent {
@@ -41,7 +40,6 @@
   max-width: 1050px;
   margin: 0 auto;
 }
-
 
 /* Badge */
 
@@ -71,10 +69,9 @@
 }
 
 .contactHeroBadge:hover {
-  background: rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
-
 
 /* Badge SVG */
 
@@ -83,10 +80,9 @@
   height: 18px;
   flex-shrink: 0;
 
-  fill: #F59E0B;
-  stroke: #F59E0B;
+  fill: #f59e0b;
+  stroke: #f59e0b;
 }
-
 
 /* Heading */
 
@@ -103,7 +99,6 @@
   color: #ffffff;
 }
 
-
 /* Subtitle */
 
 .contactHeroSubtitle {
@@ -119,13 +114,11 @@
   color: #eef4f0;
 }
 
-
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 992px) {
-
   .contactHero {
     min-height: 470px;
     padding: 90px 24px;
@@ -139,16 +132,13 @@
     max-width: 800px;
     font-size: 18px;
   }
-
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 768px) {
-
   .contactHero {
     min-height: 430px;
     padding: 75px 20px;
@@ -176,16 +166,13 @@
     font-size: 16px;
     line-height: 1.6;
   }
-
 }
-
 
 /* =========================
    SMALL MOBILE
 ========================= */
 
 @media (max-width: 480px) {
-
   .contactHero {
     min-height: 400px;
     padding: 65px 18px;
@@ -208,16 +195,13 @@
     font-size: 14px;
     line-height: 1.6;
   }
-
 }
-
 
 /* =========================
    EXTRA SMALL MOBILE
 ========================= */
 
 @media (max-width: 360px) {
-
   .contactHero {
     padding: 55px 15px;
   }
@@ -234,10 +218,9 @@
   .contactHeroSubtitle {
     font-size: 13.5px;
   }
-
 }
 
- /* -------------------------------------------------SEcond Section -------------------------------- */
+/* -------------------------------------------------SEcond Section -------------------------------- */
 
 /* =========================
    CONTACT GRID
@@ -252,7 +235,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
 }
-
 
 /* =========================
    CONTACT CARD
@@ -274,7 +256,6 @@
     border-color 0.3s ease;
 }
 
-
 /* Hover */
 
 .contactCard:hover {
@@ -282,7 +263,6 @@
   border-color: #d8e8df;
   box-shadow: 0 12px 30px rgba(13, 27, 42, 0.08);
 }
-
 
 /* =========================
    TOP
@@ -297,7 +277,6 @@
   margin-bottom: 30px;
 }
 
-
 /* =========================
    TITLE
 ========================= */
@@ -309,7 +288,6 @@
   line-height: 1.3;
   color: #0d1b2a;
 }
-
 
 /* =========================
    ICON CIRCLE
@@ -337,7 +315,6 @@
   background-color: #e0f4e8;
 }
 
-
 /* SVG */
 
 .contactCardIcon svg {
@@ -345,7 +322,6 @@
   height: 22px;
   display: block;
 }
-
 
 /* =========================
    TEXT
@@ -356,16 +332,14 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: #64748B;
+  color: #64748b;
 }
-
 
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 900px) {
-
   .contactGrid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -374,16 +348,13 @@
   .contactCard {
     padding: 30px 26px;
   }
-
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 480px) {
-
   .contactGrid {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -418,16 +389,13 @@
     font-size: 15px;
     line-height: 1.55;
   }
-
 }
-
 
 /* =========================
    EXTRA SMALL MOBILE
 ========================= */
 
 @media (max-width: 360px) {
-
   .contactCard {
     padding: 22px 18px;
   }
@@ -450,9 +418,7 @@
     width: 18px;
     height: 18px;
   }
-
 }
-
 
 /* -------------------------------- Third Section ---------------------------------------- */
 /* =========================================
@@ -469,7 +435,6 @@
   align-items: start;
 }
 
-
 /* =========================================
    LEFT FORM CARD
 ========================================= */
@@ -481,16 +446,14 @@
   padding: 44px;
 }
 
-
 .contactUsFormTitle {
   font-family: "Poppins", sans-serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 1.2;
-  color: #1E293B;
+  color: #1e293b;
   margin-bottom: 36px;
 }
-
 
 /* =========================================
    FORM ROW
@@ -503,16 +466,13 @@
   margin-bottom: 26px;
 }
 
-
 .contactUsFormGroup {
   min-width: 0;
 }
 
-
 .contactUsFormGroupFull {
   grid-column: 1 / -1;
 }
-
 
 /* =========================================
    LABEL
@@ -524,10 +484,9 @@
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #1E293B;
+  color: #1e293b;
   margin-bottom: 10px;
 }
-
 
 /* =========================================
    INPUT
@@ -550,18 +509,15 @@
     background-color 0.25s ease;
 }
 
-
 .contactUsFormGroup input::placeholder {
   color: #9aa4b2;
 }
-
 
 .contactUsFormGroup input:focus {
   border-color: #1a9850;
   background: #ffffff;
   box-shadow: 0 0 0 3px rgba(26, 152, 80, 0.08);
 }
-
 
 /* =========================================
    SUBMIT BUTTON
@@ -572,21 +528,19 @@
   border: none;
   border-radius: 10px;
   padding: 18px;
-  background: #009B4A;
+  background: #009b4a;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   margin-top: 8px;
-  box-shadow:
-    0 6px 16px rgba(26, 152, 80, 0.25);
+  box-shadow: 0 6px 16px rgba(26, 152, 80, 0.25);
   transition:
     background-color 0.25s ease,
     transform 0.25s ease,
     box-shadow 0.25s ease;
 }
-
 
 /* .contactUsSubmitBtn:hover {
   background: #009B4A;
@@ -595,6 +549,46 @@
     0 10px 22px rgba(26, 152, 80, 0.28);
 } */
 
+.formError {
+  display: block;
+  margin-top: 5px;
+  color: #dc2626;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.formSuccess {
+  margin-top: 15px;
+  padding: 12px 15px;
+  border-radius: 6px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 14px;
+}
+
+.formErrorMessage {
+  margin-top: 15px;
+  padding: 12px 15px;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #991b1b;
+  font-size: 14px;
+}
+
+.contactUsSubmitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contactCardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.office-card__row a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* =========================================
    RIGHT SIDEBAR
@@ -607,7 +601,6 @@
   min-width: 0;
 }
 
-
 /* =========================================
    BUSINESS OPERATIONS
 ========================================= */
@@ -619,15 +612,13 @@
   padding: 30px;
 }
 
-
 .contactUsSidebarTitle {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
   margin-bottom: 22px;
 }
-
 
 .contactUsHoursRow {
   display: flex;
@@ -637,39 +628,34 @@
   padding: 14px 0;
 }
 
-
 .contactUsHoursRow + .contactUsHoursRow {
   border-top: 1px solid #eeeeee;
 }
 
-
 .contactUsHoursDay {
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  color: #64748B;
+  color: #64748b;
 }
-
 
 .contactUsHoursTime {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
   white-space: nowrap;
 }
 
-
 .contactUsClosed {
-  color: #EF4444;
+  color: #ef4444;
 }
-
 
 /* =========================================
    WHATSAPP
 ========================================= */
 
 .contactUsWhatsappCard {
-  background: #DCFCE7;
+  background: #dcfce7;
   border: 1px solid #b6e6c8;
   border-radius: 18px;
   padding: 26px;
@@ -682,12 +668,10 @@
     box-shadow 0.3s ease;
 }
 
-
 .contactUsWhatsappCard:hover {
   transform: translateY(-3px);
 
-  box-shadow:
-    0 10px 24px rgba(37, 211, 102, 0.14);
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.14);
 }
 
 .contactUsWhatsappIcon {
@@ -709,18 +693,16 @@
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #14532D;
+  color: #14532d;
   margin-bottom: 6px;
 }
-
 
 .contactUsWhatsappText {
   font-family: "Inter", sans-serif;
   font-size: 13px;
   line-height: 1.5;
-  color: #15803D;
+  color: #15803d;
 }
-
 
 /* =========================================
    MAP CARD
@@ -738,12 +720,10 @@
 
   background: #e8eef2;
 
-  box-shadow:
-    0 5px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
 
   isolation: isolate;
 }
-
 
 .contactUsMapCard iframe {
   position: absolute;
@@ -760,7 +740,6 @@
   z-index: 1;
 }
 
-
 /* =========================================
    MAP DARK GRADIENT
 ========================================= */
@@ -774,15 +753,13 @@
 
   pointer-events: none;
 
-  background:
-    linear-gradient(
-      to top,
-      rgba(13, 27, 42, 0.72) 0%,
-      rgba(13, 27, 42, 0.20) 45%,
-      rgba(13, 27, 42, 0) 70%
-    );
+  background: linear-gradient(
+    to top,
+    rgba(13, 27, 42, 0.72) 0%,
+    rgba(13, 27, 42, 0.2) 45%,
+    rgba(13, 27, 42, 0) 70%
+  );
 }
-
 
 /* =========================================
    LOCATION PIN
@@ -804,20 +781,14 @@
   align-items: center;
   justify-content: center;
 
-  transform:
-    translate(-50%, -100%);
+  transform: translate(-50%, -100%);
 
-  filter:
-    drop-shadow(
-      0 5px 7px rgba(0, 0, 0, 0.35)
-    );
+  filter: drop-shadow(0 5px 7px rgba(0, 0, 0, 0.35));
 
-  animation:
-    contactUsPinBounce 2s ease-in-out infinite;
+  animation: contactUsPinBounce 2s ease-in-out infinite;
 
   pointer-events: none;
 }
-
 
 .contactUsMapPin svg {
   width: 50px;
@@ -826,21 +797,16 @@
   fill: #173b70;
 }
 
-
 @keyframes contactUsPinBounce {
-
   0%,
   100% {
     transform: translate(-50%, -100%);
   }
 
   50% {
-    transform:
-      translate(-50%, calc(-100% - 6px));
+    transform: translate(-50%, calc(-100% - 6px));
   }
-
 }
-
 
 /* =========================================
    MAP INFORMATION
@@ -857,7 +823,6 @@
   pointer-events: none;
 }
 
-
 .contactUsMapTitle {
   font-family: "Poppins", sans-serif;
 
@@ -868,10 +833,8 @@
 
   line-height: 1.3;
 
-  text-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
 }
-
 
 .contactUsMapAddress {
   font-family: "Inter", sans-serif;
@@ -883,10 +846,8 @@
 
   margin-top: 3px;
 
-  text-shadow:
-    0 2px 5px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
 }
-
 
 /* =========================================
    GOOGLE MAPS BUTTON
@@ -920,14 +881,12 @@
 
   text-decoration: none;
 
-  box-shadow:
-    0 3px 10px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.14);
 
   transition:
     transform 0.25s ease,
     background-color 0.25s ease;
 }
-
 
 .contactUsMapButton:hover {
   background: #f5f7fa;
@@ -935,13 +894,11 @@
   transform: translateY(-2px);
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 992px) {
-
   .contactUsPageWrap {
     grid-template-columns: 1fr;
 
@@ -963,16 +920,13 @@
   .contactUsMapCard {
     height: 280px;
   }
-
 }
-
 
 /* =========================================
    SMALL TABLET
 ========================================= */
 
 @media (max-width: 700px) {
-
   .contactUsSidebar {
     grid-template-columns: 1fr;
   }
@@ -980,16 +934,13 @@
   .contactUsMapCard {
     height: 270px;
   }
-
 }
-
 
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 560px) {
-
   .contactUsPageWrap {
     width: 100%;
 
@@ -998,20 +949,17 @@
     gap: 20px;
   }
 
-
   .contactUsFormCard {
     padding: 24px;
 
     border-radius: 14px;
   }
 
-
   .contactUsFormTitle {
     font-size: 26px;
 
     margin-bottom: 26px;
   }
-
 
   .contactUsFormRow {
     grid-template-columns: 1fr;
@@ -1021,11 +969,9 @@
     margin-bottom: 20px;
   }
 
-
   .contactUsFormGroupFull {
     grid-column: auto;
   }
-
 
   .contactUsSidebar {
     display: flex;
@@ -1035,13 +981,11 @@
     gap: 18px;
   }
 
-
   .contactUsSidebarCard {
     padding: 22px;
 
     border-radius: 14px;
   }
-
 
   .contactUsWhatsappCard {
     padding: 20px;
@@ -1049,25 +993,21 @@
     border-radius: 14px;
   }
 
-
   .contactUsMapCard {
     height: 230px;
 
     border-radius: 14px;
   }
 
-
   .contactUsMapPin {
     width: 44px;
     height: 44px;
   }
 
-
   .contactUsMapPin svg {
     width: 44px;
     height: 44px;
   }
-
 
   .contactUsMapInfo {
     left: 18px;
@@ -1075,16 +1015,13 @@
     bottom: 16px;
   }
 
-
   .contactUsMapTitle {
     font-size: 15px;
   }
 
-
   .contactUsMapAddress {
     font-size: 11px;
   }
-
 
   .contactUsMapButton {
     top: 12px;
@@ -1094,25 +1031,20 @@
 
     font-size: 11px;
   }
-
 }
-
 
 /* =========================================
    EXTRA SMALL MOBILE
 ========================================= */
 
 @media (max-width: 380px) {
-
   .contactUsFormCard {
     padding: 20px;
   }
 
-
   .contactUsFormTitle {
     font-size: 23px;
   }
-
 
   .contactUsHoursRow {
     align-items: flex-start;
@@ -1122,31 +1054,25 @@
     gap: 5px;
   }
 
-
   .contactUsHoursTime {
     white-space: normal;
   }
-
 
   .contactUsMapCard {
     height: 210px;
   }
 
-
   .contactUsWhatsappCard {
     gap: 12px;
   }
-
 
   .contactUsWhatsappTitle {
     font-size: 15px;
   }
 
-
   .contactUsWhatsappText {
     font-size: 13px;
   }
-
 }
 
 /* -------------------------------------- Fourth Section ------------------------------- */
@@ -1245,13 +1171,11 @@
   color: #1a9850;
 }
 
-
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 768px) {
-
   .regional-section {
     padding: 0 20px;
   }
@@ -1269,16 +1193,13 @@
   .office-card {
     padding: 30px 26px;
   }
-
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 480px) {
-
   .regional-section {
     padding: 0 16px;
   }
@@ -1315,16 +1236,13 @@
     font-size: 14px;
     line-height: 1.55;
   }
-
 }
-
 
 /* =========================
    EXTRA SMALL MOBILE
 ========================= */
 
 @media (max-width: 360px) {
-
   .regional-section {
     padding: 0 14px;
   }
@@ -1345,5 +1263,4 @@
   .office-card__row a {
     font-size: 13.5px;
   }
-
 }

@@ -619,12 +619,12 @@ function ProductDetail() {
                 Request Technical Proposal
               </button>
 
-              <button
+              {/* <button
                 type="button"
                 className="btn btn--outline"
               >
                 Download Product Brochure
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -1007,7 +1007,7 @@ function ProductDetail() {
 
         <div className="related-card__body">
           <h3 className="related-card__title">
-            Heavy Freight Lift
+            Freight Lift
           </h3>
 
           <p className="related-card__text">

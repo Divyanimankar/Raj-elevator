@@ -8,11 +8,26 @@ import aboutUs from "../assets/images/about.png";
 import frameTwoo from "../assets/images/frameTwo.png";
 import firstImage from "../assets/images/one.png";
 
+import quotationPdf  from "../assets/images/rajNidec.pdf";
+
 import client1 from "../assets/images/client1.png";
 import client2 from "../assets/images/client2.png";
 import client3 from "../assets/images/client3.png";
 import client4 from "../assets/images/client4.png";
 import client5 from "../assets/images/client5.png";
+
+import passengerLift from "../assets/images/passenger.png";
+import freightLift from "../assets/images/freight.png";
+
+import hospitalLift from "../assets/images/hospital.png";
+import homeLift from "../assets/images/home.png";
+
+import panoramicLift from "../assets/images/panoramic.png";
+import highSpeedLift  from "../assets/images/highSpeed.png";
+
+
+import carLift from "../assets/images/car.png";
+import capsuleLift from "../assets/images/capsule.png";
 
 const benefits=['Highly energy efficient gearless machines saving up to 40% power','Integrated microprocessor control systems for seamless floor leveling','Robust safety components including ARD (Automatic Rescue Device)']
 
@@ -99,9 +114,16 @@ export default function Home(){return (
         <Link to="/products" className="primary">
           Explore Products
         </Link>
-        <Link to="/projects" className="secondary">
+        {/* <Link to="/projects" className="secondary">
           Get Free Quote
-        </Link>
+        </Link> */}
+<a
+  href={quotationPdf}
+  download="Raj-Elevators-Quotation.pdf"
+  className="secondary"
+>
+  Get Free Quote
+</a>
       </div>
     </div>
   </section>
@@ -210,78 +232,411 @@ export default function Home(){return (
 
   {/* -------------------------------- Fourth Section------------------------------------- */}
 
-<section className="portfolio sectionLight">
-  <div className="wrap">
-    <h2>Explore Our Versatile Elevator Portfolio</h2>
+<section className="heroFourthSection">
+  <h2 className="heroFourthSectionTitle">
+    Explore Our Versatile Elevator Portfolio
+  </h2>
 
-    <div className="homeProducts">
-      {productss.slice(0, 8).map((p, i) => (
-        <article key={i} className="productCard">
+  <div className="heroFourthSectionGrid">
 
-          {/* Product Image */}
-          <div className="productImage">
-            <img src={p.image} alt={p.name} />
+    {/* Passenger Elevator */}
+    <div className="heroFourthSectionCard">
+      <img
+        className="heroFourthSectionImage"
+        src={passengerLift}
+        alt="Passenger Elevator"
+      />
+
+      <div className="heroFourthSectionBody">
+        <div className="heroFourthSectionTitleRow">
+          <div className="heroFourthSectionIconBox">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
           </div>
 
-          {/* Card Content */}
-          <div className="productContent">
+          <h3>Passenger Elevator</h3>
+        </div>
 
-            {/* Title + Icon */}
-            <div className="heroHomeProductsList">
-              <img src={firstImage} alt="" />
-              <span className="productName">{p.name}</span>
-            </div>
+        <p className="heroFourthSectionDescription">
+          Sleek, high-capacity cabins engineered with PMSM Gearless machinery
+          for smart office towers.
+        </p>
 
-            {/* Description */}
-            <p className="productTag">
-              {p.tag}
-            </p>
-
-            {/* Explore */}
-            <span className="exploreSpec">
-              Explore Spec →
-            </span>
-
-          </div>
-        </article>
-      ))}
+        <a href="/products/passenger-elevator" className="heroFourthSectionExplore">
+          Explore Specs
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
     </div>
+
+    {/* Freight Elevator */}
+    <div className="heroFourthSectionCard">
+      <img
+        className="heroFourthSectionImage"
+        src={freightLift}
+        alt="Freight Elevator"
+      />
+
+      <div className="heroFourthSectionBody">
+        <div className="heroFourthSectionTitleRow">
+          <div className="heroFourthSectionIconBox">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect x="1" y="3" width="15" height="13" />
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+              <circle cx="5.5" cy="18.5" r="2.5" />
+              <circle cx="18.5" cy="18.5" r="2.5" />
+            </svg>
+          </div>
+
+          <h3>Freight Elevator</h3>
+        </div>
+
+        <p className="heroFourthSectionDescription">
+          Ultra-heavy duty freight solutions with reinforced mechanical
+          structures. Built to withstand demanding loads.
+        </p>
+
+        <a href="/products/freight-elevator" className="heroFourthSectionExplore">
+          Explore Specs
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    {/* Hospital Elevator */}
+    <div className="heroFourthSectionCard">
+      <img
+        className="heroFourthSectionImage"
+        src={hospitalLift}
+        alt="Hospital Elevator"
+      />
+
+      <div className="heroFourthSectionBody">
+        <div className="heroFourthSectionTitleRow">
+          <div className="heroFourthSectionIconBox">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </div>
+
+          <h3>Hospital Elevator</h3>
+        </div>
+
+        <p className="heroFourthSectionDescription">
+          Sized for smooth stretcher and bed transit, with anti-bacterial
+          finishes for critical care environments.
+        </p>
+
+        <a href="/products/hospital-elevator" className="heroFourthSectionExplore">
+          Explore Specs
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    {/* Home Lift */}
+    <div className="heroFourthSectionCard">
+      <img
+        className="heroFourthSectionImage"
+        src={homeLift}
+        alt="Home Lift"
+      />
+
+      <div className="heroFourthSectionBody">
+        <div className="heroFourthSectionTitleRow">
+          <div className="heroFourthSectionIconBox">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+
+          <h3>Home Lift</h3>
+        </div>
+
+        <p className="heroFourthSectionDescription">
+          Compact, stylish, single-phase lifts requiring zero overhead or pit
+          space. Seamlessly integrates with home decor.
+        </p>
+
+        <a href="/products/home-lift" className="heroFourthSectionExplore">
+          Explore Specs
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    {/* Car Lift */}
+    <div className="heroFourthSectionCard">
+      <img
+        className="heroFourthSectionImage"
+        src={carLift}
+        alt="Car Lift"
+      />
+
+      <div className="heroFourthSectionBody">
+        <div className="heroFourthSectionTitleRow">
+          <div className="heroFourthSectionIconBox">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4" />
+            </svg>
+          </div>
+
+          <h3>Car Lift</h3>
+        </div>
+
+        <p className="heroFourthSectionDescription">
+          Advanced multi-level parking solutions featuring precise mechanical
+          positioning for tight urban plots.
+        </p>
+
+         <a href="/products/car-lift" className="heroFourthSectionExplore">
+          Explore Specs
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    {/* Panoramic Elevator */}
+    <div className="heroFourthSectionCard">
+      <img
+        className="heroFourthSectionImage"
+        src={panoramicLift}
+        alt="Panoramic Elevator"
+      />
+
+      <div className="heroFourthSectionBody">
+        <div className="heroFourthSectionTitleRow">
+          <div className="heroFourthSectionIconBox">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+
+          <h3>Panoramic Elevator</h3>
+        </div>
+
+        <p className="heroFourthSectionDescription">
+          Aesthetic architectural glass capsules providing stunning external
+          panoramic views of the skyline.
+        </p>
+
+        <a href="/products/panoramic-elevator" className="heroFourthSectionExplore">
+          Explore Specs
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    {/* High-Speed Elevator */}
+    <div className="heroFourthSectionCard">
+      <img
+        className="heroFourthSectionImage"
+        src={highSpeedLift}
+        alt="High-Speed Elevator"
+      />
+
+      <div className="heroFourthSectionBody">
+        <div className="heroFourthSectionTitleRow">
+          <div className="heroFourthSectionIconBox">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+          </div>
+
+          <h3>High-Speed Elevator</h3>
+        </div>
+
+        <p className="heroFourthSectionDescription">
+          Supercharged transit operating up to 6.0 m/s. Integrated with smart
+          dispatch for zero-wait travel.
+        </p>
+
+        <a href="/products/high-speed-elevator" className="heroFourthSectionExplore">
+          Explore Specs
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    {/* Capsule Elevator */}
+    <div className="heroFourthSectionCard">
+      <img
+        className="heroFourthSectionImage"
+        src={capsuleLift}
+        alt="Capsule Elevator"
+      />
+
+      <div className="heroFourthSectionBody">
+        <div className="heroFourthSectionTitleRow">
+          <div className="heroFourthSectionIconBox">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+              <line x1="12" y1="22.08" x2="12" y2="12" />
+            </svg>
+          </div>
+
+          <h3>Capsule Elevator</h3>
+        </div>
+
+        <p className="heroFourthSectionDescription">
+          Unique custom geometry shapes including rounded, oval, and
+          pentagonal cabins for distinctive spaces.
+        </p>
+
+        <a href="/products/capsule-lift" className="heroFourthSectionExplore">
+          Explore Specs
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
   </div>
 </section>
 
   {/* -------------------------------- Fifth  Section------------------------------------- */}
-  {/* <section className="advantage">
-    <div className="wrap advantageGrid">
-      <div>
-        <h2>
-          The Raj Elevator Advantage
-        </h2>
-        <p>
-          Engineered to perform with consistent ride quality, safety and long-term serviceability.
-        </p>
-        {benefits.map(x=>
-        <div className="advItem" key={x}>
-          <b>
-            ✦ {x}
-          </b>
-          <span>
-            Designed for dependable, efficient vertical mobility.
-          </span>
-        </div>
-        )}
-      </div>
-      <div className="advImage">
-        <img src={IMG.home} alt=""/>
-        <em>
-          22+
-          <small>
-            YEARS
-          </small>
-        </em>
-      </div>
-    </div>
-  </section> */}
-
 
  <section className="raj-advantage-section">
       <div className="raj-advantage-inner">
@@ -675,7 +1030,10 @@ export default function Home(){return (
         className="raj-projects-button"
         type="button"
       >
-        <span>View All Global Projects</span>
+        {/* <span href= "/products">View All Global Projects</span> */}
+        <Link to="/projects" className="heroFourthSectionLink">
+  View All Global Projects
+</Link>
 
         <svg
           viewBox="0 0 24 24"

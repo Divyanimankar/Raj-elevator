@@ -573,7 +573,602 @@ font-family: "Poppins", sans-serif;
 
 
 /* ------------------------------ Journey Section ------------------------ */
-.journey {
+
+/* =========================================================
+   JOURNEY TIMELINE
+========================================================= */
+
+.journey-section {
+  width: 100%;
+  padding: 70px 24px 80px;
+  background: #ffffff;
+}
+
+.journey-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+/* ================= TITLE ================= */
+
+.journey-title {
+  margin: 0 0 42px;
+
+  text-align: center;
+
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 800;
+
+  color: #0d1b2a;
+}
+
+
+/* ================= TIMELINE BACKGROUND ================= */
+
+.journey-timeline {
+  width: 100%;
+  position: relative;
+
+  padding: 32px 20px;
+
+  background: linear-gradient(
+    180deg,
+    #f4f6f9 0%,
+    #eef1f6 100%
+  );
+
+  border-radius: 2px;
+
+  overflow: hidden;
+}
+
+
+/* ================= DESKTOP ROAD ================= */
+
+.journey-road {
+  width: 100%;
+  max-width: 1180px;
+
+  height: 1500px;
+
+  position: relative;
+
+  margin: 0 auto;
+}
+
+
+.journey-road-svg {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: visible;
+}
+
+
+/* ================= PIN ================= */
+
+.journey-pin {
+  position: absolute;
+
+  width: 76px;
+  height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #1760cf;
+
+  border: 4px solid #ffffff;
+
+  box-shadow:
+    0 0 0 2px #1760cf,
+    0 7px 16px rgba(23, 96, 207, 0.30);
+
+  z-index: 5;
+}
+
+
+.journey-pin svg {
+  width: 34px;
+  height: 34px;
+
+  fill: none;
+
+  stroke: #ffffff;
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* ================= CONNECTOR ================= */
+
+.journey-connector {
+  position: absolute;
+
+  width: 3px;
+
+  background: #1760cf;
+
+  z-index: 2;
+}
+
+
+.journey-dot {
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  background: #1760cf;
+
+  border: 3px solid #ffffff;
+
+  z-index: 6;
+}
+
+
+/* ================= CARD ================= */
+
+.journey-card {
+  position: absolute;
+
+  width: 300px;
+
+  padding: 22px 26px;
+
+  background: #ffffff;
+
+  border-radius: 13px;
+
+  box-shadow:
+    0 10px 26px rgba(13, 27, 42, 0.09);
+
+  z-index: 7;
+}
+
+
+.journey-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 42px;
+  bottom: 42px;
+  left: 0;
+
+  width: 4px;
+
+  background: #1760cf;
+
+  border-radius: 0 3px 3px 0;
+}
+
+
+/* ================= CARD CONTENT ================= */
+
+.journey-year {
+  margin-bottom: 6px;
+
+  font-size: 30px;
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  color: #1760cf;
+}
+
+
+.journey-card-title {
+  margin-bottom: 7px;
+
+  font-size: 17px;
+  line-height: 1.35;
+
+  font-weight: 800;
+
+  color: #0d1b2a;
+}
+
+
+.journey-card-text {
+  font-size: 14px;
+  line-height: 1.55;
+
+  color: #667085;
+}
+
+
+/* =========================================================
+   DESKTOP POSITIONS
+========================================================= */
+
+
+/* ---------- 2024 ---------- */
+
+.pin-2024 {
+  left: 66.5%;
+  top: 2.8%;
+}
+
+.dot-2024 {
+  left: calc(66.5% + 30px);
+  top: 9.5%;
+}
+
+.connector-2024 {
+  left: calc(66.5% + 37px);
+  top: 7.5%;
+  height: 85px;
+}
+
+.card-2024 {
+  left: 75.8%;
+  top: 1.8%;
+}
+
+
+/* ---------- 2020 ---------- */
+
+.pin-2020 {
+  left: 42%;
+  top: 20.5%;
+}
+
+.dot-2020 {
+  left: calc(42% + 30px);
+  top: 27%;
+}
+
+.connector-2020 {
+  left: calc(42% + 37px);
+  top: 20%;
+  height: 105px;
+}
+
+.card-2020 {
+  left: 17.5%;
+  top: 15.2%;
+}
+
+
+/* ---------- 2015 ---------- */
+
+.pin-2015 {
+  left: 60.5%;
+  top: 29%;
+}
+
+.dot-2015 {
+  left: calc(60.5% + 30px);
+  top: 36%;
+}
+
+.connector-2015 {
+  left: calc(60.5% + 37px);
+  top: 34%;
+  height: 105px;
+}
+
+.card-2015 {
+  left: 72.5%;
+  top: 30%;
+}
+
+
+/* ---------- 2010 ---------- */
+
+.pin-2010 {
+  left: 34.5%;
+  top: 43%;
+}
+
+.dot-2010 {
+  left: calc(34.5% + 30px);
+  top: 49%;
+}
+
+.connector-2010 {
+  left: calc(34.5% + 37px);
+  top: 40%;
+  height: 125px;
+}
+
+.card-2010 {
+  left: 9.5%;
+  top: 39%;
+}
+
+
+/* ---------- 2005 ---------- */
+
+.pin-2005 {
+  left: 57%;
+  top: 53%;
+}
+
+.dot-2005 {
+  left: calc(57% + 30px);
+  top: 60%;
+}
+
+.connector-2005 {
+  left: calc(57% + 37px);
+  top: 58%;
+  height: 110px;
+}
+
+.card-2005 {
+  left: 69%;
+  top: 51.5%;
+}
+
+
+/* ---------- 1998 ---------- */
+
+.pin-1998 {
+  left: 26%;
+  top: 74%;
+}
+
+.dot-1998 {
+  left: calc(26% + 30px);
+  top: 80%;
+}
+
+.connector-1998 {
+  left: calc(26% + 37px);
+  top: 79%;
+  height: 105px;
+}
+
+.card-1998 {
+  left: 4%;
+  top: 68%;
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+.journey-mobile {
+  display: none;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1100px) {
+
+  .journey-section {
+    padding: 60px 20px;
+  }
+
+  .journey-title {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+
+  .journey-road {
+    display: none;
+  }
+
+  .journey-timeline {
+    padding: 40px 25px;
+  }
+
+  .journey-mobile {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+  }
+
+
+  .journey-mobile-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+  }
+
+
+  .journey-mobile-icon {
+    width: 58px;
+    height: 58px;
+
+    min-width: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1760cf;
+
+    border: 3px solid #ffffff;
+
+    box-shadow:
+      0 0 0 2px #1760cf,
+      0 7px 16px rgba(23, 96, 207, 0.25);
+
+    font-size: 24px;
+  }
+
+
+  .journey-mobile-card {
+    flex: 1;
+
+    padding: 20px 22px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    border-left: 4px solid #1760cf;
+
+    box-shadow:
+      0 8px 20px rgba(13, 27, 42, 0.08);
+  }
+
+
+  .journey-mobile-card .journey-year {
+    font-size: 25px;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+  .journey-section {
+    padding: 45px 15px 55px;
+  }
+
+
+  .journey-title {
+    font-size: 25px;
+
+    line-height: 1.3;
+
+    margin-bottom: 28px;
+  }
+
+
+  .journey-timeline {
+    padding: 25px 15px;
+
+    border-radius: 0;
+  }
+
+
+  .journey-mobile {
+    gap: 18px;
+  }
+
+
+  .journey-mobile-item {
+    gap: 12px;
+  }
+
+
+  .journey-mobile-icon {
+    width: 46px;
+    height: 46px;
+
+    min-width: 46px;
+
+    font-size: 18px;
+  }
+
+
+  .journey-mobile-card {
+    padding: 16px 17px;
+  }
+
+
+  .journey-mobile-card .journey-year {
+    font-size: 22px;
+
+    margin-bottom: 5px;
+  }
+
+
+  .journey-mobile-card .journey-card-title {
+    font-size: 15px;
+
+    margin-bottom: 5px;
+  }
+
+
+  .journey-mobile-card .journey-card-text {
+    font-size: 13px;
+
+    line-height: 1.5;
+  }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 380px) {
+
+  .journey-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  .journey-title {
+    font-size: 22px;
+  }
+
+
+  .journey-timeline {
+    padding: 22px 10px;
+  }
+
+
+  .journey-mobile-item {
+    gap: 10px;
+  }
+
+
+  .journey-mobile-icon {
+    width: 42px;
+    height: 42px;
+
+    min-width: 42px;
+
+    font-size: 16px;
+  }
+
+
+  .journey-mobile-card {
+    padding: 14px 15px;
+  }
+
+
+  .journey-mobile-card .journey-year {
+    font-size: 20px;
+  }
+
+
+  .journey-mobile-card .journey-card-title {
+    font-size: 14px;
+  }
+
+
+  .journey-mobile-card .journey-card-text {
+    font-size: 12.5px;
+  }
+
+}
+
+/* .journey {
   padding:75px 28px;
   max-width:1200px;
   margin:auto
@@ -629,7 +1224,7 @@ font-family: "Poppins", sans-serif;
   display:grid;
   place-items:center;
   font-size:10px
-}
+} */
 
 /*---------------------------------Factury Banner---------------------------------*/
 /* =========================

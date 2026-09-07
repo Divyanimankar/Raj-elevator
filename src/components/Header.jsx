@@ -1,6 +1,10 @@
 import { NavLink, Link } from 'react-router-dom'
 import { useState } from 'react'
-import './Header.css'
+import './Header.css';
+
+import quotationPdf  from "../assets/images/rajNidec.pdf";
+
+
 const links=[['/','Home'],['/about','About Us'],['/products','Products'],['/services','Services'],['/projects','Projects'],['/contact','Contact Us']]
 export default function Header(){
 const [open,setOpen]=useState(false)
@@ -31,9 +35,17 @@ return (
       </NavLink>
       )}
     </nav>
-    <Link className="quoteBtn" to="/contact">
+    {/* <Link className="quoteBtn" to="/contact">
       Get Free Quote
-    </Link>
+    </Link> */}
+
+    <a
+  href="/quotation.pdf"
+  download="Raj-Elevators-Quotation.pdf"
+  className="quoteBtn"
+>
+  Get Free Quote
+</a>
   </div>
 </header>
 )}

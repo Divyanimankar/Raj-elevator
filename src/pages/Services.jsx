@@ -106,11 +106,11 @@ export default function Services(){
     </p>
 
     <div className="serviceHero__actions">
-      <a href="#" className="serviceHero__btn serviceHero__btn--primary">
+      <a href="#CtaSection" className="serviceHero__btn serviceHero__btn--primary">
         Inquire Service Visit
       </a>
 
-      <a href="#" className="serviceHero__btn serviceHero__btn--outline">
+      <a href="#emergency-bar" className="serviceHero__btn serviceHero__btn--outline">
         Emergency Breakdown Helpline
       </a>
     </div>
@@ -473,7 +473,7 @@ export default function Services(){
 </section>
 
   {/* ---------------------------------------------- Fifth Section ----------------------------------- */}
- <main className="support-network-section">
+ <main className="support-network-section" >
       <section className="support-network-container">
 
         {/* LEFT SIDE - SAME */}
@@ -508,7 +508,7 @@ export default function Services(){
 
         {/* RIGHT SIDE - NEW DESIGN */}
       
-      <div className = "rightIndiaImage">
+      <div className = "rightIndiaImage" id="emergency-bar">
         <img src= {IndiaMapImage} alt='rightIndiaImage' ></img>
       </div>
 
@@ -611,6 +611,7 @@ export default function Services(){
 
 
   {/* ---------------------------------------- Eight Section ----------------------------------------- */}
+  <div id="CtaSection"></div>
   <CTASection/>
 </>
 )}

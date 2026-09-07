@@ -27,31 +27,31 @@ export default function Footer() {
 
           <ul>
             <li>
-              <Link to="/passenger-elevators">
+              <Link to="/products/passenger-elevator">
                 Passenger Elevators
               </Link>
             </li>
 
             <li>
-              <Link to="/freight-elevators">
+              <Link to="/products/freight-elevator">
                 Freight Elevators
               </Link>
             </li>
 
             <li>
-              <Link to="/high-speed-elevator">
+              <Link to="/products/high-speed-elevator">
                 High Speed Elevator
               </Link>
             </li>
 
             <li>
-              <Link to="/panoramic-elevator">
+              <Link to="/products/panoramic-elevator">
                 Panoramic Elevator
               </Link>
             </li>
 
             <li>
-              <Link to="/hospital-elevator">
+              <Link to="/products/hospital-elevator">
                 Hospital Elevator
               </Link>
             </li>
@@ -134,9 +134,10 @@ export default function Footer() {
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
             </svg>
 
-            <span>
+            {/* <span>
               +91-22-56789012
-            </span>
+            </span> */}
+            <a href="tel:+912256789012"> +91-22-56789012 </a>
 
           </div>
 
@@ -157,10 +158,10 @@ export default function Footer() {
               <path d="m22 6-10 7L2 6" />
             </svg>
 
-            <span>
+            {/* <span>
               info@rajelevators.com
-            </span>
-
+            </span> */}
+            <a href="mailto:info@rajelevators.com"> info@rajelevators.com </a>
           </div>
 
         </div>
