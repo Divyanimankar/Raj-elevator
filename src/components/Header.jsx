@@ -2,7 +2,7 @@ import { NavLink, Link } from 'react-router-dom'
 import { useState } from 'react'
 import './Header.css';
 
-import quotationPdf  from "../assets/images/rajNidec.pdf";
+// import quotationPdf  from "../assets/images/rajNidec.pdf";
 
 
 const links=[['/','Home'],['/about','About Us'],['/products','Products'],['/services','Services'],['/projects','Projects'],['/contact','Contact Us']]
@@ -40,8 +40,8 @@ return (
     </Link> */}
 
     <a
-  href="/quotation.pdf"
-  download="Raj-Elevators-Quotation.pdf"
+  // href="/quotation.pdf"
+  // download="Raj-Elevators-Quotation.pdf"
   className="quoteBtn"
 >
   Get Free Quote

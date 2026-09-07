@@ -8,7 +8,7 @@ import aboutUs from "../assets/images/about.png";
 import frameTwoo from "../assets/images/frameTwo.png";
 import firstImage from "../assets/images/one.png";
 
-import quotationPdf  from "../assets/images/rajNidec.pdf";
+// import quotationPdf  from "../assets/images/rajNidec.pdf";
 
 import client1 from "../assets/images/client1.png";
 import client2 from "../assets/images/client2.png";
@@ -118,8 +118,8 @@ export default function Home(){return (
           Get Free Quote
         </Link> */}
 <a
-  href={quotationPdf}
-  download="Raj-Elevators-Quotation.pdf"
+  // href={quotationPdf}
+  // download="Raj-Elevators-Quotation.pdf"
   className="secondary"
 >
   Get Free Quote
