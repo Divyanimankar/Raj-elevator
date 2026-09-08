@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* font-family: "Poppins", sans-serif; */
- /* font-family: "Inter", sans-serif; */
+/* font-family: "Inter", sans-serif; */
 
 .homeHero {
-
   display: flex;
   align-items: center;
   width: 100%;
@@ -15,67 +13,117 @@
   padding: 60px 8%;
   color: #fff;
 
-   background-image:
+  background-image:
     linear-gradient(
       90deg,
-      rgba(14, 167, 61, 0.65) 24%,
-      rgba(4, 49, 18, 0.65) 86%,
-      rgba(14, 167, 61, 0.65) 100%
+      rgba(4, 49, 18, 0.8) 0%,
+      rgba(4, 49, 18, 0.55) 50%,
+      rgba(4, 49, 18, 0.8) 100%
     ),
     var(--bg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .homeHeroContent {
-  max-width:720px
+  max-width: 720px;
 }
-.homeHeroContent>span,.kicker {
-  font-size:10px;
-  color:#F59E0B;
-  font-weight:800;
-  letter-spacing:.8px;
-  padding: 7px;
-  background-color: transparent;
-  border-radius: 15px;
-}
-.homeHeroContent .subHead{
-  font-family: "Inter", sans-serif;
-  color:#fff;
-  font-size: 11px;
-  font-weight: 400;;
 
+.homeHeroContent .kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.12);
 }
+
+.homeHeroContent .kicker svg {
+  width: 20px;
+  height: 20px;
+  fill: #f59e0b;
+  flex-shrink: 0;
+}
+
+.homeHeroContent .subHead {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
 .homeHero h1 {
-  font-size:48px;
-  color:#fff;
-  margin:15px 0;
+  font-size: 56px;
+  line-height: 1.15;
+  color: #fff;
+  margin: 18px 0 12px;
   font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
 
-}
 .homeHero p {
-  color:#dce7e1;
-  font-size:13px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.6;
   font-family: "Inter", sans-serif;
-  width: 83%;
+  font-weight: 200;
+  /* width: 85%; */
 }
-.primary,.secondary {
-  display:inline-block;
-  padding:12px 20px;
-  border-radius:10px;
-  font-family: "Poppins", sans-serif;
-  font-size:12px;
-  font-weight:700;
-  margin:16px 8px 0 0
+
+.heroActions {
+  display: flex;
+  gap: 14px;
+  margin-top: 24px;
 }
-.primary {
-  background:#28ABE2;
-  color:#fff;
-  
-}
+
+.primary,
 .secondary {
-  border:1px solid #009B4A;
-  color:#fff;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.primary {
+  background: #28abe2;
+  color: #fff;
+}
+
+.secondary {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  border: 1px solid #009b4a;
+  background-color: #009b4a;
+  color: #fff;
+  font-weight: 500;
+  /* background-color: transparent; */
+}
+
+.primary:hover,
+.secondary:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .homeHero h1 {
+    font-size: 32px;
+  }
+  .homeHero p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .heroActions {
+    flex-direction: column;
+  }
 }
 
 /* --------------------------- Second Section -------------------------------- */
@@ -92,7 +140,7 @@
   background: #fff;
   border-radius: 17px;
   padding: 18px;
-   position: relative;
+  position: relative;
 }
 
 .experience img {
@@ -145,55 +193,60 @@
 
 /* ---------------------------------------- Third Section------------------------- */
 .wrap {
-  max-width:1300px;
-  margin:auto;
-  padding:0 28px
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 28px;
 }
 .intro {
-  padding:65px 10px;
-  display:grid;
-  grid-template-columns:1fr 1.1fr;
-  gap:55px;
-  align-items:center
+  padding: 65px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 55px;
+  align-items: center;
 }
-.intro>img {
-  width:100%;
-  height:60vh ;
-  object-fit:cover;
-  border-radius:25px
+.intro > img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 25px;
 }
-.intro h2,.portfolio h2,.signature h2,.workflow h2,.expertise h2,.faqTeaser h2 {
-  font-size:33px;
-  text-align:center
+.intro h2,
+.portfolio h2,
+.signature h2,
+.workflow h2,
+.expertise h2,
+.faqTeaser h2 {
+  font-size: 33px;
+  text-align: center;
 }
 .intro h2 {
-  text-align:left
+  text-align: left;
 }
-.intro p,.intro li {
-  font-size:15px;
+.intro p,
+.intro li {
+  font-size: 15px;
   font-family: "Inter", sans-serif;
-  color:#64748B
+  color: #64748b;
 }
 .intro ul {
-  padding:0;
-  list-style:none
+  padding: 0;
+  list-style: none;
 }
 .intro li {
-  margin:10px 0;
-  color:#1E293B;
+  margin: 10px 0;
+  color: #1e293b;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
 .intro a {
-  font-size:15px;
-   font-family: "Poppins", sans-serif;
-  color:#009B4A;
-  font-weight:700;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: #009b4a;
+  font-weight: 700;
   display: flex;
-    align-items: center;
-    gap: 15px;
-
+  align-items: center;
+  gap: 15px;
 }
 
 /* ---------------------------- Fourth Section --------------------------- */
@@ -210,8 +263,8 @@
 
 .heroFourthSectionTitle {
   text-align: center;
-  color: #1E293B;
-   font-family: "Poppins", sans-serif;
+  color: #1e293b;
+  font-family: "Poppins", sans-serif;
   font-size: clamp(1.8rem, 3.5vw, 2.25rem);
   font-weight: 700;
   margin: 0 0 50px;
@@ -286,15 +339,15 @@
 .heroFourthSectionIconBox svg {
   width: 20px;
   height: 20px;
-  stroke: #009B4A;
+  stroke: #009b4a;
 }
 
 .heroFourthSectionTitleRow h3 {
   margin: 0;
-   font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -304,7 +357,7 @@
 /* Description */
 
 .heroFourthSectionDescription {
-  color:#64748B ;
+  color: #64748b;
   font-size: 0.875 rem;
   font-family: "Inter", sans-serif;
   line-height: 1.5;
@@ -320,7 +373,7 @@
 /* Explore Link */
 
 .heroFourthSectionExplore {
-  color: var(--accent-green, #009B4A);
+  color: var(--accent-green, #009b4a);
   font-weight: 700;
   font-size: 0.813rem;
   text-decoration: none;
@@ -335,14 +388,13 @@
 .heroFourthSectionExplore svg {
   width: 16px;
   height: 16px;
-  stroke: var(--accent-green, #009B4A);
+  stroke: var(--accent-green, #009b4a);
   transition: transform 0.15s ease;
 }
 
 .heroFourthSectionExplore:hover svg {
   transform: translateX(3px);
 }
-
 
 /* =========================================
    Tablet
@@ -353,7 +405,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
 
 /* =========================================
    Mobile
@@ -386,7 +437,6 @@
     font-size: 1.05rem;
   }
 }
-
 
 /* =========================================
    Small Mobile
@@ -436,17 +486,15 @@
   width: 100%;
   padding: 80px 24px;
 
-  background:
-    linear-gradient(
-      150deg,
-      var(--raj-bg-dark) 0%,
-      var(--raj-bg-dark-2) 70%,
-      #1a4a30 100%
-    );
+  background: linear-gradient(
+    150deg,
+    var(--raj-bg-dark) 0%,
+    var(--raj-bg-dark-2) 70%,
+    #1a4a30 100%
+  );
 
   box-sizing: border-box;
 }
-
 
 /* =========================================
    MAIN CONTAINER
@@ -462,7 +510,6 @@
   align-items: center;
 }
 
-
 /* =========================================
    LEFT CONTENT
 ========================================= */
@@ -471,7 +518,6 @@
   width: 100%;
   min-width: 0;
 }
-
 
 .raj-advantage-heading {
   margin: 0 0 22px;
@@ -482,17 +528,15 @@
   line-height: 1.2;
 }
 
-
 .raj-advantage-intro {
   max-width: 600px;
   margin: 0 0 34px;
- color: #fff;
-font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
- font-weight: 300;
+  font-weight: 300;
   line-height: 1.7;
 }
-
 
 /* =========================================
    FEATURE LIST
@@ -505,7 +549,6 @@ font-family: "Poppins", sans-serif;
   flex-direction: column;
 }
 
-
 .raj-advantage-feature-row {
   display: flex;
   align-items: flex-start;
@@ -514,17 +557,14 @@ font-family: "Poppins", sans-serif;
   border-bottom: 1px solid var(--raj-divider);
 }
 
-
 .raj-advantage-feature-row:first-child {
   padding-top: 0;
 }
-
 
 .raj-advantage-feature-row:last-child {
   padding-bottom: 0;
   border-bottom: none;
 }
-
 
 /* =========================================
    FEATURE ICON
@@ -541,7 +581,6 @@ font-family: "Poppins", sans-serif;
   background: var(--raj-icon-bg);
 }
 
-
 .raj-advantage-feature-icon svg {
   width: 24px;
   height: 24px;
@@ -552,13 +591,10 @@ font-family: "Poppins", sans-serif;
   stroke-linejoin: round;
 }
 
-
 /* Star icon needs fill */
-.raj-advantage-feature-row:first-child
-.raj-advantage-feature-icon svg {
+.raj-advantage-feature-row:first-child .raj-advantage-feature-icon svg {
   fill: none;
 }
-
 
 /* =========================================
    FEATURE TEXT
@@ -573,7 +609,6 @@ font-family: "Poppins", sans-serif;
   line-height: 1.35;
 }
 
-
 .raj-advantage-feature-desc {
   max-width: 620px;
   margin: 0;
@@ -583,7 +618,6 @@ font-family: "Poppins", sans-serif;
   line-height: 1.6;
   font-weight: 300;
 }
-
 
 /* =========================================
    RIGHT IMAGE AREA
@@ -596,7 +630,6 @@ font-family: "Poppins", sans-serif;
   justify-content: flex-end;
 }
 
-
 .raj-advantage-media-frame {
   position: relative;
   width: 100%;
@@ -605,19 +638,16 @@ font-family: "Poppins", sans-serif;
   overflow: hidden;
   border-radius: 22px;
 
-  background:
-    linear-gradient(
-      155deg,
-      #8a6a45 0%,
-      #5c4630 35%,
-      #2b2620 65%,
-      #171512 100%
-    );
+  background: linear-gradient(
+    155deg,
+    #8a6a45 0%,
+    #5c4630 35%,
+    #2b2620 65%,
+    #171512 100%
+  );
 
-  box-shadow:
-    0 24px 50px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.4);
 }
-
 
 .raj-advantage-media-frame img {
   width: 100%;
@@ -627,7 +657,6 @@ font-family: "Poppins", sans-serif;
 
   object-fit: cover;
 }
-
 
 /* =========================================
    IMAGE GLOW
@@ -640,14 +669,12 @@ font-family: "Poppins", sans-serif;
 
   pointer-events: none;
 
-  background:
-    radial-gradient(
-      circle at 70% 30%,
-      rgba(255, 255, 255, 0.18),
-      transparent 55%
-    );
+  background: radial-gradient(
+    circle at 70% 30%,
+    rgba(255, 255, 255, 0.18),
+    transparent 55%
+  );
 }
-
 
 /* =========================================
    22+ BADGE
@@ -661,7 +688,7 @@ font-family: "Poppins", sans-serif;
   height: 120px;
   border-radius: 50%;
   /* background: var(--raj-bg-dark); */
-  background-color: #08421E;
+  background-color: #08421e;
   border: 3px solid var(--raj-green-light);
   display: flex;
   flex-direction: column;
@@ -670,16 +697,14 @@ font-family: "Poppins", sans-serif;
   text-align: center;
   z-index: 3;
   box-sizing: border-box;
-  box-shadow:
-    0 12px 30px rgba(0, 0, 0, 0.35);
-    animation: dropIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
-   cursor:pointer;
-  transition:transform 0.25s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  animation: dropIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  cursor: pointer;
+  transition: transform 0.25s ease;
 }
 
-
-.raj-advantage-badge:hover{
-  transform:scale(1) rotate(-4deg);
+.raj-advantage-badge:hover {
+  transform: scale(1) rotate(-4deg);
   /* box-shadow:0 20px 40px rgba(46,204,113,0.35);   */
 }
 
@@ -687,13 +712,12 @@ font-family: "Poppins", sans-serif;
   margin-bottom: 6px;
 
   color: #ffffff;
-font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
 
   line-height: 1;
 }
-
 
 .raj-advantage-badge-label {
   color: #ffffff;
@@ -708,13 +732,11 @@ font-family: "Poppins", sans-serif;
   line-height: 1.35;
 }
 
-
 /* =========================================
    LARGE TABLET
 ========================================= */
 
 @media (max-width: 1100px) {
-
   .raj-advantage-inner {
     grid-template-columns: 1fr 0.9fr;
     gap: 40px;
@@ -737,13 +759,11 @@ font-family: "Poppins", sans-serif;
   }
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 960px) {
-
   .raj-advantage-section {
     padding: 70px 24px;
   }
@@ -776,13 +796,11 @@ font-family: "Poppins", sans-serif;
   }
 }
 
-
 /* =========================================
    SMALL TABLET / MOBILE
 ========================================= */
 
 @media (max-width: 640px) {
-
   .raj-advantage-section {
     padding: 56px 18px;
   }
@@ -805,7 +823,6 @@ font-family: "Poppins", sans-serif;
     margin-bottom: 26px;
   }
 
-
   /* IMAGE */
 
   .raj-advantage-media {
@@ -820,7 +837,6 @@ font-family: "Poppins", sans-serif;
 
     border-radius: 18px;
   }
-
 
   /* BADGE */
 
@@ -841,7 +857,6 @@ font-family: "Poppins", sans-serif;
   .raj-advantage-badge-label {
     font-size: 0.55rem;
   }
-
 
   /* FEATURES */
 
@@ -877,13 +892,11 @@ font-family: "Poppins", sans-serif;
   }
 }
 
-
 /* =========================================
    VERY SMALL MOBILE
 ========================================= */
 
 @media (max-width: 400px) {
-
   .raj-advantage-section {
     padding: 48px 15px;
   }
@@ -993,7 +1006,6 @@ font-family: "Poppins", sans-serif;
   margin: 0 auto;
 }
 
-
 /* =========================================
    SECTION TITLE
 ========================================= */
@@ -1009,7 +1021,6 @@ font-family: "Poppins", sans-serif;
   letter-spacing: -0.8px;
 }
 
-
 /* =========================================
    PROJECT GRID
 ========================================= */
@@ -1019,7 +1030,6 @@ font-family: "Poppins", sans-serif;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
-
 
 /* =========================================
    PROJECT CARD
@@ -1037,7 +1047,6 @@ font-family: "Poppins", sans-serif;
   isolation: isolate;
 }
 
-
 /* =========================================
    PROJECT IMAGE
 ========================================= */
@@ -1053,7 +1062,6 @@ font-family: "Poppins", sans-serif;
 
   transition: transform 0.5s ease;
 }
-
 
 /* Online images - replace these later
    with your own image URLs/files
@@ -1071,11 +1079,9 @@ font-family: "Poppins", sans-serif;
   background-image: url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85");
 }
 
-
 .raj-project-card:hover .raj-project-image {
   transform: scale(1.04);
 }
-
 
 /* =========================================
    DARK GRADIENT
@@ -1086,16 +1092,14 @@ font-family: "Poppins", sans-serif;
   inset: 0;
   z-index: -1;
 
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(7, 15, 25, 0.04) 15%,
-      rgba(7, 15, 25, 0.18) 35%,
-      rgba(7, 15, 25, 0.76) 70%,
-      rgba(5, 12, 22, 0.97) 100%
-    );
+  background: linear-gradient(
+    to bottom,
+    rgba(7, 15, 25, 0.04) 15%,
+    rgba(7, 15, 25, 0.18) 35%,
+    rgba(7, 15, 25, 0.76) 70%,
+    rgba(5, 12, 22, 0.97) 100%
+  );
 }
-
 
 /* =========================================
    BADGE
@@ -1129,7 +1133,6 @@ font-family: "Poppins", sans-serif;
   white-space: nowrap;
 }
 
-
 /* =========================================
    CARD CONTENT
 ========================================= */
@@ -1143,7 +1146,6 @@ font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
-
 /* =========================================
    LOCATION
 ========================================= */
@@ -1153,7 +1155,7 @@ font-family: "Poppins", sans-serif;
   align-items: center;
   gap: 6px;
   margin-bottom: 7px;
-  color: #F59E0B;
+  color: #f59e0b;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -1164,9 +1166,8 @@ font-family: "Poppins", sans-serif;
   width: 15px;
   height: 15px;
   flex-shrink: 0;
-  color: #F59E0B;
+  color: #f59e0b;
 }
-
 
 /* =========================================
    PROJECT NAME
@@ -1182,7 +1183,6 @@ font-family: "Poppins", sans-serif;
   letter-spacing: -0.3px;
 }
 
-
 /* =========================================
    DIVIDER
 ========================================= */
@@ -1194,7 +1194,6 @@ font-family: "Poppins", sans-serif;
   background: rgba(255, 255, 255, 0.22);
 }
 
-
 /* =========================================
    FEATURES
 ========================================= */
@@ -1204,7 +1203,7 @@ font-family: "Poppins", sans-serif;
   align-items: flex-start;
   gap: 9px;
   margin-bottom: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -1229,7 +1228,6 @@ font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
-
 /* =========================================
    CTA
 ========================================= */
@@ -1240,7 +1238,6 @@ font-family: "Poppins", sans-serif;
   margin-top: 64px;
 }
 
-
 .raj-projects-button {
   display: inline-flex;
   align-items: center;
@@ -1250,7 +1247,7 @@ font-family: "Poppins", sans-serif;
   padding: 16px 29px;
   border: none;
   border-radius: 999px;
-  background: #009B4A;
+  background: #009b4a;
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   font-family: inherit;
@@ -1267,13 +1264,11 @@ font-family: "Poppins", sans-serif;
     box-shadow 0.25s ease;
 }
 
-
 .raj-projects-button:hover {
   background: #00843f;
   transform: translateY(-2px);
   box-shadow: 0 14px 28px rgba(0, 155, 74, 0.32);
 }
-
 
 .raj-projects-button svg {
   width: 18px;
@@ -1284,18 +1279,15 @@ font-family: "Poppins", sans-serif;
   transition: transform 0.25s ease;
 }
 
-
 .raj-projects-button:hover svg {
   transform: translateX(4px);
 }
-
 
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 1050px) {
-
   .raj-projects-section {
     padding: 65px 25px 75px;
   }
@@ -1329,13 +1321,11 @@ font-family: "Poppins", sans-serif;
   }
 }
 
-
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 700px) {
-
   .raj-projects-section {
     padding: 50px 16px 60px;
   }
@@ -1405,13 +1395,11 @@ font-family: "Poppins", sans-serif;
   }
 }
 
-
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
 @media (max-width: 420px) {
-
   .raj-projects-section {
     padding: 42px 13px 52px;
   }
@@ -1447,9 +1435,6 @@ font-family: "Poppins", sans-serif;
     font-size: 14px;
   }
 }
-
-
-
 
 /* ----------------------------------- Seven  Section---------------------------------------------- */
 .workflow-section {
@@ -1500,10 +1485,10 @@ font-family: "Poppins", sans-serif;
 }
 
 .workflow-number {
-   font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 35px;
   font-weight: 700;
-  color: #0BA245;
+  color: #0ba245;
   margin-bottom: 10px;
   font-weight: 700;
   opacity: 0.6;
@@ -1512,7 +1497,7 @@ font-family: "Poppins", sans-serif;
 }
 
 .workflow-step:hover .workflow-number {
-  color: #0BA245;
+  color: #0ba245;
 }
 
 .workflow-step-title {
@@ -1533,7 +1518,6 @@ font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
-
 /* =========================
    TABLET
 ========================= */
@@ -1553,7 +1537,6 @@ font-family: "Poppins", sans-serif;
     gap: 20px;
   }
 }
-
 
 /* =========================
    MOBILE
@@ -1591,7 +1574,6 @@ font-family: "Poppins", sans-serif;
   }
 }
 
-
 /* =========================
    SMALL MOBILE
 ========================= */
@@ -1617,7 +1599,7 @@ font-family: "Poppins", sans-serif;
 
   .workflow-number {
     font-size: 22px;
-    color: #0BA245;
+    color: #0ba245;
   }
 
   .workflow-step-title {
@@ -1629,12 +1611,11 @@ font-family: "Poppins", sans-serif;
   }
 }
 
-
 /* -------------------------------------------- Eight Section ----------------------------------------- */
 
 .clients-section {
   width: 100%;
-  background: #009B4A;
+  background: #009b4a;
   padding: 25px 0;
   overflow: hidden;
 }
@@ -1690,7 +1671,6 @@ font-family: "Poppins", sans-serif;
   object-fit: contain;
 }
 
-
 /* =========================
    CONTINUOUS INFINITE SLIDER
 ========================= */
@@ -1705,13 +1685,11 @@ font-family: "Poppins", sans-serif;
   }
 }
 
-
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 900px) {
-
   .clients-section {
     padding: 45px 0;
   }
@@ -1740,13 +1718,11 @@ font-family: "Poppins", sans-serif;
   }
 }
 
-
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 600px) {
-
   .clients-section {
     padding: 38px 0;
   }
@@ -1777,13 +1753,11 @@ font-family: "Poppins", sans-serif;
   }
 }
 
-
 /* =========================
    SMALL MOBILE
 ========================= */
 
 @media (max-width: 400px) {
-
   .clients-section {
     padding: 32px 0;
   }
@@ -1813,6 +1787,7 @@ font-family: "Poppins", sans-serif;
 }
 
 /* -------------------------------------------- Nine Section ----------------------------------------- */
+
 /* =========================================
    NIDEC PARTNERSHIP SECTION
 ========================================= */
@@ -1824,7 +1799,6 @@ font-family: "Poppins", sans-serif;
   /* background: #ffffff; */
   background: #f2f4f6;
 }
-
 
 /* =========================================
    MAIN CONTAINER
@@ -1838,7 +1812,6 @@ font-family: "Poppins", sans-serif;
   margin: 0 auto;
   gap: 60px;
 }
-
 
 /* =========================================
    LEFT SIDE
@@ -1854,19 +1827,18 @@ font-family: "Poppins", sans-serif;
   margin: 0 0 25px;
   font-size: 34px;
   font-weight: 700;
-  color: #0F172A;
-font-family: "Poppins", sans-serif;
+  color: #0f172a;
+  font-family: "Poppins", sans-serif;
   line-height: 1.2;
 }
 
 .nidec-left > p {
   margin: 0 0 30px;
   font-size: 14px;
-  font-family: "Inter", sans-serif; 
+  font-family: "Inter", sans-serif;
   color: #475569;
   line-height: 1.7;
 }
-
 
 /* =========================================
    FEATURE LIST
@@ -1881,9 +1853,7 @@ font-family: "Poppins", sans-serif;
 .nidec-feature-item {
   display: flex;
   align-items: flex-start;
-
   gap: 14px;
-
   min-width: 0;
 }
 
@@ -1892,7 +1862,7 @@ font-family: "Poppins", sans-serif;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #009B4A;
+  background-color: #009b4a;
   color: #fff;
   display: flex;
   align-items: center;
@@ -1910,18 +1880,17 @@ font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  color: #0F172A;
+  color: #0f172a;
   line-height: 1.45;
 }
 
 .nidec-feature-subtitle {
-   font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
-  color: #64748B;
+  color: #64748b;
   margin-top: 2px;
   line-height: 1.5;
 }
-
 
 /* =========================================
    RIGHT SIDE
@@ -1936,12 +1905,11 @@ font-family: "Poppins", sans-serif;
 
 .nidec-card {
   width: 100%;
-  background-color: #28ABE2;
+  background-color: #28abe2;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
-
 
 /* =========================================
    CARD TOP
@@ -1953,62 +1921,28 @@ font-family: "Poppins", sans-serif;
 
 .nidec-official-partner {
   color: #ffffff;
-font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
 
-
 /* =========================================
-   LOGO BADGE
+   LOGO BADGE (image)
 ========================================= */
 
 .nidec-logo-badge {
-  display: inline-flex;
-
-  flex-direction: column;
-
+  display: block;
+  height: 70px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
   background-color: #ffffff;
-
   border-radius: 8px;
-
   padding: 10px 16px;
-
   margin-bottom: 20px;
 }
-
-.nidec-brand {
-  font-size: 22px;
-
-  font-weight: 800;
-
-  font-style: italic;
-
-  color: #4caf50;
-
-  line-height: 1;
-}
-
-.nidec-sub {
-  background-color: #111;
-
-  color: #fff;
-
-  font-size: 11px;
-
-  padding: 3px 8px;
-
-  border-radius: 3px;
-
-  margin-top: 6px;
-
-  align-self: flex-start;
-
-  font-weight: 600;
-}
-
 
 /* =========================================
    PARTNER NAME
@@ -2023,16 +1957,13 @@ font-family: "Poppins", sans-serif;
   line-height: 1.4;
 }
 
-
 /* =========================================
    QUOTE
 ========================================= */
 
 .nidec-quote-box {
   background-color: #ffffff;
-
   border-radius: 10px;
-
   padding: 22px 24px;
 }
 
@@ -2044,7 +1975,6 @@ font-family: "Poppins", sans-serif;
   line-height: 1.6;
   font-style: italic;
 }
-
 
 /* =========================================
    STATS GRID
@@ -2075,25 +2005,23 @@ font-family: "Poppins", sans-serif;
   font-family: "Poppins", sans-serif;
   font-size: 28px;
   font-weight: 700;
-  color: #009B4A;
+  color: #009b4a;
   margin-bottom: 8px;
   line-height: 1;
 }
 
 .nidec-stat-label {
   font-size: 12px;
-font-family: "Inter", sans-serif;
-  color: #64748B;
+  font-family: "Inter", sans-serif;
+  color: #64748b;
   line-height: 1.4;
 }
-
 
 /* =========================================
    LARGE TABLET
 ========================================= */
 
 @media (max-width: 1100px) {
-
   .nidec-section {
     padding: 60px 30px;
   }
@@ -2119,36 +2047,29 @@ font-family: "Inter", sans-serif;
   }
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 900px) {
-
   .nidec-section {
     padding: 55px 30px;
   }
 
   .nidec-container {
     flex-direction: column;
-
     align-items: stretch;
-
     gap: 50px;
   }
 
   .nidec-left {
     max-width: 750px;
-
     margin: 0 auto;
-
     width: 100%;
   }
 
   .nidec-right {
     max-width: 650px;
-
     margin: 0 auto;
   }
 
@@ -2157,13 +2078,11 @@ font-family: "Inter", sans-serif;
   }
 }
 
-
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 600px) {
-
   .nidec-section {
     padding: 45px 16px;
   }
@@ -2172,25 +2091,19 @@ font-family: "Inter", sans-serif;
     gap: 40px;
   }
 
-
   /* LEFT */
 
   .nidec-left h1 {
     font-size: 30px;
-
     line-height: 1.25;
-
     margin-bottom: 20px;
   }
 
   .nidec-left > p {
     font-size: 15px;
-
     line-height: 1.65;
-
     margin-bottom: 28px;
   }
-
 
   /* FEATURES */
 
@@ -2205,20 +2118,17 @@ font-family: "Inter", sans-serif;
   .nidec-check-icon {
     width: 24px;
     height: 24px;
-
     font-size: 13px;
   }
 
   .nidec-feature-title {
     font-size: 14px;
-
     line-height: 1.45;
   }
 
   .nidec-feature-subtitle {
     font-size: 12.5px;
   }
-
 
   /* CARD */
 
@@ -2228,27 +2138,17 @@ font-family: "Inter", sans-serif;
 
   .nidec-official-partner {
     font-size: 11px;
-
     margin-bottom: 16px;
   }
 
   .nidec-logo-badge {
+    height: 38px;
     padding: 9px 14px;
-
     margin-bottom: 17px;
-  }
-
-  .nidec-brand {
-    font-size: 20px;
-  }
-
-  .nidec-sub {
-    font-size: 10px;
   }
 
   .nidec-partner-name {
     font-size: 16px;
-
     margin-bottom: 20px;
   }
 
@@ -2258,10 +2158,8 @@ font-family: "Inter", sans-serif;
 
   .nidec-quote-box p {
     font-size: 13px;
-
     line-height: 1.6;
   }
-
 
   /* STATS */
 
@@ -2278,13 +2176,11 @@ font-family: "Inter", sans-serif;
   }
 }
 
-
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
 @media (max-width: 400px) {
-
   .nidec-section {
     padding: 38px 14px;
   }
@@ -2308,12 +2204,17 @@ font-family: "Inter", sans-serif;
   .nidec-check-icon {
     width: 22px;
     height: 22px;
-
     font-size: 12px;
   }
 
   .nidec-card-top {
     padding: 24px 15px 25px;
+  }
+
+  .nidec-logo-badge {
+    height: 32px;
+    padding: 7px 12px;
+    margin-bottom: 14px;
   }
 
   .nidec-stat-box {
@@ -2329,40 +2230,41 @@ font-family: "Inter", sans-serif;
   }
 }
 
-
-
 /* ------------------------------------- Media Query ------------------------------------ */
-@media(max-width:850px) {
+@media (max-width: 850px) {
   .homeProducts {
-    grid-template-columns:repeat(2,1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
   .stats {
-    grid-template-columns:repeat(2,1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
-  .intro,.advantageGrid,.expertiseGrid {
-    grid-template-columns:1fr
+  .intro,
+  .advantageGrid,
+  .expertiseGrid {
+    grid-template-columns: 1fr;
   }
-  .workflow>div>div {
-    grid-template-columns:repeat(2,1fr)
+  .workflow > div > div {
+    grid-template-columns: repeat(2, 1fr);
   }
   .signatureGrid {
-    grid-template-columns:1fr
+    grid-template-columns: 1fr;
   }
   .homeHero h1 {
-    font-size:34px
+    font-size: 34px;
   }
 }
-@media(max-width:520px) {
-  .homeProducts,.stats {
-    grid-template-columns:1fr
+@media (max-width: 520px) {
+  .homeProducts,
+  .stats {
+    grid-template-columns: 1fr;
   }
-  .workflow>div>div {
-    grid-template-columns:1fr
+  .workflow > div > div {
+    grid-template-columns: 1fr;
   }
   .homeHero {
-    min-height:360px
+    min-height: 360px;
   }
   .wrap {
-    padding:0 20px
+    padding: 20px;
   }
 }

@@ -1,33 +1,27 @@
 import { NavLink, Link } from 'react-router-dom'
 import { useState } from 'react'
 import './Header.css';
+import rajLogo from "../assets/images/rajBlack1.png";
+import nidecLogo from "../assets/images/nidec1.png";
 
-// import quotationPdf  from "../assets/images/rajNidec.pdf";
-
+import quotationPdf from "../assets/images/rajNidec.pdf";
 
 const links=[['/','Home'],['/about','About Us'],['/products','Products'],['/services','Services'],['/projects','Projects'],['/contact','Contact Us']]
+
 export default function Header(){
 const [open,setOpen]=useState(false)
 return (
 <header className="siteHeader">
   <div className="headerWrap">
     <Link className="brand" to="/" onClick={()=>setOpen(false)}>
-      <span className="brandRaj">
-        RAJ
-        <small>
-          ELEVATORS
-        </small>
-      </span>
-      <span className="brandNidec">
-        Nidec
-        <small>
-          Elevators
-        </small>
-      </span>
+      <img src={rajLogo} alt="Raj Elevators" className="brandRaj" />
+      <img src={nidecLogo} alt="Nidec Elevator" className="brandNidec" />
     </Link>
+
     <button className="menuBtn" onClick={()=>setOpen(!open)} aria-label="Toggle menu">
       {open?'×':'☰'}
     </button>
+
     <nav className={open?'nav open':'nav'}>
       {links.map(([to,label])=>
       <NavLink key={to} to={to} onClick={()=>setOpen(false)}>
@@ -35,17 +29,11 @@ return (
       </NavLink>
       )}
     </nav>
-    {/* <Link className="quoteBtn" to="/contact">
-      Get Free Quote
-    </Link> */}
 
-    <a
-  // href="/quotation.pdf"
-  // download="Raj-Elevators-Quotation.pdf"
-  className="quoteBtn"
->
-  Get Free Quote
-</a>
+    <a className="quoteBtn" href={quotationPdf}
+  download="Raj-Elevators-Quotation.pdf">
+      Get Free Quote
+    </a>
   </div>
 </header>
 )}

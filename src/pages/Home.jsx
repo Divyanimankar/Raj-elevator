@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom';
 import CTASection from '../components/CTASection.jsx';
 import {IMG,products,projects} from '../data/siteData.js';
 import './Home.css';
+import nidecLogo from "../assets/images/nidec1.png"
+
+import heroImageNew from "../assets/images/heroNew.png";
 import heroImage from "../assets/images/hero.png";
 import trust from "../assets/images/Frame.png";
 import aboutUs from "../assets/images/about.png";
@@ -25,6 +28,7 @@ import homeLift from "../assets/images/home.png";
 import panoramicLift from "../assets/images/panoramic.png";
 import highSpeedLift  from "../assets/images/highSpeed.png";
 
+import quotationPdf from "../assets/images/rajNidec.pdf";
 
 import carLift from "../assets/images/car.png";
 import capsuleLift from "../assets/images/capsule.png";
@@ -102,31 +106,38 @@ export default function Home(){return (
 
 
 {/* -------------------------------- First Section------------------------------------- */}
-  <section className="homeHero" style={{'--bg':`url(${heroImage})`}}>
-    <div className="homeHeroContent">
-      <span>
-        ★ <span className='subHead'>Engineered with Japanese Nidec Precision Controls</span> 
-      </span>
-      <h1>
-        Elevating India's Future<br/>with Japanese Precision</h1><p>India's leading partner in high-performance vertical transportation with Nidec-backed engineering and certified safety.
-      </p>
-      <div>
-        <Link to="/products" className="primary">
-          Explore Products
-        </Link>
-        {/* <Link to="/projects" className="secondary">
-          Get Free Quote
-        </Link> */}
-<a
-  // href={quotationPdf}
-  // download="Raj-Elevators-Quotation.pdf"
-  className="secondary"
->
-  Get Free Quote
-</a>
-      </div>
+  <section className="homeHero" style={{ "--bg": `url(${heroImageNew})` }}>
+  <div className="homeHeroContent">
+    <span className="kicker">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <polygon points="12 2 15 9 22 9.5 16.5 14.5 18 22 12 18 6 22 7.5 14.5 2 9.5 9 9" />
+      </svg>
+      <span className="subHead">Engineered with Japanese Nidec Precision Controls</span>
+    </span>
+
+    <h1>
+      Elevating India's Future<br />with Japanese Precision
+    </h1>
+
+    <p>
+      In exclusive technology partnership with Nidec Corporation (Japan). Delivering ultra-reliable, safe, and whisper-quiet vertical mobility solutions for premier infrastructure.
+      {/* India's leading partner in high-performance vertical transportation with Nidec-backed engineering and certified safety. */}
+    </p>
+
+    <div className="heroActions">
+      <Link to="/products" className="primary">
+        Explore Products
+      </Link>
+      {/* <Link to="/contact" className="secondary">
+        Get Free Quote
+      </Link> */}
+       <a className="secondary" href={quotationPdf}
+  download="Raj-Elevators-Quotation.pdf">
+      Get Free Quote
+    </a>
     </div>
-  </section>
+  </div>
+</section>
 
 
   {/* -------------------------------- Second Section------------------------------------- */}
@@ -1200,7 +1211,9 @@ export default function Home(){return (
             OFFICIAL PARTNER
           </div>
 
-          <div className="nidec-logo-badge">
+          <img src={nidecLogo} alt="Nidec Elevator" className="nidec-logo-badge" />
+
+          {/* <div className="nidec-logo-badge">
             <span className="nidec-brand">
               Nidec
             </span>
@@ -1208,7 +1221,7 @@ export default function Home(){return (
             <span className="nidec-sub">
               Elevator
             </span>
-          </div>
+          </div> */}
 
           <div className="nidec-partner-name">
             Nidec Corporation, Japan
@@ -1282,14 +1295,16 @@ export default function Home(){return (
 </section>
 
    {/* --------------------------------Done  Ten Section------------------------------------- */}
-  <section className="faqTeaser sectionLight"  >
-    {/* style={{ backgroundColor: "#E2E8F0" }} */}
+  {/* <section className="faqTeaser sectionLight"  >
+    
     <div className="wrap">
       <h2>
         Clearing Your Doubts on Elevator Technology
       </h2>
     </div>
-  </section>
+  </section> */}
+
+  {/* style={{ backgroundColor: "#E2E8F0" }}> */}
   <CTASection/>
 </>
 )}

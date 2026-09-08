@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import './Footer.css'
+import './Footer.css';
+import rajLogo from "../assets/images/rajBlack1.png"
 
 export default function Footer() {
   return (
@@ -10,8 +11,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="footer-brand">
           <div className="logo">
-            <span className="logo-main">RAJ</span>
-            <span className="logo-sub">ELEVATORS</span>
+            <img src={rajLogo} alt="rajLogo" />
           </div>
 
           <p>
