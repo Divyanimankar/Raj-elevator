@@ -1,4 +1,5 @@
-import { useState } from "react";     
+import { useState } from "react";  
+import { Link } from 'react-router-dom';   
 import PageHero from '../components/PageHero.jsx';
 import CTASection from '../components/CTASection.jsx';
 import {IMG} from '../data/siteData.js';
@@ -80,7 +81,7 @@ export default function Services(){
   const [activeFaq, setActiveFaq] = useState(0);
   return (
 <>
-  {/* <PageHero image={IMG.service} title="Complete Elevator Lifespan Services" text="From precision mechanical installation by certified engineers to certified preventive maintenance and rapid breakdown support."/> */}
+ 
   
 
   {/* ------------------------------------ First Section ------------------------------------ */}
@@ -355,9 +356,12 @@ export default function Services(){
           </li>
         </ul>
 
-        <button className="raj-pricing-btn">
+        {/* <button className="raj-pricing-btn">
           Inquire Plan Quotation
-        </button>
+        </button> */}
+        <Link to="/contact" className="raj-pricing-btn">
+  Inquire Plan Quotation
+</Link>
       </div>
 
       {/* Comprehensive */}
@@ -408,10 +412,13 @@ export default function Services(){
             Annual certified elevator load test validation
           </li>
         </ul>
-
+{/* 
         <button className="raj-pricing-btn">
           Inquire Plan Quotation
-        </button>
+        </button> */}
+        <Link to="/contact" className="raj-pricing-btn">
+  Inquire Plan Quotation
+</Link>
       </div>
 
       {/* Semi-Comprehensive */}
@@ -463,9 +470,12 @@ export default function Services(){
           </li>
         </ul>
 
-        <button className="raj-pricing-btn">
+        {/* <button className="raj-pricing-btn">
           Inquire Plan Quotation
-        </button>
+        </button> */}
+        <Link to="/contact" className="raj-pricing-btn">
+  Inquire Plan Quotation
+</Link>
       </div>
 
     </div>

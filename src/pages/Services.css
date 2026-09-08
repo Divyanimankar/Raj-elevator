@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* font-family: "Poppins", sans-serif; */
- /* font-family: "Inter", sans-serif; */
+/* font-family: "Inter", sans-serif; */
 
-
-
- html {
+html {
   scroll-behavior: smooth;
 }
- /* -------------------------------------------- First Section -------------------------------------------- */
+/* -------------------------------------------- First Section -------------------------------------------- */
 
 /* =========================================
    SERVICE HERO
@@ -43,7 +40,6 @@
   overflow: hidden;
 }
 
-
 /* =========================================
    CONTENT
 ========================================= */
@@ -56,7 +52,6 @@
 
   margin: 0 auto;
 }
-
 
 /* =========================================
    BADGE
@@ -84,10 +79,9 @@
   width: 18px;
   height: 18px;
   flex-shrink: 0;
-  fill: #F59E0B;
-  stroke: #F59E0B;
+  fill: #f59e0b;
+  stroke: #f59e0b;
 }
-
 
 /* =========================================
    TITLE
@@ -105,7 +99,6 @@
   color: #ffffff;
 }
 
-
 /* =========================================
    SUBTITLE
 ========================================= */
@@ -119,7 +112,6 @@
   line-height: 1.65;
   color: #e4eee9;
 }
-
 
 /* =========================================
    BUTTONS
@@ -153,13 +145,12 @@
     box-shadow 0.3s ease;
 }
 
-
 /* Primary */
 
 .serviceHero__btn--primary {
-  background: #F59E0B;
-  border: 2px solid #F59E0B;
-  color: #1E293B;
+  background: #f59e0b;
+  border: 2px solid #f59e0b;
+  color: #1e293b;
   box-shadow: 0 8px 20px rgba(245, 158, 11, 0.22);
 }
 
@@ -168,29 +159,26 @@
   box-shadow: 0 12px 26px rgba(245, 158, 11, 0.3);
 }
 
-
 /* Outline */
 
 .serviceHero__btn--outline {
   background: rgba(255, 255, 255, 0.04);
-  border: 2px solid #0B4EA2;
+  border: 2px solid #0b4ea2;
   color: #ffffff;
 }
 
 .serviceHero__btn--outline:hover {
   background: rgba(47, 111, 237, 0.18);
-  border-color: #0B4EA2;
+  border-color: #0b4ea2;
   transform: translateY(-3px);
   box-shadow: 0 10px 24px rgba(47, 111, 237, 0.18);
 }
-
 
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 900px) {
-
   .serviceHero {
     min-height: 500px;
 
@@ -208,16 +196,13 @@
 
     max-width: 700px;
   }
-
 }
-
 
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 600px) {
-
   .serviceHero {
     min-height: auto;
 
@@ -284,16 +269,13 @@
 
     font-size: 14px;
   }
-
 }
-
 
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
 @media (max-width: 400px) {
-
   .serviceHero {
     padding: 55px 15px;
   }
@@ -309,13 +291,9 @@
   .serviceHero__badge {
     font-size: 11px;
   }
-
 }
 
-
-
-
- /* -------------------------------------------- Second Section -------------------------------------------- */
+/* -------------------------------------------- Second Section -------------------------------------------- */
 
 /* =========================================
    RAJ ELEVATORS - ENGINEERING SUPPORT
@@ -345,7 +323,7 @@
   font-family: "Poppins", sans-serif;
   line-height: 1.25;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
 }
 
 /* Grid */
@@ -396,7 +374,7 @@
   width: 23px;
   height: 23px;
   fill: none;
-  stroke: #009B4A;
+  stroke: #009b4a;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -417,7 +395,7 @@
 
 .raj-support-card > p {
   margin: 0 0 20px;
-  color: #64748B;
+  color: #64748b;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 1.65;
@@ -438,7 +416,7 @@
   margin: 0 0 11px;
   padding-left: 18px;
   font-family: "Inter", sans-serif;
-  color: #1E293B;
+  color: #1e293b;
   font-size: 13px;
   line-height: 1.5;
 }
@@ -628,8 +606,8 @@
   /* max-width: 900px; */
   margin: 0 auto 80px;
   text-align: center;
-  color: #1E293B;
-  font-family: "Poppins", sans-serif; 
+  color: #1e293b;
+  font-family: "Poppins", sans-serif;
   font-size: 32px;
   line-height: 1.25;
   font-weight: 700;
@@ -687,8 +665,8 @@
   line-height: 1;
   font-weight: 800;
   font-family: "Poppins", sans-serif;
-  color: #0D3B20;
-  opacity: 0.4;;
+  color: #0d3b20;
+  opacity: 0.4;
   margin-bottom: 26px;
   transition:
     color 0.3s ease,
@@ -742,7 +720,7 @@
 
 .raj-process-content h3 {
   margin: 0 0 14px;
-  color: #1E293B;
+  color: #1e293b;
   font-size: 16px;
   line-height: 1.35;
   font-weight: 700;
@@ -760,7 +738,7 @@
 .raj-process-content p {
   max-width: 280px;
   margin: 0;
-  color: #64748B;
+  color: #64748b;
   font-family: "Inter", sans-serif;
   font-size: 13px;
   line-height: 1.65;
@@ -880,8 +858,6 @@
   }
 }
 
-
-
 /* ------------------------------------------ Fourth Section --------------------------------- */
 
 .raj-pricing-section {
@@ -901,7 +877,7 @@
   font-size: 32px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  color: #1E293B;
+  color: #1e293b;
   margin: 0 0 55px;
   line-height: 1.4;
 }
@@ -921,7 +897,7 @@
   position: relative;
   padding: 40px 34px 34px;
   background: #ffffff;
-  border: 1px solid #edeef0;
+  border: 2px solid #edeef0;
   border-radius: 18px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
   cursor: pointer;
@@ -937,7 +913,7 @@
 
 .raj-pricing-middle {
   /* background: linear-gradient(160deg, #17a061, #0f8a52); */
-  background: #009B4A;
+  background: #009b4a;
   border-color: transparent;
   transform: translateY(-14px);
   box-shadow: 0 22px 40px rgba(15, 138, 82, 0.28);
@@ -961,7 +937,7 @@
   font-size: 13px;
   font-family: "Inter", sans-serif;
   line-height: 1.6;
-  color: #64748B;
+  color: #64748b;
   margin: 0 0 22px;
   transition: color 0.45s ease;
 }
@@ -988,10 +964,10 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  color: #1E293B;
+  color: #1e293b;
   margin-bottom: 16px;
   transition: color 0.45s ease;
 }
@@ -1020,13 +996,13 @@ font-family: "Inter", sans-serif;
 .raj-pricing-badge {
   display: inline-block;
 
-  background: #F59E0B;
-  color: #1E293B;
+  background: #f59e0b;
+  color: #1e293b;
 
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.4px;
-font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 5px 10px;
   border-radius: 20px;
   margin-bottom: 18px;
@@ -1044,14 +1020,14 @@ font-family: "Inter", sans-serif;
 .raj-pricing-btn {
   display: block;
   width: 100%;
-
+  text-align: center;
   padding: 15px 0;
 
   border-radius: 8px;
-  border: 2px solid #009B4A;
+  border: 2px solid #009b4a;
 
   background: transparent;
-  color: #009B4A;
+  color: #009b4a;
 
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -1105,7 +1081,7 @@ font-family: "Inter", sans-serif;
 
 .raj-pricing-card:not(.raj-pricing-middle):hover {
   /* background: linear-gradient(160deg, #17a061, #0f8a52); */
-  background-color: #009B4A;
+  background-color: #009b4a;
   border-color: transparent;
 
   transform: translateY(-14px);
@@ -1153,9 +1129,8 @@ font-family: "Inter", sans-serif;
    MIDDLE CARD BECOMES NORMAL
 ========================= */
 
-.raj-pricing-grid:has(
-  .raj-pricing-card:not(.raj-pricing-middle):hover
-) .raj-pricing-middle {
+.raj-pricing-grid:has(.raj-pricing-card:not(.raj-pricing-middle):hover)
+  .raj-pricing-middle {
   background: #ffffff;
   border-color: #edeef0;
 
@@ -1166,45 +1141,48 @@ font-family: "Inter", sans-serif;
 
 /* Middle card text */
 
-.raj-pricing-grid:has(
-  .raj-pricing-card:not(.raj-pricing-middle):hover
-) .raj-pricing-middle h3,
-.raj-pricing-grid:has(
-  .raj-pricing-card:not(.raj-pricing-middle):hover
-) .raj-pricing-middle .raj-pricing-desc,
-.raj-pricing-grid:has(
-  .raj-pricing-card:not(.raj-pricing-middle):hover
-) .raj-pricing-middle ul li {
+.raj-pricing-grid:has(.raj-pricing-card:not(.raj-pricing-middle):hover)
+  .raj-pricing-middle
+  h3,
+.raj-pricing-grid:has(.raj-pricing-card:not(.raj-pricing-middle):hover)
+  .raj-pricing-middle
+  .raj-pricing-desc,
+.raj-pricing-grid:has(.raj-pricing-card:not(.raj-pricing-middle):hover)
+  .raj-pricing-middle
+  ul
+  li {
   color: #16233d;
 }
 
-.raj-pricing-grid:has(
-  .raj-pricing-card:not(.raj-pricing-middle):hover
-) .raj-pricing-middle .raj-pricing-desc {
+.raj-pricing-grid:has(.raj-pricing-card:not(.raj-pricing-middle):hover)
+  .raj-pricing-middle
+  .raj-pricing-desc {
   color: #7b8598;
 }
 
 /* Middle hr */
 
-.raj-pricing-grid:has(
-  .raj-pricing-card:not(.raj-pricing-middle):hover
-) .raj-pricing-middle hr {
+.raj-pricing-grid:has(.raj-pricing-card:not(.raj-pricing-middle):hover)
+  .raj-pricing-middle
+  hr {
   border-color: #e4e7eb;
 }
 
 /* Middle SVG normal */
 
-.raj-pricing-grid:has(
-  .raj-pricing-card:not(.raj-pricing-middle):hover
-) .raj-pricing-middle ul li svg {
+.raj-pricing-grid:has(.raj-pricing-card:not(.raj-pricing-middle):hover)
+  .raj-pricing-middle
+  ul
+  li
+  svg {
   stroke: #1eab5c;
 }
 
 /* Middle badge hide */
 
-.raj-pricing-grid:has(
-  .raj-pricing-card:not(.raj-pricing-middle):hover
-) .raj-pricing-middle .raj-pricing-badge {
+.raj-pricing-grid:has(.raj-pricing-card:not(.raj-pricing-middle):hover)
+  .raj-pricing-middle
+  .raj-pricing-badge {
   opacity: 0;
   max-height: 0;
   margin-bottom: 0;
@@ -1212,9 +1190,9 @@ font-family: "Inter", sans-serif;
 
 /* Middle button normal */
 
-.raj-pricing-grid:has(
-  .raj-pricing-card:not(.raj-pricing-middle):hover
-) .raj-pricing-middle .raj-pricing-btn {
+.raj-pricing-grid:has(.raj-pricing-card:not(.raj-pricing-middle):hover)
+  .raj-pricing-middle
+  .raj-pricing-btn {
   background: transparent;
   border-color: #1eab5c;
   color: #1eab5c;
@@ -1313,7 +1291,6 @@ font-family: "Inter", sans-serif;
   }
 }
 
-
 /* --------------------------------- Fifth Section ------------------------------------- */
 
 /* ================================
@@ -1337,7 +1314,6 @@ font-family: "Inter", sans-serif;
   align-items: center;
   gap: 80px;
 }
-
 
 /* ================================
    LEFT SIDE
@@ -1364,7 +1340,7 @@ font-family: "Inter", sans-serif;
   font-family: "Inter", sans-serif;
   font-size: clamp(14px, 1.5vw, 14px);
   line-height: 1.55;
-  color: #64748B;
+  color: #64748b;
 }
 
 .support-depots {
@@ -1386,8 +1362,7 @@ font-family: "Inter", sans-serif;
 .support-depot:hover {
   transform: translateY(-3px);
 
-  box-shadow:
-    0 10px 25px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
 .support-depot h2 {
@@ -1396,7 +1371,7 @@ font-family: "Inter", sans-serif;
   font-family: "Poppins", sans-serif;
   line-height: 1.2;
   font-weight: 700;
-  color: #009B4A;
+  color: #009b4a;
 }
 
 .support-depot p {
@@ -1404,9 +1379,8 @@ font-family: "Inter", sans-serif;
 
   font-size: clamp(14px, 1.1vw, 12px);
   font-family: "Inter", sans-serif;
-  color: #64748B;
+  color: #64748b;
 }
-
 
 /* ================================
    RIGHT SIDE IMAGE
@@ -1439,17 +1413,14 @@ font-family: "Inter", sans-serif;
 .rightIndiaImage img:hover {
   transform: translateY(-4px);
 
-  box-shadow:
-    0 18px 40px rgba(17, 24, 39, 0.18);
+  box-shadow: 0 18px 40px rgba(17, 24, 39, 0.18);
 }
-
 
 /* ================================
    TABLET
 ================================ */
 
 @media (max-width: 950px) {
-
   .support-network-container {
     grid-template-columns: 1fr;
     gap: 50px;
@@ -1464,16 +1435,13 @@ font-family: "Inter", sans-serif;
     max-width: 600px;
     margin: 0 auto;
   }
-
 }
-
 
 /* ================================
    MOBILE
 ================================ */
 
 @media (max-width: 600px) {
-
   .support-network-section {
     padding: 55px 16px;
   }
@@ -1506,16 +1474,13 @@ font-family: "Inter", sans-serif;
     width: 100%;
     border-radius: 18px;
   }
-
 }
-
 
 /* ================================
    SMALL MOBILE
 ================================ */
 
 @media (max-width: 400px) {
-
   .support-network-title {
     font-size: 28px;
   }
@@ -1531,7 +1496,6 @@ font-family: "Inter", sans-serif;
   .rightIndiaImage img {
     border-radius: 16px;
   }
-
 }
 
 /* ------------------------------------------ sIXTH -------------------------------------- */
@@ -1542,15 +1506,13 @@ font-family: "Inter", sans-serif;
 .emergency-bar {
   width: 100%;
   box-sizing: border-box;
-  background-color: #009B4A;
+  background-color: #009b4a;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   padding: 16px 8%;
- 
 }
-
 
 /* ================================
    LEFT
@@ -1588,11 +1550,10 @@ font-family: "Inter", sans-serif;
 .emergency-bar__text {
   color: #ffffff;
   font-size: 18px;
-   font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 1.3;
 }
-
 
 /* ================================
    RIGHT
@@ -1609,7 +1570,7 @@ font-family: "Inter", sans-serif;
 
 .emergency-bar__number {
   color: #ffffff;
-font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -1617,9 +1578,9 @@ font-family: "Poppins", sans-serif;
 }
 
 .emergency-bar__button {
-  background-color: #0F172A;
+  background-color: #0f172a;
   color: #ffffff;
-font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   border: none;
   border-radius: 10px;
   padding: 15px 20px;
@@ -1647,13 +1608,11 @@ font-family: "Poppins", sans-serif;
   transform: translateY(0);
 }
 
-
 /* ================================
    TABLET
 ================================ */
 
 @media (max-width: 1000px) {
-
   .emergency-bar {
     padding: 16px 24px;
     gap: 16px;
@@ -1673,13 +1632,11 @@ font-family: "Poppins", sans-serif;
   }
 }
 
-
 /* ================================
    MOBILE
 ================================ */
 
 @media (max-width: 768px) {
-
   .emergency-bar {
     flex-direction: column;
     align-items: center;
@@ -1721,13 +1678,11 @@ font-family: "Poppins", sans-serif;
   }
 }
 
-
 /* ================================
    SMALL MOBILE
 ================================ */
 
 @media (max-width: 480px) {
-
   .emergency-bar {
     padding: 20px 14px;
   }
@@ -1790,7 +1745,7 @@ font-family: "Poppins", sans-serif;
   font-size: 32px;
   line-height: 1.2;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
 }
 
 .faq-list {
@@ -1828,8 +1783,7 @@ font-family: "Poppins", sans-serif;
   cursor: pointer;
   text-align: left;
   font-family: "Poppins", sans-serif;
-  color: #1E293B;
-  
+  color: #1e293b;
 
   transition: color 0.3s ease;
 }
@@ -1856,7 +1810,6 @@ font-family: "Poppins", sans-serif;
   transform: rotate(180deg);
 }
 
-
 /* =========================================
    FAQ ANSWER ANIMATION
 ========================================= */
@@ -1865,8 +1818,7 @@ font-family: "Poppins", sans-serif;
   display: grid;
   grid-template-rows: 0fr;
 
-  transition:
-    grid-template-rows 0.4s ease;
+  transition: grid-template-rows 0.4s ease;
 }
 
 .faq-item.active .faq-answer-wrapper {
@@ -1879,7 +1831,7 @@ font-family: "Poppins", sans-serif;
   font-size: 14px;
   line-height: 1.7;
   font-family: "Inter", sans-serif;
-  color: #64748B;
+  color: #64748b;
 
   transition:
     padding 0.4s ease,
@@ -1889,7 +1841,6 @@ font-family: "Poppins", sans-serif;
 .faq-item.active .faq-answer {
   padding: 0 30px 25px;
 }
-
 
 /* =========================================
    FOCUS
@@ -1905,13 +1856,11 @@ font-family: "Poppins", sans-serif;
   border-radius: 14px;
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 768px) {
-
   .faq-section {
     padding: 60px 18px;
   }
@@ -1937,16 +1886,13 @@ font-family: "Poppins", sans-serif;
   .faq-item.active .faq-answer {
     padding: 0 22px 22px;
   }
-
 }
-
 
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 480px) {
-
   .faq-section {
     padding: 50px 15px;
   }
@@ -1984,16 +1930,13 @@ font-family: "Poppins", sans-serif;
   .faq-item.active .faq-answer {
     padding: 0 16px 18px;
   }
-
 }
-
 
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
 @media (max-width: 360px) {
-
   .faq-title {
     font-size: 25px;
   }
@@ -2009,5 +1952,4 @@ font-family: "Poppins", sans-serif;
   .faq-answer {
     font-size: 13px;
   }
-
 }

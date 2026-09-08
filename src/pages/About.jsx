@@ -14,9 +14,7 @@ const journey=[['1998','Founded'],['2005','ISO Certified'],['2010','1000th Lift'
 export default function About(){return (
 <>
 
-{/*------------------- first Section---------------------- */}
-  {/* <PageHero image={IMG.factory} eyebrow="★ An ISO 9001:2015 Certified Vertical Transit Leader" title="About Raj Elevators" text="Elevating vertical mobility with 25+ years of Japanese-backed mechanical engineering excellence and zero-compromise safety."/> */}
-  
+{/*------------------- first Section---------------------- */}  
 <section className="about-hero">
       
       {/* Background Image */}

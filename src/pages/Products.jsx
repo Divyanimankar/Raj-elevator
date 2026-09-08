@@ -21,20 +21,23 @@ import capsuleLift from "../assets/images/capsule.png";
 
 export default function Products(){return (
 <>
-  <PageHero image={IMG.passenger} eyebrow="★ An ISO 9001:2015 Certified Vertical Transit Leader" title="Our Elevator Solutions" text="Explore a comprehensive and versatile portfolio co-engineered with Japanese Nidec precision controls for every architectural specification."/>
+  {/* <PageHero image={IMG.passenger} eyebrow="★ An ISO 9001:2015 Certified Vertical Transit Leader" title="Our Elevator Solutions" text="Explore a comprehensive and versatile portfolio co-engineered with Japanese Nidec precision controls for every architectural specification."/> */}
   
-  {/* ---------------------------- Second Section ------------------------------------------ */}
-  {/* <section className="productsPage">
-    <h2>
-      High Precision Products
-    </h2>
-    <div className="productsGrid">
-      {[...products,...products.slice(0,2)].map((p,i)=>
-      <ProductCard key={i} product={p}/>
-      )}
-    </div>
-  </section> */}
 
+  <PageHero
+  image={IMG.passenger}
+  eyebrow={
+    <>
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="eyebrow-icon">
+        <polygon points="12 2 15 9 22 9.5 16.5 14.5 18 22 12 18 6 22 7.5 14.5 2 9.5 9 9" />
+      </svg>
+      An ISO 9001:2015 Certified Vertical Transit Leader
+    </>
+  }
+  title="Our Elevator Solutions"
+  text="Explore a comprehensive and versatile portfolio co-engineered with Japanese Nidec precision controls for every architectural specification."
+/>
+  {/* ---------------------------- Second Section ------------------------------------------ */}
   <section className="rep-products-section">
   <div className="rep-products-container">
 
