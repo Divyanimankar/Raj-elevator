@@ -1,19 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* font-family: "Poppins", sans-serif; */
- /* font-family: "Inter", sans-serif; */
+/* font-family: "Inter", sans-serif; */
 
-
- html {
+html {
   scroll-behavior: smooth;
 }
 
-
 /* -------------------------------------------------------- First Section ---------------------------- */
-
 
 /* -------------------------------------------------------- Second Section ---------------------------- */
 .careerWhySection {
@@ -25,7 +21,7 @@
   font-size: 36px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
   text-align: center;
   margin-bottom: 48px;
 }
@@ -74,7 +70,7 @@
   font-size: 18px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  color: #1E293B;
+  color: #1e293b;
   margin-bottom: 12px;
 }
 
@@ -82,30 +78,25 @@
   font-size: 14px;
   font-family: "Inter", sans-serif;
   line-height: 1.6;
-  color: #64748B;
+  color: #64748b;
 }
-
 
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 992px) {
-
   .careerWhyGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 560px) {
-
   .careerWhySection {
     padding: 0 16px;
   }
@@ -141,9 +132,7 @@
   .careerWhyCardText {
     font-size: 14px;
   }
-
 }
-
 
 /* --------------------------------------------- third Section ------------------------------------------- */
 .careerCareersSection {
@@ -155,7 +144,7 @@
   font-size: 38px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
   text-align: center;
   margin-bottom: 48px;
 }
@@ -196,7 +185,7 @@
 }
 
 .careerJobCardBadge {
-  background-color: #FFF8E7;
+  background-color: #fff8e7;
   color: #f39d0a;
   font-size: 11px;
   font-family: "Inter", sans-serif;
@@ -210,7 +199,7 @@
   font-size: 13px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  color: #6B7280;
+  color: #6b7280;
 }
 
 .careerJobCardTitle {
@@ -227,7 +216,7 @@
   gap: 8px;
   font-family: "Inter", sans-serif;
   font-size: 13px;
-  color: #6B7280;
+  color: #6b7280;
 }
 
 .careerJobCardLocation svg {
@@ -235,14 +224,14 @@
   height: 16px;
   min-width: 16px;
   fill: none;
-  stroke: #9CA3AF;
+  stroke: #9ca3af;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .careerJobCardButton {
-  background-color: #0B579F;
+  background-color: #0b579f;
   color: #ffffff;
   border: none;
   padding: 16px 30px;
@@ -259,13 +248,11 @@
   background-color: #142e70;
 }
 
-
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 768px) {
-
   .careerCareersSection {
     width: 100%;
   }
@@ -277,16 +264,13 @@
   .careerJobCardTitle {
     font-size: 21px;
   }
-
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 560px) {
-
   .careerCareersSection {
     padding: 0 16px;
   }
@@ -329,16 +313,13 @@
     width: 100%;
     text-align: center;
   }
-
 }
-
 
 /* =========================
    SMALL MOBILE
 ========================= */
 
 @media (max-width: 360px) {
-
   .careerCareersSection {
     padding: 0 12px;
   }
@@ -363,58 +344,65 @@
   .careerJobCardTitle {
     font-size: 18px;
   }
-
 }
 
-
 /* --------------------------------------------------- Fourth Section--------------------------------------- */
-
 .careerBenefitsSection {
-  /* max-width: 1280px;
-  margin: 0 auto; */
-  background-color: #0F172A;
+  width: 100%;
+  background-color: #0f172a;
+  box-sizing: border-box;
 }
 
 .careerBenefitsSectionNew {
-  margin: 0 120px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 120px;
+  box-sizing: border-box;
 }
 
+/* Eyebrow */
 .careerBenefitsSectionEyebrow {
-   /* max-width: 1280px;
-  margin: 0 auto; */
   text-align: center;
-  font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #F59E0B;
+  color: #f59e0b;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin: 0 0 14px;
 }
 
+/* Title */
 .careerBenefitsSectionTitle {
   text-align: center;
-  font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 700;
+  line-height: 1.3;
   color: #ffffff;
-  margin-bottom: 48px;
+  margin: 0 0 48px;
 }
 
+/* Grid */
 .careerBenefitsGrid {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
+/* Card */
 .careerBenefitCard {
+  min-width: 0;
   background-color: #131c30;
   border: 1px solid #232d42;
   border-radius: 16px;
   padding: 30px 28px;
-  transition: transform 0.3s ease, border-color 0.3s ease,
+  box-sizing: border-box;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
     box-shadow 0.3s ease;
 }
 
@@ -424,84 +412,136 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* Icon */
 .careerBenefitCardIcon {
   width: 56px;
   height: 56px;
   border-radius: 50%;
   background-color: #232d42;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin-bottom: 26px;
+  flex-shrink: 0;
 }
 
 .careerBenefitCardIcon svg {
   width: 24px;
   height: 24px;
   fill: none;
-  stroke: #F59E0B;
+  stroke: #f59e0b;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
+/* Card Title */
 .careerBenefitCardTitle {
-  font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
+  line-height: 1.4;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
+/* Card Text */
 .careerBenefitCardText {
-   font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
   line-height: 1.6;
   color: #9aa4b8;
+  margin: 0;
 }
 
-/* Tablet */
-@media (max-width: 900px) {
+/* ========================================
+   LARGE TABLET / LAPTOP
+======================================== */
+
+@media (max-width: 1200px) {
+  .careerBenefitsSectionNew {
+    padding: 55px 60px;
+  }
+
   .careerBenefitsGrid {
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+
+  .careerBenefitCard {
+    padding: 28px 24px;
+  }
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+  .careerBenefitsSectionNew {
+    padding: 50px 32px;
   }
 
   .careerBenefitsSectionTitle {
     font-size: 30px;
+    margin-bottom: 38px;
+  }
+
+  .careerBenefitsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .careerBenefitCard {
+    padding: 26px 22px;
   }
 }
 
-/* Mobile */
-@media (max-width: 560px) {
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
   .careerBenefitsSection {
     width: 100%;
-    padding: 0 16px;
+  }
+
+  .careerBenefitsSectionNew {
+    width: 100%;
+    margin: 0;
+    padding: 45px 16px;
     box-sizing: border-box;
   }
 
   .careerBenefitsSectionEyebrow {
     font-size: 12px;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
   }
 
   .careerBenefitsSectionTitle {
     font-size: 24px;
-    margin-bottom: 32px;
+    line-height: 1.3;
+    margin-bottom: 30px;
   }
 
   .careerBenefitsGrid {
+    width: 100%;
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 16px;
   }
 
   .careerBenefitCard {
-    padding: 24px 22px;
+    width: 100%;
+    padding: 24px 20px;
+    border-radius: 14px;
   }
 
   .careerBenefitCardIcon {
     width: 48px;
     height: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .careerBenefitCardIcon svg {
@@ -510,36 +550,57 @@
   }
 
   .careerBenefitCardTitle {
-    font-size: 19px;
+    font-size: 17px;
+    margin-bottom: 8px;
   }
 
   .careerBenefitCardText {
     font-size: 14px;
+    line-height: 1.6;
   }
 }
 
-/* Small Mobile */
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
 @media (max-width: 360px) {
-  .careerBenefitsSection {
-    padding: 0 12px;
+  .careerBenefitsSectionNew {
+    padding: 40px 12px;
+  }
+
+  .careerBenefitsSectionTitle {
+    font-size: 22px;
+    margin-bottom: 26px;
+  }
+
+  .careerBenefitsGrid {
+    gap: 14px;
   }
 
   .careerBenefitCard {
     padding: 20px 18px;
   }
 
-  .careerBenefitsSectionTitle {
-    font-size: 22px;
+  .careerBenefitCardIcon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 16px;
+  }
+
+  .careerBenefitCardIcon svg {
+    width: 20px;
+    height: 20px;
   }
 
   .careerBenefitCardTitle {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .careerBenefitCardText {
+    font-size: 13px;
   }
 }
-
-
-
-
 
 /* -------------------------------------------Fifth Section --------------------------------------------- */
 
@@ -554,7 +615,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   /* letter-spacing: 1px; */
-  color: #0B4EA2;
+  color: #0b4ea2;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
@@ -564,7 +625,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
   margin-bottom: 44px;
 }
 
@@ -589,7 +650,7 @@
   display: block;
   font-size: 14px;
   font-weight: 600;
-  color: #1E293B;
+  color: #1e293b;
   font-family: "Inter", sans-serif;
   margin-bottom: 10px;
 }
@@ -639,7 +700,6 @@
   margin-bottom: 26px;
 }
 
-
 /* =========================
    UPLOAD BOX
 ========================= */
@@ -658,14 +718,14 @@
 
 .careerUploadBox:hover,
 .careerUploadBox.dragover {
-  border-color: #0B4EA2;
+  border-color: #0b4ea2;
   background-color: #eef4ff;
 }
 
 .careerUploadBox svg {
   width: 28px;
   height: 28px;
-  stroke: #0B4EA2;
+  stroke: #0b4ea2;
   fill: none;
   stroke-width: 2.5;
   stroke-linecap: round;
@@ -677,14 +737,14 @@
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  color: #0B4EA2;
+  color: #0b4ea2;
   margin-bottom: 8px;
 }
 
 .careerUploadBoxHint {
   font-size: 12px;
   font-family: "Inter", sans-serif;
-  color: #64748B;
+  color: #64748b;
 }
 
 .careerUploadBoxFilename {
@@ -695,19 +755,18 @@
   word-break: break-word;
 }
 
-
 /* =========================
    SUBMIT BUTTON
 ========================= */
 
 .careerSubmitButton {
   width: 100%;
-  background-color: #F59E0B;
-  color: #1E293B;
+  background-color: #f59e0b;
+  color: #1e293b;
   border: none;
   padding: 18px;
   border-radius: 10px;
-  font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
@@ -718,13 +777,11 @@
   background-color: #e0951a;
 }
 
-
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 768px) {
-
   .careerApplyCard {
     padding: 32px;
   }
@@ -732,16 +789,13 @@
   .careerApplySectionTitle {
     font-size: 30px;
   }
-
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 560px) {
-
   .careerApplySection {
     width: 100%;
     padding: 0 16px;
@@ -789,16 +843,13 @@
     padding: 16px;
     font-size: 16px;
   }
-
 }
-
 
 /* =========================
    SMALL MOBILE
 ========================= */
 
 @media (max-width: 360px) {
-
   .careerApplySection {
     padding: 0 12px;
   }
@@ -817,5 +868,4 @@
     font-size: 14px;
     padding: 13px 14px;
   }
-
 }
