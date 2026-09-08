@@ -1027,7 +1027,6 @@ function ProductDetail() {
     </div>
   </div>
 </section>
-```
 
 
     </div>

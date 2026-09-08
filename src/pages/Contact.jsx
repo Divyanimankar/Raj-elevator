@@ -99,72 +99,146 @@ export default function Contact() {
   // =========================
   // SUBMIT FORM
   // =========================
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   setStatus("");
+
+  //   // Validate form
+  //   const isValid = validateForm();
+
+  //   if (!isValid) {
+  //     return;
+  //   }
+
+  //   setIsSubmitting(true);
+
+  //   try {
+  //     const serviceId = "service_1a934wi";
+  //     const templateId = "template_8wdcqh1";
+  //     const publicKey = "vaTV90ZSYJunHCoYN";
+
+  //     console.log("Sending EmailJS request...", {
+  //       serviceId,
+  //       templateId,
+  //       publicKey,
+  //     });
+
+  //     await emailjs.send(
+  //       serviceId,
+  //       templateId,
+  //       {
+  //         fullname: formData.fullname,
+  //         email: formData.email,
+  //         phone: formData.phone,
+  //         company: formData.company,
+  //         floors: formData.floors,
+  //         subject: formData.subject,
+  //         shaft: formData.shaft,
+  //       },
+  //       {
+  //         publicKey: publicKey,
+  //       }
+  //     );
+
+  //     console.log("Email sent successfully");
+
+  //     setStatus("success");
+
+  //     // Clear form
+  //     setFormData({
+  //       fullname: "",
+  //       email: "",
+  //       phone: "",
+  //       company: "",
+  //       floors: "",
+  //       subject: "",
+  //       shaft: "",
+  //     });
+
+  //     setErrors({});
+  //   } catch (error) {
+  //     console.error("EmailJS Error:", error);
+
+  //     setStatus("error");
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
+
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    setStatus("");
+  setStatus("");
 
-    // Validate form
-    const isValid = validateForm();
+  // Validate form
+  const isValid = validateForm();
 
-    if (!isValid) {
-      return;
-    }
+  if (!isValid) {
+    return;
+  }
 
-    setIsSubmitting(true);
+  setIsSubmitting(true);
 
-    try {
-      const serviceId = "service_1a934wi";
-      const templateId = "template_8wdcqh1";
-      const publicKey = "vaTV90ZSYJunHCoYN";
+  try {
+    const serviceId = "service_1a934wi";
+    const templateId = "template_8wdcqh1";
+    const publicKey = "vaTV90ZSYJunHCoYN";
 
-      console.log("Sending EmailJS request...", {
-        serviceId,
-        templateId,
-        publicKey,
-      });
+    console.log("Sending EmailJS request...", {
+      serviceId,
+      templateId,
+      publicKey,
+    });
 
-      await emailjs.send(
-        serviceId,
-        templateId,
-        {
-          fullname: formData.fullname,
-          email: formData.email,
-          phone: formData.phone,
-          company: formData.company,
-          floors: formData.floors,
-          subject: formData.subject,
-          shaft: formData.shaft,
-        },
-        {
-          publicKey: publicKey,
-        }
-      );
+    await emailjs.send(
+      serviceId,
+      templateId,
+      {
+        fullname: formData.fullname,
+        email: formData.email,
+        phone: formData.phone,
+        company: formData.company,
+        floors: formData.floors,
+        subject: formData.subject,
+        shaft: formData.shaft,
+      },
+      {
+        publicKey: publicKey,
+      }
+    );
 
-      console.log("Email sent successfully");
+    console.log("Email sent successfully");
 
-      setStatus("success");
+    // Show success message
+    setStatus("success");
 
-      // Clear form
-      setFormData({
-        fullname: "",
-        email: "",
-        phone: "",
-        company: "",
-        floors: "",
-        subject: "",
-        shaft: "",
-      });
+    // Hide success message after 2 seconds
+    setTimeout(() => {
+      setStatus("");
+    }, 2000);
 
-      setErrors({});
-    } catch (error) {
-      console.error("EmailJS Error:", error);
+    // Clear form
+    setFormData({
+      fullname: "",
+      email: "",
+      phone: "",
+      company: "",
+      floors: "",
+      subject: "",
+      shaft: "",
+    });
 
-      setStatus("error");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    setErrors({});
+  } catch (error) {
+    console.error("EmailJS Error:", error);
+
+    setStatus("error");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
 
   return (
     <>
