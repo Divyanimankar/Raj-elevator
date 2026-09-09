@@ -392,196 +392,50 @@ return (
 
   {/* ------------------------ Fifth Section------------------------- */}
  
-<div className="careerApplySection" id='careerApplySection'>
+
+<div className="careerApplySection" id="careerApplySection">
 
   <div className="careerApplySectionEyebrow">
     Start Your Journey
   </div>
 
   <div className="careerApplySectionTitle">
-    Submit Your Application
+    Ready to Elevate Your Building?
   </div>
 
   <div className="careerApplyCard">
 
-    <form>
+    <p className="careerApplyDescription">
+      Get in touch with our team to discuss your elevator needs. We're here to help
+      you find the perfect solution.
+    </p>
 
-      {/* Row 1 */}
-      <div className="careerFormRow">
-
-        <div className="careerFormGroup">
-          <label htmlFor="careerFullName">
-            Your Full Name
-          </label>
-
-          <input
-            type="text"
-            id="careerFullName"
-            placeholder="Rajesh Kumar"
-          />
-        </div>
-
-        <div className="careerFormGroup">
-          <label htmlFor="careerEmail">
-            Email Address
-          </label>
-
-          <input
-            type="email"
-            id="careerEmail"
-            placeholder="rajesh@example.com"
-          />
-        </div>
-
-      </div>
-
-
-      {/* Row 2 */}
-      <div className="careerFormRow">
-
-        <div className="careerFormGroup">
-          <label htmlFor="careerPhone">
-            Phone Number
-          </label>
-
-          <input
-            type="tel"
-            id="careerPhone"
-            placeholder="+91 98765 43210"
-          />
-        </div>
-
-        <div className="careerFormGroup">
-          <label htmlFor="careerPosition">
-            Position Applying For
-          </label>
-
-          <select id="careerPosition">
-            <option>Mechanical Engineer (PMSM)</option>
-            <option>Senior Elevator Technician</option>
-            <option>Sales Manager - North India</option>
-            <option>Customer Support Executive</option>
-          </select>
-        </div>
-
-      </div>
-
-
-      {/* Experience */}
-      <div className="careerFormGroup careerFormGroupFull">
-
-        <label htmlFor="careerExperience">
-          Years of Experience
-        </label>
-
-        <select id="careerExperience">
-          <option>4+ Years of Professional Experience</option>
-          <option>1-3 Years of Professional Experience</option>
-          <option>Fresher / Less than 1 Year</option>
-          <option>8+ Years of Professional Experience</option>
-        </select>
-
-      </div>
-
-
-      {/* Resume Upload */}
-      <div className="careerFormGroup careerFormGroupFull">
-
-        <label htmlFor="careerResumeInput">
-          Upload Resume / CV
-        </label>
-
-        <div
-          className="careerUploadBox"
-          onClick={() =>
-            document.getElementById("careerResumeInput").click()
-          }
-          onDragOver={(e) => {
-            e.preventDefault();
-            e.currentTarget.classList.add("dragover");
-          }}
-          onDragLeave={(e) => {
-            e.currentTarget.classList.remove("dragover");
-          }}
-          onDrop={(e) => {
-            e.preventDefault();
-
-            e.currentTarget.classList.remove("dragover");
-
-            const files = e.dataTransfer.files;
-
-            if (files.length > 0) {
-              document.getElementById("careerFileName").textContent =
-                "Selected: " + files[0].name;
-            }
-          }}
-        >
-
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <polyline points="20 6 9 17 4 12" />
-          </svg>
-
-          <div className="careerUploadBoxTitle">
-            Drag &amp; drop file or click to upload
-          </div>
-
-          <div className="careerUploadBoxHint">
-            Supported formats: PDF, DOCX (Max size: 5MB)
-          </div>
-
-          <div
-            className="careerUploadBoxFilename"
-            id="careerFileName"
-          ></div>
-
-        </div>
-
-        <input
-          type="file"
-          id="careerResumeInput"
-          accept=".pdf,.doc,.docx"
-          style={{ display: "none" }}
-          onChange={(e) => {
-            if (e.target.files.length > 0) {
-              document.getElementById("careerFileName").textContent =
-                "Selected: " + e.target.files[0].name;
-            }
-          }}
-        />
-
-      </div>
-
-
-      {/* Cover Letter */}
-      <div className="careerFormGroup careerFormGroupFull">
-
-        <label htmlFor="careerCoverLetter">
-          Cover Letter / Why do you want to join Raj Elevators?
-        </label>
-
-        <textarea
-          id="careerCoverLetter"
-          placeholder="Write your message here..."
-        ></textarea>
-
-      </div>
-
-
-      {/* Submit */}
-      <button
-        type="submit"
-        className="careerSubmitButton"
+    <a
+      href="mailto:info@rajelevators.com"
+      className="careerEmailButton"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        className="careerEmailIcon"
       >
-        Submit Application
-      </button>
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <polyline points="3 7 12 13 21 7" />
+      </svg>
 
-    </form>
+      <span>Email Us</span>
+    </a>
+
+    <a
+      href="mailto:info@rajelevators.com"
+      className="careerEmailAddress"
+    >
+      info@rajelevators.com
+    </a>
 
   </div>
 
 </div>
-
-
 
 
 </>
