@@ -520,6 +520,65 @@
 }
 
 /* =========================================
+   SELECT / DROPDOWN (Building Type)
+========================================= */
+
+.contactUsFormGroup select {
+  width: 100%;
+  box-sizing: border-box;
+  background: #f6f8fb;
+  border: 1px solid #e5e9f0;
+  border-radius: 10px;
+  padding: 14px 40px 14px 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #4b5563;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+
+  /* Custom dropdown arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 18px;
+}
+
+.contactUsFormGroup select:focus {
+  border-color: #1a9850;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(26, 152, 80, 0.08);
+}
+
+/* Placeholder option ("Select building type") halka dikhana */
+.contactUsFormGroup select:invalid,
+.contactUsFormGroup select option[value=""] {
+  color: #9aa4b2;
+}
+
+/* Jab value select ho jaye, text normal input jaisa */
+.contactUsFormGroup select:valid {
+  color: #4b5563;
+}
+
+/* Dropdown options */
+.contactUsFormGroup select option {
+  color: #1e293b;
+  font-family: "Inter", sans-serif;
+}
+
+/* Error state - jaise input pe hota hai */
+.contactUsFormGroup select.select-error {
+  border-color: #dc2626;
+}
+
+/* =========================================
    SUBMIT BUTTON
 ========================================= */
 

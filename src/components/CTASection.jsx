@@ -449,7 +449,7 @@ export default function CTA() {
                       : ""
                   }
                 >
-                  <option value="" disabled>
+                  {/* <option value="" disabled>
                     Select (e.g. Residential, Corporate)
                   </option>
 
@@ -467,7 +467,19 @@ export default function CTA() {
 
                   <option value="Industrial">
                     Industrial
-                  </option>
+                  </option> */}
+
+
+                   <option value="" disabled>Select building type</option>
+                  <option value="Residential">Residential</option>
+                  <option value="Commercial">Commercial</option>
+                  <option value="Hospital">Hospital</option>
+                  <option value="Hotel">Hotel</option>
+                  <option value="Mall">Mall</option>
+                  <option value="Industrial">Industrial</option>
+                  <option value="Other">Other</option>
+
+                  
                 </select>
 
                 {errors.buildingtype && (
