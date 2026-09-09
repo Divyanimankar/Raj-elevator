@@ -146,7 +146,7 @@ export default function Home(){return (
   <div className="experience">
     <div className="experience-content">
       <div className="experience-title">
-        <b>22+ Years</b>
+        <b>30+ Years</b>
         <img src={trust} alt="Trust" />
       </div>
 
@@ -169,7 +169,7 @@ export default function Home(){return (
       <p>Installations</p>
 
       <span>
-        Spanning corporate towers, hospitals, airports, and luxury residential estates nationwide.
+        Spanning corporate towers, hospitals, and luxury residential estates nationwide.
       </span>
     </div>
   </div>
@@ -184,7 +184,7 @@ export default function Home(){return (
       <p>Active AMC Clients</p>
 
       <span>
-        Ensured with 24/7 rapid response, scheduled preventative checkups, and genuine parts. 
+        Ensured with scheduled preventative checkups, and genuine parts. 
       </span>
     </div>
   </div>
@@ -677,7 +677,8 @@ export default function Home(){return (
 
               <div>
                 <h3 className="raj-advantage-feature-title">
-                  Nidec Japan-Grade Safety
+                  {/* Nidec Japan-Grade Safety */}
+                  Internation Grade
                 </h3>
 
                 <p className="raj-advantage-feature-desc">
@@ -740,7 +741,7 @@ export default function Home(){return (
 
               <div>
                 <h3 className="raj-advantage-feature-title">
-                  4.9 / 5 Google Rating
+                  500+ Satisfied Customer
                 </h3>
 
                 <p className="raj-advantage-feature-desc">
@@ -1172,7 +1173,8 @@ export default function Home(){return (
 
           <div className="nidec-feature-text">
             <div className="nidec-feature-title">
-              Compliant with EN 81-20, ISO 4190, IS 14665
+              {/* Compliant with EN 81-20, ISO 4190, IS 14665 */}
+              Compliant with LS 17900 and LS 025745
             </div>
 
             <div className="nidec-feature-subtitle">

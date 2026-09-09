@@ -421,6 +421,29 @@ export default function Contact() {
               </div>
             </div>
 
+
+ {/* SHAFT */}
+
+            <div className="contactUsFormRow">
+              <div className="contactUsFormGroup contactUsFormGroupFull">
+                <label htmlFor="contactShaft">Shaft Dimensions</label>
+
+                <input
+                  type="text"
+                  id="contactShaft"
+                  name="shaft"
+                  value={formData.shaft}
+                  onChange={handleChange}
+                  placeholder="Shaft Dimensions"
+                />
+
+                {errors.shaft && (
+                  <span className="formError">{errors.shaft}</span>
+                )}
+              </div>
+            </div>
+
+
             {/* SUBJECT */}
 
             <div className="contactUsFormRow">
@@ -442,26 +465,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* SHAFT */}
-
-            <div className="contactUsFormRow">
-              <div className="contactUsFormGroup contactUsFormGroupFull">
-                <label htmlFor="contactShaft">Shaft Dimensions</label>
-
-                <input
-                  type="text"
-                  id="contactShaft"
-                  name="shaft"
-                  value={formData.shaft}
-                  onChange={handleChange}
-                  placeholder="Shaft Dimensions"
-                />
-
-                {errors.shaft && (
-                  <span className="formError">{errors.shaft}</span>
-                )}
-              </div>
-            </div>
+           
 
             {/* SUCCESS MESSAGE */}
 
