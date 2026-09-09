@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* font-family: "Poppins", sans-serif; */
- /* font-family: "Inter", sans-serif; */
-
-
+/* font-family: "Inter", sans-serif; */
 
 /* ----------------------- first Section ---------------------- */
 
@@ -56,14 +53,19 @@
   inset: 0;
 
   z-index: -1;
+  background: linear-gradient(
+    135deg,
+    rgba(6, 61, 41, 0.9) 0%,
+    rgba(10, 80, 55, 0.76) 50%,
+    rgba(6, 46, 33, 0.92) 100%
+  );
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(3, 117, 64, 0.94) 10%,
-      rgba(6, 78, 59, 0.88) 50%,
-      rgba(3, 104, 42, 0.88) 100%
-    );
+  /* background: linear-gradient(
+    90deg,
+    rgba(4, 49, 18, 0.8) 0%,
+    rgba(4, 49, 18, 0.55) 50%,
+    rgba(4, 49, 18, 0.8) 100%
+  ); */
 }
 
 /* =========================
@@ -89,7 +91,7 @@
   align-items: center;
   justify-content: center;
   font-family: "Inter", sans-serif;
-   font-size: 13px;
+  font-size: 13px;
   font-weight: 400;
   gap: 10px;
   max-width: 100%;
@@ -117,11 +119,10 @@
 .about-hero-heading {
   margin: 0 0 24px;
   color: #ffffff;
-  font-size:48px;
+  font-size: 48px;
   font-weight: 700;
   font-family: Poppins, sans-serif;
   line-height: 1.12;
-  
 }
 
 /* =========================
@@ -133,7 +134,7 @@
   font-family: Poppins, sans-serif;
   margin: 0 auto;
   color: rgba(255, 255, 255, 0.88);
-font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: 300;
   line-height: 1.7;
@@ -238,9 +239,6 @@ font-family: "Inter", sans-serif;
   }
 }
 
-
-
-
 /* =========================
    OUR STORY SECTION
 ========================= */
@@ -282,11 +280,7 @@ font-family: "Inter", sans-serif;
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.02),
-    rgba(0, 0, 0, 0.12)
-  );
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.12));
 
   pointer-events: none;
 }
@@ -322,25 +316,22 @@ font-family: "Inter", sans-serif;
   font-family: Poppins, sans-serif;
   margin: 0 0 16px;
   font-family: "Poppins", sans-serif;
-  color: #009B4A;
+  color: #009b4a;
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-
-
 /* Heading */
 
 .story-heading {
   margin: 0 0 15px;
-  color: #1E293B;
+  color: #1e293b;
   font-family: Poppins, sans-serif;
   font-size: 34px;
   font-weight: 800;
   line-height: 1.15;
-  
 }
 
 .story-heading span {
@@ -392,15 +383,15 @@ font-family: "Inter", sans-serif;
 
 .stat-number {
   margin-bottom: 8px;
-font-family: "Poppins", sans-serif;
-  color: #009B4A;
+  font-family: "Poppins", sans-serif;
+  color: #009b4a;
   font-size: 32px;
   font-weight: 800;
   line-height: 1;
 }
 
 .stat-label {
-  color: #64748B;
+  color: #64748b;
   font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 200;
@@ -535,42 +526,242 @@ font-family: "Poppins", sans-serif;
 }
 
 /* ------------------------------ Second Section ------------------------ */
-.visionMission {
-  background:#f2f4f6;
-  padding:60px 28px
-}
-.visionMission>div {
-  max-width:1200px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:25px
-}
-.visionMission article {
-  background:#fff;
-  border:1px solid #dce1e5;
-  border-radius:12px;
-  padding:30px
-}
-.visionMission img {
-  height:50px;
-  width:50px;
-  color:#d99418;
-  font-style:normal
-}
-.visionMission h3 {
-  font-size:21px;
-    font-family: Poppins, sans-serif;
 
+.visionMission {
+  background: #f2f4f6;
+  padding: 60px 28px;
 }
-.visionMission p {
-  font-size:14px;
-  color:#4b5563;
-  margin-top:10px;
+
+.visionMission > div {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.visionMission article {
+  background: #fff;
+
+  border: 1px solid #dce1e5;
+  border-radius: 12px;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover top highlight */
+.visionMission article::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: #009b4a;
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.3s ease;
+}
+
+.visionMission article:hover {
+  transform: translateY(-7px);
+
+  border-color: #009b4a;
+
+  box-shadow:
+    0 12px 30px rgba(21, 82, 193, 0.12),
+    0 4px 10px rgba(30, 42, 60, 0.06);
+}
+
+.visionMission article:hover::before {
+  transform: scaleX(1);
+}
+
+/* =========================
+   ICON
+========================= */
+
+.visionMission img {
+  height: 50px;
+  width: 50px;
+
+  object-fit: contain;
+
+  color: #d99418;
+  font-style: normal;
+
+  margin-bottom: 15px;
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.visionMission article:hover img {
+  transform: scale(1.08);
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.visionMission h3 {
+  font-size: 21px;
+  line-height: 1.3;
+
+  margin: 0;
+
   font-family: Poppins, sans-serif;
 
+  color: #1e2a3c;
 }
 
+/* =========================
+   DESCRIPTION
+========================= */
+
+.visionMission p {
+  font-size: 14px;
+  line-height: 1.6;
+
+  color: #4b5563;
+
+  margin: 10px 0 0;
+
+  font-family: Poppins, sans-serif;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .visionMission {
+    padding: 50px 22px;
+  }
+
+  .visionMission > div {
+    gap: 20px;
+  }
+
+  .visionMission article {
+    padding: 25px;
+  }
+
+  .visionMission h3 {
+    font-size: 19px;
+  }
+
+  .visionMission p {
+    font-size: 13.5px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+  .visionMission {
+    padding: 45px 16px;
+  }
+
+  .visionMission > div {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .visionMission article {
+    width: 100%;
+    padding: 22px;
+    border-radius: 10px;
+  }
+
+  .visionMission img {
+    width: 45px;
+    height: 45px;
+
+    margin-bottom: 12px;
+  }
+
+  .visionMission h3 {
+    font-size: 19px;
+  }
+
+  .visionMission p {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  /* Mobile par hover movement avoid */
+  .visionMission article:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .visionMission {
+    padding: 35px 12px;
+  }
+
+  .visionMission > div {
+    gap: 15px;
+  }
+
+  .visionMission article {
+    padding: 20px;
+  }
+
+  .visionMission img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .visionMission h3 {
+    font-size: 18px;
+  }
+
+  .visionMission p {
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .visionMission article,
+  .visionMission article::before,
+  .visionMission img {
+    transition: none;
+  }
+}
 
 /* ------------------------------ Journey Section ------------------------ */
 
@@ -590,7 +781,6 @@ font-family: "Poppins", sans-serif;
   margin: 0 auto;
 }
 
-
 /* ================= TITLE ================= */
 
 .journey-title {
@@ -605,7 +795,6 @@ font-family: "Poppins", sans-serif;
   color: #0d1b2a;
 }
 
-
 /* ================= TIMELINE BACKGROUND ================= */
 
 .journey-timeline {
@@ -614,17 +803,12 @@ font-family: "Poppins", sans-serif;
 
   padding: 32px 20px;
 
-  background: linear-gradient(
-    180deg,
-    #f4f6f9 0%,
-    #eef1f6 100%
-  );
+  background: linear-gradient(180deg, #f4f6f9 0%, #eef1f6 100%);
 
   border-radius: 2px;
 
   overflow: hidden;
 }
-
 
 /* ================= DESKTOP ROAD ================= */
 
@@ -639,7 +823,6 @@ font-family: "Poppins", sans-serif;
   margin: 0 auto;
 }
 
-
 .journey-road-svg {
   position: absolute;
 
@@ -650,7 +833,6 @@ font-family: "Poppins", sans-serif;
 
   overflow: visible;
 }
-
 
 /* ================= PIN ================= */
 
@@ -672,11 +854,10 @@ font-family: "Poppins", sans-serif;
 
   box-shadow:
     0 0 0 2px #1760cf,
-    0 7px 16px rgba(23, 96, 207, 0.30);
+    0 7px 16px rgba(23, 96, 207, 0.3);
 
   z-index: 5;
 }
-
 
 .journey-pin svg {
   width: 34px;
@@ -691,7 +872,6 @@ font-family: "Poppins", sans-serif;
   stroke-linejoin: round;
 }
 
-
 /* ================= CONNECTOR ================= */
 
 .journey-connector {
@@ -703,7 +883,6 @@ font-family: "Poppins", sans-serif;
 
   z-index: 2;
 }
-
 
 .journey-dot {
   position: absolute;
@@ -720,7 +899,6 @@ font-family: "Poppins", sans-serif;
   z-index: 6;
 }
 
-
 /* ================= CARD ================= */
 
 .journey-card {
@@ -734,12 +912,10 @@ font-family: "Poppins", sans-serif;
 
   border-radius: 13px;
 
-  box-shadow:
-    0 10px 26px rgba(13, 27, 42, 0.09);
+  box-shadow: 0 10px 26px rgba(13, 27, 42, 0.09);
 
   z-index: 7;
 }
-
 
 .journey-card::before {
   content: "";
@@ -757,7 +933,6 @@ font-family: "Poppins", sans-serif;
   border-radius: 0 3px 3px 0;
 }
 
-
 /* ================= CARD CONTENT ================= */
 
 .journey-year {
@@ -771,7 +946,6 @@ font-family: "Poppins", sans-serif;
   color: #1760cf;
 }
 
-
 .journey-card-title {
   margin-bottom: 7px;
 
@@ -783,7 +957,6 @@ font-family: "Poppins", sans-serif;
   color: #0d1b2a;
 }
 
-
 .journey-card-text {
   font-size: 14px;
   line-height: 1.55;
@@ -791,11 +964,9 @@ font-family: "Poppins", sans-serif;
   color: #667085;
 }
 
-
 /* =========================================================
    DESKTOP POSITIONS
 ========================================================= */
-
 
 /* ---------- 2024 ---------- */
 
@@ -820,7 +991,6 @@ font-family: "Poppins", sans-serif;
   top: 1.8%;
 }
 
-
 /* ---------- 2020 ---------- */
 
 .pin-2020 {
@@ -843,7 +1013,6 @@ font-family: "Poppins", sans-serif;
   left: 17.5%;
   top: 15.2%;
 }
-
 
 /* ---------- 2015 ---------- */
 
@@ -868,7 +1037,6 @@ font-family: "Poppins", sans-serif;
   top: 30%;
 }
 
-
 /* ---------- 2010 ---------- */
 
 .pin-2010 {
@@ -891,7 +1059,6 @@ font-family: "Poppins", sans-serif;
   left: 9.5%;
   top: 39%;
 }
-
 
 /* ---------- 2005 ---------- */
 
@@ -916,7 +1083,6 @@ font-family: "Poppins", sans-serif;
   top: 51.5%;
 }
 
-
 /* ---------- 1998 ---------- */
 
 .pin-1998 {
@@ -940,7 +1106,6 @@ font-family: "Poppins", sans-serif;
   top: 68%;
 }
 
-
 /* =========================================================
    MOBILE / TABLET
 ========================================================= */
@@ -949,11 +1114,9 @@ font-family: "Poppins", sans-serif;
   display: none;
 }
 
-
 /* ================= TABLET ================= */
 
 @media (max-width: 1100px) {
-
   .journey-section {
     padding: 60px 20px;
   }
@@ -982,7 +1145,6 @@ font-family: "Poppins", sans-serif;
     gap: 24px;
   }
 
-
   .journey-mobile-item {
     display: flex;
 
@@ -990,7 +1152,6 @@ font-family: "Poppins", sans-serif;
 
     gap: 18px;
   }
-
 
   .journey-mobile-icon {
     width: 58px;
@@ -1015,7 +1176,6 @@ font-family: "Poppins", sans-serif;
     font-size: 24px;
   }
 
-
   .journey-mobile-card {
     flex: 1;
 
@@ -1027,26 +1187,20 @@ font-family: "Poppins", sans-serif;
 
     border-left: 4px solid #1760cf;
 
-    box-shadow:
-      0 8px 20px rgba(13, 27, 42, 0.08);
+    box-shadow: 0 8px 20px rgba(13, 27, 42, 0.08);
   }
-
 
   .journey-mobile-card .journey-year {
     font-size: 25px;
   }
-
 }
-
 
 /* ================= MOBILE ================= */
 
 @media (max-width: 600px) {
-
   .journey-section {
     padding: 45px 15px 55px;
   }
-
 
   .journey-title {
     font-size: 25px;
@@ -1056,23 +1210,19 @@ font-family: "Poppins", sans-serif;
     margin-bottom: 28px;
   }
 
-
   .journey-timeline {
     padding: 25px 15px;
 
     border-radius: 0;
   }
 
-
   .journey-mobile {
     gap: 18px;
   }
 
-
   .journey-mobile-item {
     gap: 12px;
   }
-
 
   .journey-mobile-icon {
     width: 46px;
@@ -1083,11 +1233,9 @@ font-family: "Poppins", sans-serif;
     font-size: 18px;
   }
 
-
   .journey-mobile-card {
     padding: 16px 17px;
   }
-
 
   .journey-mobile-card .journey-year {
     font-size: 22px;
@@ -1095,47 +1243,38 @@ font-family: "Poppins", sans-serif;
     margin-bottom: 5px;
   }
 
-
   .journey-mobile-card .journey-card-title {
     font-size: 15px;
 
     margin-bottom: 5px;
   }
 
-
   .journey-mobile-card .journey-card-text {
     font-size: 13px;
 
     line-height: 1.5;
   }
-
 }
-
 
 /* ================= SMALL MOBILE ================= */
 
 @media (max-width: 380px) {
-
   .journey-section {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-
   .journey-title {
     font-size: 22px;
   }
-
 
   .journey-timeline {
     padding: 22px 10px;
   }
 
-
   .journey-mobile-item {
     gap: 10px;
   }
-
 
   .journey-mobile-icon {
     width: 42px;
@@ -1146,85 +1285,22 @@ font-family: "Poppins", sans-serif;
     font-size: 16px;
   }
 
-
   .journey-mobile-card {
     padding: 14px 15px;
   }
-
 
   .journey-mobile-card .journey-year {
     font-size: 20px;
   }
 
-
   .journey-mobile-card .journey-card-title {
     font-size: 14px;
   }
 
-
   .journey-mobile-card .journey-card-text {
     font-size: 12.5px;
   }
-
 }
-
-/* .journey {
-  padding:75px 28px;
-  max-width:1200px;
-  margin:auto
-}
-.journey h2 {
-  text-align:center;
-  font-size:29px
-}
-.journeyRoad {
-  position:relative;
-  display:grid;
-  grid-template-columns:repeat(6,1fr);
-  gap:14px;
-  margin-top:45px;
-  padding:35px 0
-}
-.journeyRoad:before {
-  content:"";
-  position:absolute;
-  left:7%;
-  right:7%;
-  top:50%;
-  border-top:6px solid #d8dde0;
-  border-radius:50%
-}
-.journeyRoad article {
-  background:#fff;
-  border:1px solid #e1e5e8;
-  padding:15px;
-  border-radius:10px;
-  position:relative;
-  z-index:1;
-  box-shadow:0 7px 18px rgba(0,0,0,.05)
-}
-.journeyRoad b {
-  color:#225a91;
-  font-size:18px
-}
-.journeyRoad h3 {
-  font-size:13px;
-  margin:5px 0
-}
-.journeyRoad span {
-  position:absolute;
-  bottom:-34px;
-  left:50%;
-  transform:translateX(-50%);
-  width:26px;
-  height:26px;
-  border-radius:50%;
-  background:#225a91;
-  color:#fff;
-  display:grid;
-  place-items:center;
-  font-size:10px
-} */
 
 /*---------------------------------Factury Banner---------------------------------*/
 /* =========================
@@ -1259,7 +1335,6 @@ font-family: "Poppins", sans-serif;
   display: block;
   object-fit: cover;
   object-position: center;
-  
 }
 
 /* =========================
@@ -1296,10 +1371,11 @@ font-family: "Poppins", sans-serif;
 ========================= */
 
 .facility-eyebrow {
+  font-family: "Poppins", sans-serif;
   margin: 0 0 18px;
-  color: #F59E0B;
+  color: #f59e0b;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -1310,7 +1386,7 @@ font-family: "Poppins", sans-serif;
 .facility-heading {
   margin: 0 0 26px;
   color: #ffffff;
-  font-size: 36Px;
+  font-size: 36px;
   font-family: Poppins, sans-serif;
   line-height: 1.15;
 }

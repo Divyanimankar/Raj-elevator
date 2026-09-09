@@ -1,0 +1,680 @@
+:root {
+  --blue: #1552c1;
+  --blue-deep: #0f3f9a;
+  --ink: #1e2a3c;
+  --body: #66707f;
+  --panel: #f4f6fa;
+  --card: #ffffff;
+  --road-edge: #bfc5cf;
+  --road-top: #e1e4e9;
+  --line: #d3d9e3;
+}
+
+/* =========================================================
+   MAIN WRAPPER
+========================================================= */
+
+.journeyWrap {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 3.2rem 1rem 4rem;
+  font-family: "Public Sans", sans-serif;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.journeyWrap *,
+.journeyWrap *::before,
+.journeyWrap *::after {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.journeyTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.7rem, 3.4vw, 2.25rem);
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--ink);
+  margin: 0 0 2.6rem;
+  animation: journeyFadeDown 0.8s 0.05s both;
+}
+
+/* =========================================================
+   SCROLL
+========================================================= */
+
+.journeyScroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+}
+
+/* =========================================================
+   DESKTOP STAGE
+========================================================= */
+
+.journeyStage {
+  position: relative;
+  container-type: inline-size;
+
+  width: 100%;
+  min-width: 920px;
+
+  aspect-ratio: 1600 / 1130;
+
+  background: radial-gradient(
+    120% 90% at 50% 0%,
+    #f8fafc 0%,
+    var(--panel) 55%,
+    #eef1f6 100%
+  );
+
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+/* =========================================================
+   ROAD
+========================================================= */
+
+.journeyRoad {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+.journeyDash {
+  animation: journeyMarch 26s linear infinite;
+}
+
+/* =========================================================
+   CONNECTOR LINES
+========================================================= */
+
+.journeyLink {
+  position: absolute;
+
+  height: 0.14cqw;
+
+  background: var(--line);
+
+  z-index: 1;
+
+  transform-origin: left center;
+
+  animation: journeyGrowX 0.7s both;
+}
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.journeyCard {
+  position: absolute;
+
+  left: var(--x);
+  top: var(--y);
+
+  width: var(--w);
+
+  background: var(--card);
+
+  border-radius: 0.9cqw;
+
+  box-shadow:
+    0 0.5cqw 1.8cqw rgba(30, 42, 60, 0.1),
+    0 0.15cqw 0.4cqw rgba(30, 42, 60, 0.06);
+
+  padding: 1cqw 2cqw 1cqw;
+
+  z-index: 2;
+
+  transition:
+    transform 0.35s cubic-bezier(0.22, 0.8, 0.32, 1),
+    box-shadow 0.35s;
+
+  animation: journeyCardIn 0.75s both;
+
+  animation-delay: var(--d);
+
+  cursor: default;
+}
+
+.journeyCard:hover {
+  transform: translateY(-0.45cqw);
+
+  box-shadow:
+    0 1.1cqw 2.6cqw rgba(21, 82, 193, 0.16),
+    0 0.2cqw 0.6cqw rgba(30, 42, 60, 0.08);
+}
+
+/* Card blue line */
+
+.journeyCard::before {
+  content: "";
+
+  position: absolute;
+
+  top: 1.7cqw;
+  bottom: 1.7cqw;
+
+  width: 0.28cqw;
+
+  border-radius: 0.2cqw;
+
+  background: var(--blue);
+}
+
+.journeyCard--left {
+  padding-left: 3.1cqw;
+}
+
+.journeyCard--right {
+  padding-right: 3.1cqw;
+}
+
+.journeyCard--left::before {
+  left: 1.55cqw;
+}
+
+.journeyCard--right::before {
+  right: 1.55cqw;
+}
+
+/* Card typography */
+
+.journeyCard h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--blue);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.journeyCard h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--ink);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.journeyCard p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--body);
+  font-weight: 400;
+  margin: 0;
+}
+
+/* =========================================================
+   MARKERS
+========================================================= */
+
+.journeyMarker {
+  position: absolute;
+
+  left: var(--x);
+  top: var(--y);
+
+  width: 0;
+  height: 0;
+
+  z-index: 3;
+
+  animation: journeyDropIn 0.7s both;
+
+  animation-delay: var(--d);
+}
+
+.journeyStem {
+  position: absolute;
+
+  bottom: 0;
+  left: -0.11cqw;
+
+  width: 0.22cqw;
+
+  height: var(--h);
+
+  background: linear-gradient(
+    to bottom,
+    var(--blue) 0%,
+    var(--blue) 78%,
+    rgba(21, 82, 193, 0.35) 100%
+  );
+
+  border-radius: 0.2cqw;
+}
+
+.journeyPin {
+  position: absolute;
+
+  bottom: -0.42cqw;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 1.9cqw;
+  height: 0.78cqw;
+
+  background: radial-gradient(
+    50% 50% at 50% 40%,
+    var(--blue) 55%,
+    var(--blue-deep) 100%
+  );
+
+  border-radius: 50%;
+
+  box-shadow: 0 0.25cqw 0.55cqw rgba(15, 63, 154, 0.35);
+}
+
+.journeyBadge {
+  position: absolute;
+
+  bottom: var(--h);
+
+  left: 0;
+
+  transform: translate(-50%, 50%);
+
+  width: 5.75cqw;
+  height: 5.75cqw;
+
+  background: #fff;
+
+  border: 0.2cqw solid var(--blue);
+
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+
+  box-shadow: 0 0.45cqw 1.2cqw rgba(21, 82, 193, 0.22);
+
+  transition: transform 0.3s cubic-bezier(0.22, 0.8, 0.32, 1);
+}
+
+.journeyMarker:hover .journeyBadge {
+  transform: translate(-50%, 50%) scale(1.08);
+}
+
+.journeyCore {
+  width: 4.45cqw;
+  height: 4.45cqw;
+
+  background: radial-gradient(
+    70% 70% at 35% 30%,
+    #2f6bd8 0%,
+    var(--blue) 55%,
+    var(--blue-deep) 100%
+  );
+
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+
+  color: #fff;
+}
+
+.journeyCore svg {
+  width: 2.35cqw;
+  height: 2.35cqw;
+
+  stroke: #fff;
+
+  fill: none;
+
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* =========================================================
+   TABLET
+   769px - 1100px
+========================================================= */
+
+@media (max-width: 1100px) and (min-width: 769px) {
+  .journeyWrap {
+    padding: 2.8rem 1rem 3.5rem;
+  }
+
+  .journeyTitle {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    margin-bottom: 2rem;
+  }
+
+  .journeyStage {
+    min-width: 820px;
+  }
+
+  .journeyCard {
+    padding-top: 1.2cqw;
+    padding-bottom: 1.2cqw;
+  }
+
+  .journeyCard p {
+    line-height: 1.45;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   <= 768px
+
+   Convert winding desktop timeline into
+   clean vertical timeline.
+========================================================= */
+
+/* =========================================================
+   MOBILE TIMELINE
+   <= 768px
+========================================================= */
+
+/* =========================================
+   MOBILE JOURNEY TIMELINE
+========================================= */
+
+@media (max-width: 767px) {
+  .journeyStage {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    aspect-ratio: auto;
+    overflow: visible;
+    background: transparent;
+  }
+
+  /* Desktop road hide */
+  .journeyRoad,
+  .journeyLink {
+    display: none;
+  }
+
+  /* =========================
+     HIGHLIGHTED TIMELINE
+  ========================= */
+
+  .journeyStage::before {
+    content: "";
+
+    position: absolute;
+
+    /* line position */
+    left: 18px;
+    top: 20px;
+    bottom: 20px;
+
+    width: 4px;
+
+    background: var(--blue);
+
+    border-radius: 10px;
+
+    /* Highlight effect */
+    box-shadow:
+      0 0 0 2px rgba(21, 82, 193, 0.12),
+      0 0 12px rgba(21, 82, 193, 0.25);
+
+    z-index: 1;
+  }
+
+  /* =========================
+     HIDE ALL ICONS
+  ========================= */
+
+  .journeyMarker {
+    display: none !important;
+  }
+
+  .journeyBadge,
+  .journeyCore,
+  .journeyCore svg,
+  .journeyStem,
+  .journeyPin {
+    display: none !important;
+  }
+
+  /* =========================
+     CARDS
+  ========================= */
+
+  .journeyCard {
+    position: relative;
+
+    left: auto;
+    top: auto;
+
+    width: calc(100% - 48px);
+
+    margin-left: 48px;
+    margin-bottom: 20px;
+
+    padding: 16px 18px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    z-index: 2;
+
+    box-shadow:
+      0 4px 18px rgba(30, 42, 60, 0.08),
+      0 1px 4px rgba(30, 42, 60, 0.05);
+  }
+
+  .journeyCard--left,
+  .journeyCard--right {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .journeyCard::before {
+    display: none;
+  }
+
+  .journeyCard:hover {
+    transform: none;
+  }
+
+  .journeyCard h3 {
+    font-size: 1.35rem;
+    line-height: 1.1;
+    margin: 0 0 4px;
+  }
+
+  .journeyCard h4 {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 0 0 6px;
+  }
+
+  .journeyCard p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .journeyStage::before {
+    left: 14px;
+    width: 3px;
+
+    box-shadow:
+      0 0 0 1px rgba(21, 82, 193, 0.12),
+      0 0 9px rgba(21, 82, 193, 0.22);
+  }
+
+  .journeyCard {
+    width: calc(100% - 38px);
+    margin-left: 38px;
+
+    padding: 14px 15px;
+    margin-bottom: 18px;
+  }
+
+  .journeyCard h3 {
+    font-size: 1.2rem;
+  }
+
+  .journeyCard h4 {
+    font-size: 0.92rem;
+  }
+
+  .journeyCard p {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+}
+
+/* =========================================================
+   MOBILE ANIMATIONS
+========================================================= */
+
+@keyframes journeyMobileCardIn {
+  from {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes journeyMobileMarkerIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes journeyFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes journeyCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(1.4cqw);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes journeyMobileCardIn {
+  from {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes journeyDropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-1.6cqw);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes journeyMobileMarkerIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes journeyGrowX {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes journeyMarch {
+  to {
+    stroke-dashoffset: -560;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .journeyWrap *,
+  .journeyWrap *::before,
+  .journeyWrap *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
