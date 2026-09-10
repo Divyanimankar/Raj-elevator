@@ -184,12 +184,12 @@ export default function Contact() {
 
       <section className="contactHero">
         <div className="contactHeroContent">
-          <div className="contactHeroBadge">
+          {/* <div className="contactHeroBadge">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <polygon points="12 2 15 9 22 9.5 16.5 14.5 18 22 12 18 6 22 7.5 14.5 2 9.5 9 9" />
             </svg>
             Japanese Nidec Precision Engineering Inside
-          </div>
+          </div> */}
 
           <h1 className="contactHeroTitle">Get In Touch</h1>
 

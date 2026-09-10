@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import "./ProductDetail.css";
+// import { Link } from "react-router-dom";
 
 const verticals = [
   {
@@ -461,75 +462,6 @@ function ProductDetail() {
               />
             </div>
 
-            {/* <div className="gallery__thumbs">
-              {product.images.map((image, index) => (
-                <button
-                  type="button"
-                  key={image}
-                  className={
-                    activeImage === index
-                      ? "gallery__thumb active"
-                      : "gallery__thumb"
-                  }
-                  onClick={() => setActiveImage(index)}
-                >
-                  <img
-                    src={image}
-                    alt={`${product.title} ${index + 1}`}
-                  />
-                </button>
-              ))}
-            </div> */}
-
-            {/* <div className="gallery__thumb-wrapper">
-
-  {product.images.length > 4 && (
-    <button
-      type="button"
-      className="gallery-arrow gallery-arrow--left"
-      onClick={() => scrollThumbnails(-1)}
-      aria-label="Previous images"
-    >
-      &#10094;
-    </button>
-  )}
-
-  <div
-    className="gallery__thumbs"
-    ref={thumbsRef}
-  >
-    {product.images.map((image, index) => (
-      <button
-        type="button"
-        key={`${image}-${index}`}
-        className={
-          activeImage === index
-            ? "gallery__thumb active"
-            : "gallery__thumb"
-        }
-        onClick={() => setActiveImage(index)}
-      >
-        <img
-          src={image}
-          alt={`${product.title} ${index + 1}`}
-        />
-      </button>
-    ))}
-  </div>
-
-  {product.images.length > 4 && (
-    <button
-      type="button"
-      className="gallery-arrow gallery-arrow--right"
-      onClick={() => scrollThumbnails(1)}
-      aria-label="Next images"
-    >
-      &#10095;
-    </button>
-  )}
-
-</div> */}
-
 
 <div className="gallery__thumb-wrapper">
 
@@ -612,12 +544,20 @@ function ProductDetail() {
             </div>
 
             <div className="hero-actions">
-              <button
+              {/* <button
                 type="button"
                 className="btn btn--solid"
               >
                 Request Technical Proposal
-              </button>
+              </button> */}
+
+              <Link
+  to="/contact"
+  className="btn btn--solid"
+>
+  Request Technical Proposal
+</Link>
+
 
               {/* <button
                 type="button"

@@ -1509,3 +1509,74 @@
     padding: 50px 15px;
   }
 }
+
+/* /////////////////////////////////////////////////////// */
+
+.newJourney {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.newJourney img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   Large Desktop
+========================= */
+@media (min-width: 1400px) {
+  .newJourney {
+    padding: 0 50px;
+  }
+}
+
+/* =========================
+   Tablet
+========================= */
+@media (max-width: 1024px) {
+  .newJourney {
+    padding: 0 30px;
+  }
+
+  .newJourney img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+@media (max-width: 768px) {
+  .newJourney {
+    padding: 0 20px;
+  }
+
+  .newJourney img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+@media (max-width: 480px) {
+  .newJourney {
+    padding: 0 15px;
+  }
+
+  .newJourney img {
+    width: 100%;
+    height: auto;
+  }
+}
