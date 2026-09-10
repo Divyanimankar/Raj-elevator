@@ -536,7 +536,7 @@ export default function Contact() {
           {/* WHATSAPP */}
 
           <a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/918108800283"
             target="_blank"
             rel="noopener noreferrer"
             className="contactUsWhatsappCard"
@@ -631,7 +631,7 @@ export default function Contact() {
               </svg>
 
               <span>
-                205, Hari Om Plaza, M.G. Road, Borivali East, Mumbai - 400066.
+                Hari Om Plaza, 205, Mahatma Gandhi Rd, Sukarwadi, Borivali East, Mumbai, Maharashtra 400066
               </span>
             </div>
 
@@ -644,7 +644,7 @@ export default function Contact() {
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
 
-              <a href="tel:+912256789012">+91-22-56789012</a>
+              <a href="tel:+912256789012">+91-8108800283</a>
             </div>
           </div>
 
@@ -662,7 +662,7 @@ export default function Contact() {
               </svg>
 
               <span>
-                Hari Om Plaza, 205, Mahatma Gandhi Rd, Sukarwadi, Borivali East, Mumbai, Maharashtra 400066
+                #20/27, Kaveri Complex, Gokula Stage 1, Phase 1, 1st Main Road, Mathikere, Bangalore - 560 054.
               </span>
             </div>
 
@@ -675,7 +675,7 @@ export default function Contact() {
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
 
-              <a href="tel:+918108800283">+91 8108800283</a>
+              <a href="tel:+917208553162">+91 7208553162</a>
             </div>
           </div>
         </div>

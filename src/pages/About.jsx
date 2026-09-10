@@ -43,7 +43,7 @@ export default function About() {
           <h1 className="about-hero-heading">About Raj Elevators</h1>
 
           <p className="about-hero-subtext">
-            Elevating vertical mobility with 25+ years of Japanese-backed
+            Elevating vertical mobility with 30+ years of Japanese-backed
             mechanical engineering excellence and zero-compromise safety.
           </p>
         </div>
