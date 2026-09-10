@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500&display=swap");
+
+.Disclaimer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 24px 100px;
+  background: #ffffff;
+}
+
+.Disclaimer .dc-title {
+  font-family: "Poppins", sans-serif;
+  color: #17233a;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.Disclaimer .dc-updated {
+  font-family: "Inter", sans-serif;
+  color: #94a3b8;
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+
+.Disclaimer .dc-heading {
+  font-family: "Poppins", sans-serif;
+  color: #17233a;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 40px 0 16px;
+}
+
+.Disclaimer .dc-subheading {
+  font-family: "Poppins", sans-serif;
+  color: #17233a;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 24px 0 10px;
+}
+
+.Disclaimer .dc-text {
+  font-family: "Inter", sans-serif;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 4px;
+}
+
+.Disclaimer .dc-text strong {
+  color: #17233a;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+.Disclaimer .dc-block {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 640px) {
+  .Disclaimer {
+    padding: 40px 18px 60px;
+  }
+  .Disclaimer .dc-title {
+    font-size: 24px;
+  }
+  .Disclaimer .dc-heading {
+    font-size: 22px;
+  }
+}

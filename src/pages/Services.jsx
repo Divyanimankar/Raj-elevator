@@ -8,7 +8,7 @@ import IndiaMapImage from "../assets/images/IndiaMap.png"
 
 
 
-const services=['Heavy-Duty Installation','Modernization Upgrade','Preventive AMC','AMC Shield Plans','Precision Repair','24/7 Breakdown Dispatch']
+const services=['Heavy-Duty Installation','Modernization Upgrade','Preventive AMC','AMC Shield Plans','Precision Repair','Breakdown Dispatch']
 
   const steps = [
     {
@@ -60,7 +60,7 @@ const faqs = [
     question:
       "What happens if a passenger gets trapped inside the cabin during a power failure?",
     answer:
-      "Every passenger elevator is standard fitted with an Automatic Rescue Device (ARD). If main power drops, the ARD instantly engages, powering the VVVF control grid to land safety-cabin to the nearest deck and release doors. Our toll-free emergency desk is also active 24/7.",
+      "Every passenger elevator is standard fitted with an Automatic Rescue Device (ARD). If main power drops, the ARD instantly engages, powering the VVVF control grid to land safety-cabin to the nearest deck and release doors. Our toll-free emergency desk is also active.",
   },
   {
     question:
@@ -103,7 +103,7 @@ export default function Services(){
 
     <p className="serviceHero__subtitle">
       From precision mechanical installation by certified engineers to certified
-      preventive maintenance contracts and fast 24/7 breakdown emergency dispatch.
+      preventive maintenance contracts and fast breakdown emergency dispatch.
     </p>
 
     <div className="serviceHero__actions">
@@ -256,7 +256,7 @@ export default function Services(){
               </svg>
             </div>
 
-            <h3>24/7 Breakdown Dispatch</h3>
+            <h3>Breakdown Dispatch</h3>
 
             <p>
               Immediate telemetry-activated dispatch and emergency breakdown
@@ -265,7 +265,7 @@ export default function Services(){
 
             <ul>
               <li>Zero passenger trapping target</li>
-              <li>24/7 monitoring desk coverage</li>
+              <li>Monitoring desk coverage</li>
               <li>Real-time dispatch telemetry</li>
             </ul>
           </article>
@@ -395,7 +395,7 @@ export default function Services(){
             <svg viewBox="0 0 24 24">
               <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
             </svg>
-            24/7 Breakdown rapid dispatch support
+            Breakdown rapid dispatch support
           </li>
 
           <li>
@@ -438,7 +438,7 @@ export default function Services(){
             <svg viewBox="0 0 24 24">
               <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
             </svg>
-            Unlimited 24/7 priority emergency dispatch
+            Unlimited priority emergency dispatch
           </li>
 
           <li>
@@ -541,14 +541,14 @@ export default function Services(){
 
   <div className="emergency-bar__right">
     <div className="emergency-bar__number">
-      1800-123-5678
+      81088 00283 
     </div>
 
     <button
       className="emergency-bar__button"
       type="button"
       onClick={() => {
-        window.location.href = "tel:18001235678";
+        window.location.href = "tel:8108800283";
       }}
     >
       Call Now

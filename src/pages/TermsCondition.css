@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500&display=swap");
+
+.TermsCondition {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 24px 100px;
+  background: #ffffff;
+}
+
+.TermsCondition .tc-title {
+  font-family: "Poppins", sans-serif;
+  color: #17233a;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.TermsCondition .tc-updated {
+  font-family: "Inter", sans-serif;
+  color: #94a3b8;
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+
+.TermsCondition .tc-heading {
+  font-family: "Poppins", sans-serif;
+  color: #17233a;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 40px 0 16px;
+}
+
+.TermsCondition .tc-subheading {
+  font-family: "Poppins", sans-serif;
+  color: #17233a;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 24px 0 10px;
+}
+
+.TermsCondition .tc-text {
+  font-family: "Inter", sans-serif;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 4px;
+}
+
+.TermsCondition .tc-block {
+  margin-bottom: 14px;
+}
+
+.TermsCondition strong {
+  color: #17233a;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .TermsCondition {
+    padding: 40px 18px 60px;
+  }
+  .TermsCondition .tc-title {
+    font-size: 24px;
+  }
+  .TermsCondition .tc-heading {
+    font-size: 22px;
+  }
+}

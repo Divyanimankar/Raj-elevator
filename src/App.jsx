@@ -47,6 +47,12 @@ import Services from "./pages/Services.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
 import Career from "./pages/Career.jsx";
+
+import Disclaimer from "./pages/Disclaimer.jsx";
+
+import TermsCondition from "./pages/TermsCondition.jsx";
+
+import Privacy from "./pages/Privacy.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 export default function App() {
@@ -77,6 +83,12 @@ export default function App() {
 
           <Route path="/career" element={<Career />} />
 
+          <Route path="/terms" element={<TermsCondition />} />
+          
+           <Route path="/privacy" element={<Privacy />} />
+
+            <Route path="/disclaimer" element={<Disclaimer />} />
+           
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

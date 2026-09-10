@@ -78,11 +78,11 @@ const productss = [
 ];
 
 const steps = [
-  { number: "01", title: "Consultation", desc: "Assessing building traffic, shafts, and specifications." },
-  { number: "02", title: "Design", desc: "Drafting detailed cabin layout drawings and machine ratings." },
-  { number: "03", title: "Manufacturing", desc: "Assembling structural components and Nidec controllers." },
-  { number: "04", title: "Installation", desc: "Onsite mechanical alignment and stringent testing." },
-  { number: "05", title: "Maintenance", desc: "Scheduled safety audits and preventive lubrications." },
+  { number: "01", title: "Consultation", desc: "Project Communication/proposal " },
+  { number: "02", title: "Customised Solution", desc: "Drafting detailed cabin layout drawings and machine ratings." },
+  { number: "03", title: "Production and transportation", desc: "Assembling structural components and Nidec controllers." },
+  { number: "04", title: "InstInstallation and Commissioningallation", desc: "Onsite mechanical alignment and stringent testing." },
+  { number: "05", title: "After sales support", desc: "Scheduled safety audits and preventive lubrications." },
 ];
 
 const clientLogos = [
@@ -775,7 +775,7 @@ export default function Home(){return (
           <div className="raj-advantage-badge">
 
             <div className="raj-advantage-badge-number">
-              22+
+              30+
             </div>
 
             <div className="raj-advantage-badge-label">
@@ -1082,9 +1082,9 @@ export default function Home(){return (
           {step.title}
         </h3>
 
-        <p className="workflow-desc">
+        {/* <p className="workflow-desc">
           {step.desc}
-        </p>
+        </p> */}
       </div>
     ))}
   </div>
@@ -1174,7 +1174,7 @@ export default function Home(){return (
           <div className="nidec-feature-text">
             <div className="nidec-feature-title">
               {/* Compliant with EN 81-20, ISO 4190, IS 14665 */}
-              Compliant with LS 17900 and LS 025745
+              Compliant with IS 17900 and IS 025745
             </div>
 
             <div className="nidec-feature-subtitle">

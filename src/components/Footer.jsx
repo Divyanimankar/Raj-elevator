@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Footer.css';
-import rajLogo from "../assets/images/rajBlack1.png"
+import rajLogo from "../assets/images/rajBlack1.png";
+import nidec1 from "../assets/images/nidec1.png";
 
 export default function Footer() {
   return (
@@ -11,7 +12,9 @@ export default function Footer() {
         {/* Brand */}
         <div className="footer-brand">
           <div className="logo">
-            <img src={rajLogo} alt="rajLogo" />
+            <img src={rajLogo} alt="rajLogo" /> 
+            <img src={nidec1} alt="rajLogo" />
+
           </div>
 
           <p>
@@ -112,15 +115,13 @@ export default function Footer() {
             </svg>
 
             <span>
-              Plot 14, Industrial Area Phase II, Mumbai,
-              Maharashtra 400011
+              Hari Om Plaza, 205, Mahatma Gandhi Rd, Sukarwadi, Borivali East, Mumbai, Maharashtra 400066
             </span>
 
           </div>
 
 
           <div className="hq-item">
-
             <svg
               width="18"
               height="18"
@@ -137,7 +138,21 @@ export default function Footer() {
             {/* <span>
               +91-22-56789012
             </span> */}
-            <a href="tel:+912256789012"> +91-22-56789012 </a>
+          {/* <div style="display: flex; flex-direction: column;">
+            <a href="tel:+918108800283"> +91-81088 00283 </a>
+            <a href="tel:+917208553162"> +91-72085 53162  </a>
+            </div>
+            */}
+
+            <div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+  }}
+>
+  <a href="tel:+918108800283">+91-81088 00283</a>
+  <a href="tel:+917208553162">+91-72085 53162</a>
+</div>
 
           </div>
 
@@ -161,7 +176,12 @@ export default function Footer() {
             {/* <span>
               info@rajelevators.com
             </span> */}
-            <a href="mailto:info@rajelevators.com"> info@rajelevators.com </a>
+            <div>
+                <a href="mailto:info@rajelevators.com"> info@rajelevators.com </a>
+                <a href="mailto:contact@rajelevators.com"> contact@rajelevators.com </a>
+            </div>
+            {/* <a href="mailto:info@rajelevators.com"> info@rajelevators.com </a>
+            <a href="mailto:contact@rajelevators.com"> contact@rajelevators.com </a> */}
           </div>
 
         </div>
@@ -178,7 +198,7 @@ export default function Footer() {
 
         <div className="footer-links">
 
-          <Link to="/privacy-policy">
+          <Link to="/privacy">
             Privacy Policy
           </Link>
 
@@ -186,8 +206,8 @@ export default function Footer() {
             Terms &amp; Conditions
           </Link>
 
-          <Link to="/sitemap">
-            Sitemap
+          <Link to="/disclaimer">
+            Disclaimer 
           </Link>
 
         </div>

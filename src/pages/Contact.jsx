@@ -229,7 +229,7 @@ export default function Contact() {
           </div>
 
           <div className="contactCardText">
-            205, Hari Om Plaza, M.G. Road, Borivali (East), Mumbai - 400 066
+            Hari Om Plaza, 205, Mahatma Gandhi Rd, Sukarwadi, Borivali East, Mumbai, Maharashtra 400066
           </div>
         </div>
 
@@ -240,7 +240,7 @@ export default function Contact() {
             <div className="contactCardTitle">Phone Hotline</div>
 
             <a
-              href="tel:+918080845028"
+              href="tel:+918108800283"
               className="contactCardIcon"
               aria-label="Call Raj Elevators"
             >
@@ -251,11 +251,19 @@ export default function Contact() {
           </div>
 
           <a
-            href="tel:+918080845028"
+            href="tel:+918108800283"
             className="contactCardText contactCardLink"
           >
-            +91 8080 845 028
+            +91 81088 00283
           </a>
+
+           <a
+            href="tel:+917208553162"
+            className="contactCardText contactCardLink"
+          >
+            +91 72085 53162
+          </a>
+
         </div>
 
         {/* EMAIL */}
@@ -280,6 +288,13 @@ export default function Contact() {
             className="contactCardText contactCardLink"
           >
             contact@rajelevators.com
+          </a>
+
+          <a
+            href="mailto:info@rajelevators.com"
+            className="contactCardText contactCardLink"
+          >
+            info@rajelevators.com
           </a>
         </div>
       </div>
@@ -552,8 +567,8 @@ export default function Contact() {
               </div>
 
               <div className="contactUsWhatsappText">
-                Need quick chat support? Send us a direct WhatsApp text: +91
-                98765 43210
+                Need quick chat support? Send us a direct WhatsApp 
+                text: +91 81088 00283, +91 72085 53162
               </div>
             </div>
           </a>
@@ -603,35 +618,6 @@ export default function Contact() {
         </div>
 
         <div className="offices-grid">
-          {/* Bengaluru Office */}
-
-          <div className="office-card">
-            <div className="office-card__title">Bengaluru Office</div>
-
-            <div className="office-card__row">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
-
-              <span>
-                #20/27, Kaveri Complex, Gokula Stage 1, Phase 1, 1st Main Road,
-                Mathikere, Bangalore - 560 054.
-              </span>
-            </div>
-
-            <div className="office-card__row">
-              <svg
-                viewBox="0 0 24 24"
-                className="icon-filled"
-                aria-hidden="true"
-              >
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-
-              <a href="tel:+918494909414">+91 8494 909 414</a>
-            </div>
-          </div>
 
           {/* Mumbai Office */}
 
@@ -659,6 +645,37 @@ export default function Contact() {
               </svg>
 
               <a href="tel:+912256789012">+91-22-56789012</a>
+            </div>
+          </div>
+
+
+
+          {/* Bengaluru Office */}
+
+          <div className="office-card">
+            <div className="office-card__title">Bengaluru Office</div>
+
+            <div className="office-card__row">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+
+              <span>
+                Hari Om Plaza, 205, Mahatma Gandhi Rd, Sukarwadi, Borivali East, Mumbai, Maharashtra 400066
+              </span>
+            </div>
+
+            <div className="office-card__row">
+              <svg
+                viewBox="0 0 24 24"
+                className="icon-filled"
+                aria-hidden="true"
+              >
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+
+              <a href="tel:+918108800283">+91 8108800283</a>
             </div>
           </div>
         </div>

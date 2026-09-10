@@ -400,14 +400,13 @@ return (
   </div>
 
   <div className="careerApplySectionTitle">
-    Ready to Elevate Your Building?
+    Ready to Elevate Your Career?
   </div>
 
   <div className="careerApplyCard">
 
     <p className="careerApplyDescription">
-      Get in touch with our team to discuss your elevator needs. We're here to help
-      you find the perfect solution.
+     We're always looking for passionate and talented individuals to join our team. Explore open positions and take the next step in your career with us.
     </p>
 
     <a
@@ -423,14 +422,14 @@ return (
         <polyline points="3 7 12 13 21 7" />
       </svg>
 
-      <span>Email Us</span>
+      <span>Apply Now</span>
     </a>
 
     <a
       href="mailto:info@rajelevators.com"
       className="careerEmailAddress"
     >
-      info@rajelevators.com
+      contact@rajelevators.com
     </a>
 
   </div>
