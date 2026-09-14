@@ -38,7 +38,7 @@ const productsData = {
     title: "Passenger Elevator",
     badge: "6–26 PERSON CAPACITY",
     description:
-      "Engineered with high-torque gearless PMSM motors and robust Japanese micro-controllers. Quiet operation, ultra-smooth VVVF acceleration curves, and up to 40% energy conservation. Perfectly optimized for hotels, corporate workspace complexes, and luxury residential apartments.",
+      "Residential Buildings, Commercial Buildings, High Rise Buildings.",
 
     images: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
@@ -53,38 +53,40 @@ const productsData = {
     ],
 
     specs: [
-      {
-        label: "Capacity Range",
-        value: "6 - 26 Persons (450 - 1600 kg)",
-      },
+
       {
         label: "Speed Capabilities",
-        value: "1.0 - 2.5 m/s (High-Speed VVVF)",
+        value: "0.6 mps to 7 mps",
       },
       {
-        label: "Drive Architecture",
-        value: "PMSM Gearless Traction",
+        label: "Capacity Range:",
+        value: "6 to 24 Passengers",
+      },
+      
+      {
+        label: "Drive Type",
+        value: "Traction Geared, Traction Gearless, Hydraulic",
       },
     ],
 
     matrix: [
-      ["Rated Load Capacity", "450kg / 680kg / 1000kg / 1360kg / 1600kg"],
-      ["Contract Transit Speed", "1.0 m/s, 1.5 m/s, 1.75 m/s, 2.0 m/s, 2.5 m/s"],
-      ["Maximum Travel Height", "Up to 120 meters"],
-      ["Door Configuration Options", "Center Opening / Side Opening"],
-      ["Integrated Controller System", "Intelligent 32-Bit Microprocessor System"],
-      ["Power Source Grid Supply", "3-Phase 380V / 400V / 415V"],
-      ["Standard Car Enclosure Sizes", "Width 1400mm × Depth 1350mm × Height 2400mm"],
-      ["Required Pit Depth Clearance", "1500mm / 1600mm / 1800mm"],
-      ["Minimum Overhead Clearance", "4200mm / 4500mm / 4800mm"],
+      ["Rated Load ", "408 Kg / 544 Kg / 680 Kg / 816 kg / 884 kg / 1020 kg / 1088 kg / 1360 kg / 1600 kg"],
+      ["Rated Speed", "1 mps to 7 mps"],
+      ["Maximum Travel Height", "240 m"],
+      ["Door Configuration Options", "Automatic Center Opening/ Automatic Telescopic Opening"],
+      ["Integrated Controller System", "Integrated Microprocesssor Based VVVF Drive System"],
+      ["Power Source", "3 Phase 380V, 50Hz"],
+      ["Standard Car Enclosure Sizes", "MS Powder Coated / Stainless Steel Hairline Finish / GI-PVC Coated Lampre Designers Sheets"],
+      ["Required Pit Depth", "1500mm to 2500mm Depending on Rated Speed"],
+      ["Minimum Overhead Clearance", "3000mm to 6000mm Depending on Rated Speed and Capacity"],
     ],
   },
 
   "freight-elevator": {
-    title: "Freight Elevator",
+    title: "Freight Elevators",
     badge: "UP TO 5000 KG CAPACITY",
     description:
-      "Heavy-duty freight elevators engineered for industrial logistics, warehouses and manufacturing facilities. Reinforced cabins and powerful traction systems provide reliable transportation for heavy loads.",
+      "Factories, Industrial Buildings, Warehouses, Showrooms.",
 
     images: [
       "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop",
@@ -102,29 +104,29 @@ const productsData = {
 
     specs: [
       {
-        label: "Load Capacity",
-        value: "1000 - 5000 kg",
+        label: "Speed Capabilities",
+        value: "0.3 to 1 mps",
       },
       {
-        label: "Door Type",
-        value: "Heavy Duty Vertical Sliding",
+        label: "Capacity Range",
+        value: "500 kg to 3000 kg",
       },
       {
-        label: "Drive Architecture",
-        value: "Heavy Duty Gearless Traction",
+        label: "Drive Type",
+        value: "Traction Geared/Gearless, Hydraulic",
       },
     ],
 
     matrix: [
-      ["Rated Load Capacity", "1000kg / 2000kg / 3000kg / 5000kg"],
-      ["Transit Speed", "0.5 m/s - 1.0 m/s"],
-      ["Maximum Travel Height", "Up to 60 meters"],
-      ["Door Configuration", "Center Opening / Vertical Sliding"],
-      ["Cabin Construction", "Reinforced Structural Steel"],
-      ["Power Supply", "3-Phase AC Supply"],
-      ["Platform Flooring", "Anti-Skid Heavy Duty Steel"],
-      ["Pit Depth", "1600mm - 2200mm"],
-      ["Safety System", "Shock Buffers and Overload Protection"],
+      ["Rated Load", "500 kg / 1000 kg / 1500 kg / 2000 kg / 2500 kg / 3000 kg"],
+      ["Rated Speed", "0.5 mps to 2 mps"],
+      ["Maximum Travel Height", "30 m "],
+      ["Door Configuration Option", "Manual Collapsible Gates, Automatic 6 Panel Center Opening, Vertical Telescopic"],
+      ["Integrated Controller System", "Microprocessor Based Drive"],
+      ["Power Source", "3 Phase 380V, 50Hz"],
+      ["Standard Car Enclosure Finish", "MMS Powder Coated / Stainless Steel, Crash Guards, Chequered Plate Flooring"],
+      ["Pit Depth", "1500mm to 1800mm Depending on Rated Speed"],
+      ["Minimum Overhead Clearnace", "4800mm to 5500 mm Depending on Rated Speed and Capacity"],
     ],
   },
 
@@ -132,7 +134,7 @@ const productsData = {
     title: "Hospital Elevator",
     badge: "STRETCHER OPTIMIZED",
     description:
-      "Specially engineered hospital elevators designed for smooth stretcher movement, patient comfort and emergency transportation. Features soft acceleration, accurate leveling and spacious cabin layouts.",
+      "Stretcher Lifts for Hospitals, Nursing Homes",
 
     images: [
       "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1200&auto=format&fit=crop",
@@ -147,29 +149,29 @@ const productsData = {
 
     specs: [
       {
-        label: "Stretcher Capacity",
-        value: "1600 - 2000 kg",
+        label: "Speed Capabilities",
+        value: " 0.5 mps to 1.5 mps",
       },
       {
-        label: "Door Opening",
-        value: "Wide Automatic Doors",
+        label: "Capacity Range",
+        value: "15 to 24 Passengers",
       },
       {
-        label: "Leveling",
-        value: "Precision Micro-Leveling",
+        label: "Drive Type",
+        value: "Traction Geared, Traction Gearless",
       },
     ],
 
     matrix: [
-      ["Rated Load Capacity", "1000kg / 1600kg / 2000kg"],
-      ["Transit Speed", "0.5 m/s - 1.5 m/s"],
-      ["Cabin Size", "Stretcher and medical equipment optimized"],
-      ["Door Opening", "Wide center opening doors"],
-      ["Leveling Accuracy", "High precision micro-leveling"],
-      ["Control System", "Intelligent hospital priority mode"],
-      ["Power Supply", "3-Phase AC Supply"],
-      ["Emergency Backup", "Automatic rescue system"],
-      ["Interior Finish", "Anti-microbial easy-clean surfaces"],
+      ["Rated Load ", "1020 kg / 1088 kg / 1360 kg / 1600 kg "],
+      ["Transit Speed", "0.5 mps to 1.5 mps"],
+      ["Maximum Travel Height", "60 m"],
+      ["Door Configuration Options", "Automatic Center Opening/ Automatic Telescopic Opening"],
+      ["Integrated Controller System", "Integrated Microprocesssor Based VVVF Drive System"],
+      ["Power Source", "3 Phase 380V, 50Hz"],
+      ["Standard Car Enclosure Finish", "Stainless Steel 304 Finish, Optional - Anti Bacterial GI Panels"],
+      ["Required Pit Depth", "1500mm to 1800mm Depending on Rated Speed"],
+      ["Minimum Overhead Clearnace", "4800mm to 5500 mm Depending on Rated Speed and Capacity"],
     ],
   },
 
@@ -177,7 +179,7 @@ const productsData = {
     title: "Home Lift",
     badge: "ZERO-PIT REQUIRED",
     description:
-      "Compact and elegant residential lifts designed for villas, duplex homes and private residences. Quiet operation and space-efficient design make them ideal for modern homes.",
+      "Homes, Bungalows, Duplex pent houses, low pit and low overhead constraints",
 
     images: [
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
@@ -188,29 +190,29 @@ const productsData = {
 
     specs: [
       {
-        label: "Capacity",
-        value: "2 - 6 Persons",
+        label: "Speed Capabilities",
+        value: "0.1 to 1 mps",
       },
       {
-        label: "Power Supply",
-        value: "Single Phase",
+        label: "Capacity Range:",
+        value: "3 to 6 Passenger",
       },
       {
-        label: "Pit Requirement",
-        value: "Minimal / Zero Pit",
+        label: "Drive Type",
+        value: "Traction Gearless, Hydraulic",
       },
     ],
 
     matrix: [
-      ["Rated Capacity", "2 / 4 / 6 Persons"],
-      ["Maximum Travel", "Up to 20 meters"],
-      ["Drive System", "Compact gearless drive"],
-      ["Power Supply", "Single Phase"],
-      ["Pit Requirement", "Minimal or Zero Pit"],
-      ["Cabin Type", "Custom Residential Interior"],
-      ["Door Type", "Automatic Swing / Sliding"],
-      ["Noise Level", "Low Noise Operation"],
-      ["Safety", "Automatic Emergency Rescue"],
+      ["Rated Load", "272 kg / 340 kg / 408 kg "],
+      ["Rated Speed", "0.1 mps to 1 mps"],
+      ["Maximum Travel Height", "6 m"],
+      ["Door Configuration Options", "Manual Swing Doors, Automatic Telescopic doors, Center Opening Semi Automatic Bus Doors"],
+      ["Integrated Controller System", " "],
+      ["Power Source", "3 Phase / Single Phase, 50 Hz"],
+      ["Standard Car Enclosure Finish", "MS Powder Coated / Stainless Steel Hairline Finish / GI-PVC Coated Lampre Designers Sheets, Full Glass Panels"],
+      ["Required Pit Depth", "150mm to 1500mm"],
+      ["Minimum Overhead Clearnace", "2700mm to 3500mm"],
     ],
   },
 
@@ -218,7 +220,7 @@ const productsData = {
     title: "Panoramic Elevator",
     badge: "PANORAMIC GLASS DESIGN",
     description:
-      "Premium panoramic elevators featuring large glass panels and elegant architectural finishes. Designed for hotels, malls and premium commercial spaces.",
+      "Commercial Buildings, Hotels, Malls, Showrooms.",
 
     images: [
       "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=1200&auto=format&fit=crop",
@@ -229,29 +231,29 @@ const productsData = {
 
     specs: [
       {
-        label: "Capacity",
-        value: "6 - 20 Persons",
+        label: "Speed Capabilities",
+        value: "1 mps to 3 mps",
       },
       {
-        label: "Cabin Design",
-        value: "Panoramic Glass",
+        label: "Capacity Range",
+        value: "13 to 24 Passengers",
       },
       {
-        label: "Travel Speed",
-        value: "Up to 2.0 m/s",
+        label: "Drive Type",
+        value: "Traction Geareless",
       },
     ],
 
     matrix: [
-      ["Rated Load Capacity", "450kg - 1600kg"],
-      ["Travel Speed", "1.0 m/s - 2.0 m/s"],
-      ["Cabin Construction", "Panoramic Safety Glass"],
-      ["Glass Type", "Laminated Safety Glass"],
-      ["Drive System", "Gearless PMSM"],
-      ["Maximum Travel", "Up to 100 meters"],
-      ["Lighting", "Architectural LED Lighting"],
-      ["Door Configuration", "Automatic Glass Doors"],
-      ["Control System", "Intelligent Microprocessor Control"],
+      ["Rated Load", "816 kg / 884 kg / 1020 kg / 1088 kg / 1360 kg / 1600 kg "],
+      ["Rated Speed", "1 mps to 3 mps"],
+      ["Maximum Travel Height", "30 m  "],
+      ["Door Configuration Options", "Automatic Center Opening/ Automatic Telescopic Opening"],
+      ["Integrated Controller System", "Integrated Microprocesssor Based VVVF Drive System"],
+      ["Power Source", "3 Phase 380V, 50Hz"],
+      ["Standard Car Enclosure Finish", "Sandwich glass panels for clear view, Stainless Steel Panels, Designer False ceiling, "],
+      ["Required Pit Depth", "1500mm to 2000mm Depending on Rated Speed"],
+      ["Minimum Overhead Clearnace", "4800mm to 5500 mm Depending on Rated Speed and Capacity"],
     ],
   },
 
@@ -259,7 +261,7 @@ const productsData = {
     title: "High-Speed Elevator",
     badge: "HIGH-RISE PERFORMANCE",
     description:
-      "High-speed elevator systems designed for premium high-rise towers and large commercial developments with fast, smooth and efficient vertical transportation.",
+      "Residential and Commercial Buildings, Heavy Duty requirements",
 
     images: [
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
@@ -270,29 +272,29 @@ const productsData = {
 
     specs: [
       {
-        label: "Maximum Speed",
-        value: "Up to 6.0 m/s",
+        label: "Speed Capabilities",
+        value: "1 mps to 7 mps",
       },
       {
-        label: "Building Height",
-        value: "High-Rise Towers",
+        label: "Capacity Range",
+        value: " 13 to 24 Passengers",
       },
       {
-        label: "Control System",
-        value: "Destination Control",
+        label: "Drive Type",
+        value: "Traction Gearless",
       },
     ],
 
     matrix: [
-      ["Rated Load Capacity", "680kg - 2000kg"],
-      ["Maximum Speed", "Up to 6.0 m/s"],
-      ["Maximum Travel", "Up to 300 meters"],
-      ["Drive System", "High Performance PMSM"],
-      ["Control System", "Destination Dispatch Control"],
-      ["Ride Comfort", "Advanced VVVF Control"],
-      ["Door System", "High-Speed Automatic Doors"],
-      ["Emergency System", "Automatic Rescue Device"],
-      ["Power Optimization", "Regenerative Drive"],
+      ["Rated Load", "816 kg / 884 kg / 1020 kg / 1088 kg / 1360 kg / 1600 kg "],
+      ["Rated Speed", "1 mps to 7 mps"],
+      ["Maximum Travel Height", "180 m"],
+      ["Door Configuration Options", "Automatic Center Opening/ Automatic Telescopic Opening"],
+      ["Integrated Controller System", "Integrated Microprocesssor Based VVVF Drive System"],
+      ["Power Source", "3 Phase 380V, 50Hz"],
+      ["Standard Car Enclosure Finish", "MS Powder Coated / Stainless Steel, Crash Guards, Chequered Plate Flooring"],
+      ["Required Pit Depth", "1500mm to 2500mm Depending on Rated Speed"],
+      ["Minimum Overhead Clearnace", "4800mm to 5500 mm Depending on Rated Speed and Capacity"],
     ],
   },
 
@@ -300,7 +302,7 @@ const productsData = {
     title: "Car Lift",
     badge: "VEHICLE TRANSPORT SYSTEM",
     description:
-      "Heavy-duty car lifts engineered for transporting vehicles between parking levels in luxury residences, commercial buildings and automated parking facilities.",
+      "Residential and Commercial Buildings, Car Parking Buildings.",
 
     images: [
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
@@ -311,29 +313,29 @@ const productsData = {
 
     specs: [
       {
-        label: "Vehicle Capacity",
-        value: "Up to 5000 kg",
+        label: "Speed Capabilities",
+        value: "0.3 to 1 mps",
       },
       {
-        label: "Platform Type",
-        value: "Heavy Duty Steel",
+        label: "Capacity Range:",
+        value: "2500 kg to 3500 kg ",
       },
       {
-        label: "Door System",
-        value: "Wide Vehicle Access",
+        label: "Drive Type:",
+        value: "Traction Gearless, Hydraulic",
       },
     ],
 
     matrix: [
-      ["Rated Load Capacity", "2500kg / 3000kg / 5000kg"],
-      ["Platform Size", "Customized for vehicle dimensions"],
-      ["Transit Speed", "0.2 m/s - 0.6 m/s"],
-      ["Door Width", "Wide vehicle entry"],
-      ["Drive System", "Heavy Duty Hydraulic / Traction"],
-      ["Safety System", "Vehicle Locking and Overload Protection"],
-      ["Flooring", "Anti-Skid Steel Platform"],
-      ["Pit Depth", "Project Specific"],
-      ["Control", "Automatic Vehicle Lift Control"],
+      ["Rated Load", "2500 kg / 3000 kg"],
+      ["Rated Speed", "0.3 to 1 mps"],
+      ["Maximum Travel Height", "30 m"],
+      ["Door Configuration Options", "Automatic 6 Panel Center Opening, Vertical Telescopic"],
+      ["Integrated Controller System", "Microprocessor Based Drive"],
+      ["Power Source", "3 Phase 380V, 50Hz"],
+      ["Standard Car Enclosure Finish", "MS Powder Coated / Stainless Steel, Crash Guards, Chequered Plate Flooring"],
+      ["Required Pit Depth", "1500mm"],
+      ["Minimum Overhead Clearnace", "5000mm"],
     ],
   },
 
