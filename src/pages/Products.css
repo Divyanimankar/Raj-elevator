@@ -68,6 +68,7 @@
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
+  cursor: pointer;
 }
 
 .rep-products-card:hover {
@@ -173,7 +174,7 @@
 
 .rep-products-content a:hover {
   color: #087536;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* =========================================

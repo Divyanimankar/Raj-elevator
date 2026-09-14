@@ -18,8 +18,15 @@ import highSpeedLift  from "../assets/images/highSpeed.png";
 
 import carLift from "../assets/images/car.png";
 import capsuleLift from "../assets/images/capsule.png";
+import { useNavigate } from "react-router-dom";
 
-export default function Products(){return (
+export default function Products(){
+  
+
+ const navigate = useNavigate();
+
+
+  return (
 <>
   {/* <PageHero image={IMG.passenger} eyebrow="★ An ISO 9001:2015 Certified Vertical Transit Leader" title="Our Elevator Solutions" text="Explore a comprehensive and versatile portfolio co-engineered with Japanese Nidec precision controls for every architectural specification."/> */}
   
@@ -48,7 +55,7 @@ export default function Products(){return (
     <div className="rep-products-grid">
 
       {/* Passenger Elevator */}
-      <article className="rep-products-card">
+      <article className="rep-products-card"  onClick={() => navigate("/products/passenger-elevator")}>
         <div className="rep-products-image-wrap">
           <img
             src= {passengerLift} alt="Passenger Elevator" />
@@ -56,15 +63,13 @@ export default function Products(){return (
 
         <div className="rep-products-content">
           <span className="rep-products-badge">
-            6–26 PERSON CAPACITY
+            6–24 PASSENGERS CAPACITY
           </span>
 
           <h3>Passenger Elevator</h3>
 
           <p>
-            Sleek office & high-rise passenger lifts designed with gearless
-            PMSM motors for absolute quiet, swift comfort, and micro-level
-            leveling accuracy.
+           Residential Buildings, Commercial Buildings, High Rise Buildings.
           </p>
 
           {/* <a href="products/product-details">
@@ -79,7 +84,7 @@ export default function Products(){return (
 
 
       {/* Freight Elevator */}
-      <article className="rep-products-card">
+      <article className="rep-products-card" onClick={() => navigate("/products/freight-elevator")}>
         <div className="rep-products-image-wrap">
           <img
             src= {freightLift} alt="Freight Elevator" />
@@ -87,15 +92,13 @@ export default function Products(){return (
 
         <div className="rep-products-content">
           <span className="rep-products-badge">
-            UP TO 5000 KG CAPACITY
+            500 KG to 3000 KG CAPACITY
           </span>
 
           <h3>Freight Elevator</h3>
 
           <p>
-            Reinforced load-bearing freight transit built to carry heavy
-            industrial logistics. Features active shock buffers and thick
-            structural steel walls.
+            Factories, Industrial Buildings, Warehouses, Showrooms.
           </p>
 
           <Link to="/products/freight-elevator">
@@ -106,7 +109,7 @@ export default function Products(){return (
 
 
       {/* Hospital Elevator */}
-      <article className="rep-products-card">
+      <article className="rep-products-card" onClick={() => navigate("/products/hospital-elevator")}>
         <div className="rep-products-image-wrap">
           <img
             src= {hospitalLift} alt="Hospital Elevator"
@@ -115,15 +118,13 @@ export default function Products(){return (
 
         <div className="rep-products-content">
           <span className="rep-products-badge">
-            STRETCHER OPTIMIZED
+           15 to 24 PASSENGERS 
           </span>
 
           <h3>Hospital Elevator</h3>
 
           <p>
-            Precisely sized for clinical emergency stretchers. Programmed
-            with slow soft door controls, non-vibrate traction, and sterile
-            anti-microbial trims.
+           Stretcher Lifts for Hospitals, Nursing Homes.
           </p>
 
           <Link to="/products/hospital-elevator">
@@ -134,7 +135,7 @@ export default function Products(){return (
 
 
       {/* Home Lift */}
-      <article className="rep-products-card">
+      <article className="rep-products-card" onClick={() => navigate("/products/home-lift")}>
         <div className="rep-products-image-wrap">
           <img
             src= {homeLift} alt="Home Lift"
@@ -143,15 +144,13 @@ export default function Products(){return (
 
         <div className="rep-products-content">
           <span className="rep-products-badge">
-            ZERO-PIT REQUIRED
+            3 TO 6 PASSENGERS CAPACITY
           </span>
 
           <h3>Home Lift</h3>
 
           <p>
-            Whisper-quiet villa and duplex lifts designed for compact
-            single-phase residential usage. Eliminates need for standard
-            deep pits or headrooms.
+            Homes, Bungalows, Duplex pent houses, low pit and low overhead constraints.
           </p>
 
          <Link to="/products/home-lift">
@@ -162,7 +161,7 @@ export default function Products(){return (
 
 
       {/* Panoramic Elevator - Repeat */}
-      <article className="rep-products-card">
+      <article className="rep-products-card"  onClick={() => navigate("/products/panoramic-elevator")}>
         <div className="rep-products-image-wrap">
           <img
             src= {panoramicLift} alt="Panoramic Elevator"
@@ -171,15 +170,13 @@ export default function Products(){return (
 
         <div className="rep-products-content">
           <span className="rep-products-badge">
-            6–26 PERSON CAPACITY
+            13–24 PASSENGERS CAPACITY
           </span>
 
           <h3>Panoramic Elevator</h3>
 
           <p>
-            Sleek office & high-rise passenger lifts designed with gearless
-            PMSM motors for absolute quiet, swift comfort, and micro-level
-            leveling accuracy.
+           Commercial Buildings, Hotels, Malls, Showrooms.
           </p>
 
          <Link to="/products/panoramic-elevator">
@@ -190,7 +187,7 @@ export default function Products(){return (
 
 
       {/* highSpeedLift Elevator - Repeat */}
-      <article className="rep-products-card">
+      <article className="rep-products-card" onClick={() => navigate("/products/high-speed-elevator")}>
         <div className="rep-products-image-wrap">
           <img
             src= {highSpeedLift} alt="HighSpeed Lift"
@@ -199,15 +196,13 @@ export default function Products(){return (
 
         <div className="rep-products-content">
           <span className="rep-products-badge">
-            UP TO 5000 KG CAPACITY
+             13 to 24 Passengers CAPACITY
           </span>
 
           <h3>High-Speed Elevator</h3>
 
           <p>
-            Reinforced load-bearing freight transit built to carry heavy
-            industrial logistics. Features active shock buffers and thick
-            structural steel walls.
+           Residential and Commercial Buildings, Heavy Duty requirements.
           </p>
 
           <Link to="/products/high-speed-elevator">
@@ -218,7 +213,7 @@ export default function Products(){return (
 
 
       {/* Car Elevator - Repeat */}
-      <article className="rep-products-card">
+      <article className="rep-products-card" onClick={() => navigate("/products/car-lift")}>
         <div className="rep-products-image-wrap">
           <img
             src= {carLift}
@@ -227,15 +222,13 @@ export default function Products(){return (
 
         <div className="rep-products-content">
           <span className="rep-products-badge">
-            STRETCHER OPTIMIZED
+            2500 KG to 3500 KG CAPACITY 
           </span>
 
           <h3>Car Lift</h3>
 
           <p>
-            Precisely sized for clinical emergency stretchers. Programmed
-            with slow soft door controls, non-vibrate traction, and sterile
-            anti-microbial trims.
+           Residential and Commercial Buildings, Car Parking Buildings.
           </p>
 
           <Link to="/products/car-lift">
@@ -246,7 +239,7 @@ export default function Products(){return (
 
 
       {/* Capsule - Repeat */}
-      <article className="rep-products-card">
+      {/* <article className="rep-products-card">
         <div className="rep-products-image-wrap">
           <img
             src={capsuleLift}
@@ -271,7 +264,7 @@ export default function Products(){return (
   VIEW SPECIFICATIONS
 </Link>
         </div>
-      </article>
+      </article> */}
 
     </div>
   </div>

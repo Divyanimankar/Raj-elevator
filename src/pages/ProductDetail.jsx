@@ -134,7 +134,7 @@ const productsData = {
     title: "Hospital Elevator",
     badge: "STRETCHER OPTIMIZED",
     description:
-      "Stretcher Lifts for Hospitals, Nursing Homes",
+      "Stretcher Lifts for Hospitals, Nursing Homes.",
 
     images: [
       "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1200&auto=format&fit=crop",
@@ -179,7 +179,7 @@ const productsData = {
     title: "Home Lift",
     badge: "ZERO-PIT REQUIRED",
     description:
-      "Homes, Bungalows, Duplex pent houses, low pit and low overhead constraints",
+      "Homes, Bungalows, Duplex pent houses, low pit and low overhead constraints.",
 
     images: [
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
@@ -261,7 +261,7 @@ const productsData = {
     title: "High-Speed Elevator",
     badge: "HIGH-RISE PERFORMANCE",
     description:
-      "Residential and Commercial Buildings, Heavy Duty requirements",
+      "Residential and Commercial Buildings, Heavy Duty requirements.",
 
     images: [
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",

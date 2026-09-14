@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import CTASection from '../components/CTASection.jsx';
 import {IMG,products,projects} from '../data/siteData.js';
 import './Home.css';
@@ -35,47 +36,47 @@ import capsuleLift from "../assets/images/capsule.png";
 
 const benefits=['Highly energy efficient gearless machines saving up to 40% power','Integrated microprocessor control systems for seamless floor leveling','Robust safety components including ARD (Automatic Rescue Device)']
 
-const productss = [
-  {
-    name: "Passenger Elevator",
-    image: IMG.passenger,
-     tag: "Sleek, high-capacity cabins engineered with PMSM Gearless machinery for smart office towers and premium residential developments."
-  },
-  {
-    name: "Freight Elevator",
-    image: IMG.freight,
-    tag: "Ultra-heavy duty freight solutions with reinforced mechanical structures. Built to withstand punishing industrial logistics.', image:IMG.freight, desc:'Reinforced load-bearing freight transit built for industrial logistics, factories and warehouses."  },
-  {
-    name: "Hospital Elevator",
-    image: IMG.hospital,
-    tag: "Sized for smooth stretcher transit. Features micro-leveling accuracy, slow door closing, and sterile, quiet-ride cabin design."
-  },
-  {
-    name: "Home Lift",
-    image: IMG.home,
-    tag:"Compact, stylish, single-phase lifts requiring zero overhead or pit space. Seamlessly integrated into luxury villas.', image:IMG.home, desc:'Whisper-quiet home lift solutions for compact single-phase residential spaces."
-  },
-  {
-    name: "Panoramic Elevator",
-    image: IMG.panoramic,
-    tag: "Advanced multi-level parking solutions featuring precise mechanical structural guidance and auto-door gate coordination."
-  },
-  {
-    name: "High-Speed Elevator",
-    image: IMG.highSpeed,
-    tag: "Aesthetic architectural glass capsules providing stunning external panoramas. Designed as dynamic visual elements.', image:IMG.office, desc:'Fast, stable vertical transport engineered for demanding commercial towers."
-  },
-  {
-    name: "Car Lift",
-    image: IMG.car,
-    tag: "'Supercharged transit operating up to 6.0 m/s. Integrated with smart dispatch controls and active vibration damping.', image:IMG.mall, desc:'A premium visual statement for malls, hotels and landmark buildings."
-  },
-  {
-    name: "Capsule Elevator",
-    image: IMG.capsule,
-    tag: "Unique custom geometry shapes including rounded, oval, and pentagonal glass cabins for bespoke architectural layouts.', image:IMG.office, desc:'Fast, stable vertical transport engineered for demanding commercial towers."
-  },
-];
+// const productss = [
+//   {
+//     name: "Passenger Elevator",
+//     image: IMG.passenger,
+//      tag: "Sleek, high-capacity cabins engineered with PMSM Gearless machinery for smart office towers and premium residential developments."
+//   },
+//   {
+//     name: "Freight Elevator",
+//     image: IMG.freight,
+//     tag: "Ultra-heavy duty freight solutions with reinforced mechanical structures. Built to withstand punishing industrial logistics.', image:IMG.freight, desc:'Reinforced load-bearing freight transit built for industrial logistics, factories and warehouses."  },
+//   {
+//     name: "Hospital Elevator",
+//     image: IMG.hospital,
+//     tag: "Sized for smooth stretcher transit. Features micro-leveling accuracy, slow door closing, and sterile, quiet-ride cabin design."
+//   },
+//   {
+//     name: "Home Lift",
+//     image: IMG.home,
+//     tag:"Compact, stylish, single-phase lifts requiring zero overhead or pit space. Seamlessly integrated into luxury villas.', image:IMG.home, desc:'Whisper-quiet home lift solutions for compact single-phase residential spaces."
+//   },
+//   {
+//     name: "Panoramic Elevator",
+//     image: IMG.panoramic,
+//     tag: "Advanced multi-level parking solutions featuring precise mechanical structural guidance and auto-door gate coordination."
+//   },
+//   {
+//     name: "High-Speed Elevator",
+//     image: IMG.highSpeed,
+//     tag: "Aesthetic architectural glass capsules providing stunning external panoramas. Designed as dynamic visual elements.', image:IMG.office, desc:'Fast, stable vertical transport engineered for demanding commercial towers."
+//   },
+//   {
+//     name: "Car Lift",
+//     image: IMG.car,
+//     tag: "'Supercharged transit operating up to 6.0 m/s. Integrated with smart dispatch controls and active vibration damping.', image:IMG.mall, desc:'A premium visual statement for malls, hotels and landmark buildings."
+//   },
+//   {
+//     name: "Capsule Elevator",
+//     image: IMG.capsule,
+//     tag: "Unique custom geometry shapes including rounded, oval, and pentagonal glass cabins for bespoke architectural layouts.', image:IMG.office, desc:'Fast, stable vertical transport engineered for demanding commercial towers."
+//   },
+// ];
 
 const steps = [
   { number: "01", title: "Project Communication/proposal", desc: "Project Communication/proposal " },
@@ -101,7 +102,10 @@ const sliderLogos = [
   ...clientLogos,
 ];
 
-export default function Home(){return (
+export default function Home(){
+  
+  const navigate = useNavigate();
+  return (
 <>
 
 
@@ -251,7 +255,7 @@ export default function Home(){return (
   <div className="heroFourthSectionGrid">
 
     {/* Passenger Elevator */}
-    <div className="heroFourthSectionCard">
+    <div className="heroFourthSectionCard" onClick={() => navigate("/products/passenger-elevator")}>
       <img
         className="heroFourthSectionImage"
         src={passengerLift}
@@ -280,8 +284,7 @@ export default function Home(){return (
         </div>
 
         <p className="heroFourthSectionDescription">
-          Sleek, high-capacity cabins engineered with PMSM Gearless machinery
-          for smart office towers.
+         Residential Buildings, Commercial Buildings, High Rise Buildings.
         </p>
 
         <a href="/products/passenger-elevator" className="heroFourthSectionExplore">
@@ -302,7 +305,7 @@ export default function Home(){return (
     </div>
 
     {/* Freight Elevator */}
-    <div className="heroFourthSectionCard">
+    <div className="heroFourthSectionCard"  onClick={() => navigate("/products/freight-elevator")}>
       <img
         className="heroFourthSectionImage"
         src={freightLift}
@@ -331,8 +334,7 @@ export default function Home(){return (
         </div>
 
         <p className="heroFourthSectionDescription">
-          Ultra-heavy duty freight solutions with reinforced mechanical
-          structures. Built to withstand demanding loads.
+         Factories, Industrial Buildings, Warehouses, Showrooms.
         </p>
 
         <a href="/products/freight-elevator" className="heroFourthSectionExplore">
@@ -353,7 +355,7 @@ export default function Home(){return (
     </div>
 
     {/* Hospital Elevator */}
-    <div className="heroFourthSectionCard">
+    <div className="heroFourthSectionCard" onClick={() => navigate("/products/hospital-elevator")}>
       <img
         className="heroFourthSectionImage"
         src={hospitalLift}
@@ -379,8 +381,7 @@ export default function Home(){return (
         </div>
 
         <p className="heroFourthSectionDescription">
-          Sized for smooth stretcher and bed transit, with anti-bacterial
-          finishes for critical care environments.
+           Stretcher Lifts for Hospitals, Nursing Homes.
         </p>
 
         <a href="/products/hospital-elevator" className="heroFourthSectionExplore">
@@ -401,7 +402,7 @@ export default function Home(){return (
     </div>
 
     {/* Home Lift */}
-    <div className="heroFourthSectionCard">
+    <div className="heroFourthSectionCard" onClick={() => navigate("/products/home-lift")}>
       <img
         className="heroFourthSectionImage"
         src={homeLift}
@@ -428,8 +429,7 @@ export default function Home(){return (
         </div>
 
         <p className="heroFourthSectionDescription">
-          Compact, stylish, single-phase lifts requiring zero overhead or pit
-          space. Seamlessly integrates with home decor.
+           Homes, Bungalows, Duplex pent houses, low pit and low overhead constraints.
         </p>
 
         <a href="/products/home-lift" className="heroFourthSectionExplore">
@@ -450,7 +450,7 @@ export default function Home(){return (
     </div>
 
     {/* Car Lift */}
-    <div className="heroFourthSectionCard">
+    <div className="heroFourthSectionCard" onClick={() => navigate("/products/car-lift")}>
       <img
         className="heroFourthSectionImage"
         src={carLift}
@@ -476,8 +476,7 @@ export default function Home(){return (
         </div>
 
         <p className="heroFourthSectionDescription">
-          Advanced multi-level parking solutions featuring precise mechanical
-          positioning for tight urban plots.
+         Residential and Commercial Buildings, Car Parking Buildings.
         </p>
 
          <a href="/products/car-lift" className="heroFourthSectionExplore">
@@ -498,7 +497,7 @@ export default function Home(){return (
     </div>
 
     {/* Panoramic Elevator */}
-    <div className="heroFourthSectionCard">
+    <div className="heroFourthSectionCard" onClick={() => navigate("/products/panoramic-elevator")}>
       <img
         className="heroFourthSectionImage"
         src={panoramicLift}
@@ -525,8 +524,7 @@ export default function Home(){return (
         </div>
 
         <p className="heroFourthSectionDescription">
-          Aesthetic architectural glass capsules providing stunning external
-          panoramic views of the skyline.
+          Commercial Buildings, Hotels, Malls, Showrooms.
         </p>
 
         <a href="/products/panoramic-elevator" className="heroFourthSectionExplore">
@@ -547,7 +545,7 @@ export default function Home(){return (
     </div>
 
     {/* High-Speed Elevator */}
-    <div className="heroFourthSectionCard">
+    <div className="heroFourthSectionCard" onClick={() => navigate("/products/high-speed-elevator")}>
       <img
         className="heroFourthSectionImage"
         src={highSpeedLift}
@@ -573,8 +571,7 @@ export default function Home(){return (
         </div>
 
         <p className="heroFourthSectionDescription">
-          Supercharged transit operating up to 6.0 m/s. Integrated with smart
-          dispatch for zero-wait travel.
+         Residential and Commercial Buildings, Heavy Duty requirements.
         </p>
 
         <a href="/products/high-speed-elevator" className="heroFourthSectionExplore">
@@ -595,7 +592,7 @@ export default function Home(){return (
     </div>
 
     {/* Capsule Elevator */}
-    <div className="heroFourthSectionCard">
+    {/* <div className="heroFourthSectionCard">
       <img
         className="heroFourthSectionImage"
         src={capsuleLift}
@@ -642,7 +639,7 @@ export default function Home(){return (
           </svg>
         </a>
       </div>
-    </div>
+    </div> */}
 
   </div>
 </section>
