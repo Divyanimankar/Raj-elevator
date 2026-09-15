@@ -4,6 +4,79 @@ import { useParams, Link } from "react-router-dom";
 import "./ProductDetail.css";
 // import { Link } from "react-router-dom";
 
+
+// ---------------------------------------- Import Product Images---------------------------------------------------------
+
+// --------------------------------------- Passenger-------------------------------------------
+import pass1 from "../assets/images/product/pass1.jpg";
+import pass2 from "../assets/images/product/pass2.jpg";
+import pass3 from "../assets/images/product/pass3.jpg";
+import pass4 from "../assets/images/product/pass4.jpg";
+import pass5 from "../assets/images/product/pass5.jpg";
+import pass6 from "../assets/images/product/pass6.jpg";
+
+// ---------------------------------------------------------Freight Elevators----------------------------------------
+import f1 from "../assets/images/product/f1.jpg";
+import f2 from "../assets/images/product/f2.jpg";
+import f3 from "../assets/images/product/f3.jpg";
+import f4 from "../assets/images/product/f4.jpg";
+import f5 from "../assets/images/product/f5.jpg";
+import f6 from "../assets/images/product/f6.jpg";
+import f7 from "../assets/images/product/f7.jpg";
+
+// ---------------------------------------------------------Hospital Elevators----------------------------------------
+
+import hospi1 from "../assets/images/product/hospi1.jpg";
+import hospi2 from "../assets/images/product/hospi2.jpg";
+import hospi3 from "../assets/images/product/hospi3.jpg";
+import hospi4 from "../assets/images/product/hospi4.jpg";
+import hospi5 from "../assets/images/product/hospi5.jpg";
+import hospi6 from "../assets/images/product/hospi6.jpg";
+import hospi7 from "../assets/images/product/hospi7.jpg";
+
+// ---------------------------------------------------------Home Elevators----------------------------------------
+
+import home1 from "../assets/images/product/home1.jpg";
+import home2 from "../assets/images/product/home2.jpg";
+import home3 from "../assets/images/product/home3.jpg";
+import home4 from "../assets/images/product/home4.jpg";
+import home5 from "../assets/images/product/home5.jpg";
+import home6 from "../assets/images/product/home6.jpg";
+import home7 from "../assets/images/product/home7.jpg";
+import home8 from "../assets/images/product/home8.jpg";
+
+// ---------------------------------------------------------High Speed Elevators----------------------------------------
+
+import hs1 from "../assets/images/product/hs1.jpg";
+import hs2 from "../assets/images/product/hs2.jpg";
+import hs3 from "../assets/images/product/hs3.jpg";
+import hs4 from "../assets/images/product/hs4.jpg";
+import hs5 from "../assets/images/product/hs5.jpg";
+import hs6 from "../assets/images/product/hs6.jpg";
+
+// ---------------------------------------------------------Panaromic Elevators----------------------------------------
+
+import pana1 from "../assets/images/product/pana1.jpg";
+import pana2 from "../assets/images/product/pana2.jpg";
+import pana3 from "../assets/images/product/pana3.jpg";
+import pana4 from "../assets/images/product/pana4.jpg";
+import pana5 from "../assets/images/product/pana5.jpg";
+import pana6 from "../assets/images/product/pana6.jpg";
+
+// ---------------------------------------------------------Panaromic Elevators----------------------------------------
+
+import car1 from "../assets/images/product/car1.jpg";
+import car2 from "../assets/images/product/car2.jpg";
+import car3 from "../assets/images/product/car3.jpg";
+import car4 from "../assets/images/product/car4.jpg";
+import car5 from "../assets/images/product/car5.jpg";
+import car6 from "../assets/images/product/car6.jpg";
+
+
+
+// ----------------------------------------END  Import Product Images---------------------------------------------------------
+
+
 const verticals = [
   {
     title: "Office Towers",
@@ -41,15 +114,12 @@ const productsData = {
       "Residential Buildings, Commercial Buildings, High Rise Buildings.",
 
     images: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
-
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
+      pass1,
+      pass2,
+      pass3,
+      pass4,
+      pass5,
+      pass6,
     ],
 
     specs: [
@@ -89,17 +159,13 @@ const productsData = {
       "Factories, Industrial Buildings, Warehouses, Showrooms.",
 
     images: [
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop",
-      // "https://images.unsplash.com/photo-1581092919535-7146a5a43c15?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop",
-
-
-
-       "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop",
-      // "https://images.unsplash.com/photo-1581092919535-7146a5a43c15?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop",
+      f1,
+      f2,
+      f3,
+      f4,
+      f5,
+      f6,
+      f7,
     ],
 
     specs: [
@@ -137,14 +203,13 @@ const productsData = {
       "Stretcher Lifts for Hospitals, Nursing Homes.",
 
     images: [
-      "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1200&auto=format&fit=crop",
-
-
-      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1200&auto=format&fit=crop",
+     hospi1,
+     hospi2,
+     hospi3,
+     hospi4,
+     hospi5,
+     hospi6,
+     hospi7,
     ],
 
     specs: [
@@ -182,10 +247,14 @@ const productsData = {
       "Homes, Bungalows, Duplex pent houses, low pit and low overhead constraints.",
 
     images: [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
+      home1,
+      home2,
+      home3,
+      home4,
+      home5,
+      home6,
+      home7,
+      home8,
     ],
 
     specs: [
@@ -223,10 +292,12 @@ const productsData = {
       "Commercial Buildings, Hotels, Malls, Showrooms.",
 
     images: [
-      "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
+     pana1,
+     pana2,
+     pana3,
+     pana4,
+     pana5,
+     pana6,
     ],
 
     specs: [
@@ -264,10 +335,13 @@ const productsData = {
       "Residential and Commercial Buildings, Heavy Duty requirements.",
 
     images: [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+      hs1,
+      hs2,
+      hs3,
+      hs4,
+      hs5,
+      hs6,
+
     ],
 
     specs: [
@@ -305,10 +379,12 @@ const productsData = {
       "Residential and Commercial Buildings, Car Parking Buildings.",
 
     images: [
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1504215680853-026ed2a45def?q=80&w=1200&auto=format&fit=crop",
+     car1,
+     car2,
+     car3,
+     car4,
+     car5,
+     car6,
     ],
 
     specs: [
@@ -339,46 +415,46 @@ const productsData = {
     ],
   },
 
-  "capsule-lift": {
-    title: "Capsule Lift",
-    badge: "PREMIUM ARCHITECTURAL DESIGN",
-    description:
-      "Luxury capsule lifts designed as architectural centerpieces with premium glass cabins, elegant finishes and smooth high-performance vertical transportation.",
+  // "capsule-lift": {
+  //   title: "Capsule Lift",
+  //   badge: "PREMIUM ARCHITECTURAL DESIGN",
+  //   description:
+  //     "Luxury capsule lifts designed as architectural centerpieces with premium glass cabins, elegant finishes and smooth high-performance vertical transportation.",
 
-    images: [
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop",
-    ],
+  //   images: [
+  //     "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
+  //     "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
+  //     "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=1200&auto=format&fit=crop",
+  //     "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop",
+  //   ],
 
-    specs: [
-      {
-        label: "Capacity",
-        value: "4 - 15 Persons",
-      },
-      {
-        label: "Cabin Type",
-        value: "Luxury Capsule Design",
-      },
-      {
-        label: "Glass Finish",
-        value: "Premium Safety Glass",
-      },
-    ],
+  //   specs: [
+  //     {
+  //       label: "Capacity",
+  //       value: "4 - 15 Persons",
+  //     },
+  //     {
+  //       label: "Cabin Type",
+  //       value: "Luxury Capsule Design",
+  //     },
+  //     {
+  //       label: "Glass Finish",
+  //       value: "Premium Safety Glass",
+  //     },
+  //   ],
 
-    matrix: [
-      ["Rated Capacity", "4 - 15 Persons"],
-      ["Travel Speed", "1.0 m/s - 2.5 m/s"],
-      ["Cabin Design", "Architectural Capsule Cabin"],
-      ["Glass Type", "Premium Laminated Safety Glass"],
-      ["Drive System", "Gearless PMSM"],
-      ["Lighting", "Custom LED Interior Lighting"],
-      ["Maximum Travel", "Up to 120 meters"],
-      ["Door System", "Automatic Premium Doors"],
-      ["Control System", "Smart Microprocessor Control"],
-    ],
-  },
+  //   matrix: [
+  //     ["Rated Capacity", "4 - 15 Persons"],
+  //     ["Travel Speed", "1.0 m/s - 2.5 m/s"],
+  //     ["Cabin Design", "Architectural Capsule Cabin"],
+  //     ["Glass Type", "Premium Laminated Safety Glass"],
+  //     ["Drive System", "Gearless PMSM"],
+  //     ["Lighting", "Custom LED Interior Lighting"],
+  //     ["Maximum Travel", "Up to 120 meters"],
+  //     ["Door System", "Automatic Premium Doors"],
+  //     ["Control System", "Smart Microprocessor Control"],
+  //   ],
+  // },
 };
 
 

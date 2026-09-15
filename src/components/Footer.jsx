@@ -42,22 +42,34 @@ export default function Footer() {
             </li>
 
             <li>
-              <Link to="/products/high-speed-elevator">
-                High Speed Elevator
+              <Link to="/products/hospital-elevator">
+                Hospital Elevator
               </Link>
             </li>
 
             <li>
+              <Link to="/products/home-lift">
+                Home Lift
+              </Link>
+            </li>
+
+             <li>
               <Link to="/products/panoramic-elevator">
                 Panoramic Elevator
               </Link>
             </li>
 
-            <li>
-              <Link to="/products/hospital-elevator">
-                Hospital Elevator
+             <li>
+              <Link to="/products/car-lift">
+                Car Lift
               </Link>
             </li>
+
+            <li>
+              <Link to="/products/high-speed-elevator">
+                High Speed Elevator
+              </Link>
+            </li>         
           </ul>
         </div>
 

@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* font-family: "Poppins", sans-serif; */
- /* font-family: "Inter", sans-serif; */
-
-
+/* font-family: "Inter", sans-serif; */
 
 /* =========================================
    PRODUCT DETAIL PAGE
@@ -28,7 +25,6 @@
   box-sizing: border-box;
 }
 
-
 /* =========================================
    BREADCRUMB
 ========================================= */
@@ -36,7 +32,7 @@
 .breadcrumb {
   padding: 24px 0 10px;
   font-size: 13px;
-  font-family: "Inter", sans-serif; 
+  font-family: "Inter", sans-serif;
   color: #8a92a3;
 }
 
@@ -44,12 +40,12 @@
   color: #8a92a3;
   text-decoration: none;
   transition: color 0.2s ease;
-   font-size: 13px;
-  font-family: "Inter", sans-serif; 
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
 }
 
 .breadcrumb a:hover {
-  color: #009B4A;
+  color: #009b4a;
 }
 
 .breadcrumb .sep {
@@ -58,10 +54,9 @@
 }
 
 .breadcrumb .current {
-  color: #009B4A;
+  color: #009b4a;
   font-weight: 600;
 }
-
 
 /* =========================================
    PRODUCT HERO
@@ -74,7 +69,6 @@
   padding: 28px 0 80px;
   align-items: start;
 }
-
 
 /* =========================================
    PRODUCT GALLERY
@@ -97,13 +91,10 @@
 .gallery__main img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   object-position: center;
   display: block;
 }
-
-
-
 
 /* =========================================
    THUMBNAIL WRAPPER
@@ -113,8 +104,6 @@
   position: relative;
   width: 100%;
 } */
-
-
 
 .gallery__thumb-wrapper {
   position: relative;
@@ -190,7 +179,6 @@
   display: none;
 } */
 
-
 /* =========================================
    SINGLE THUMBNAIL
 ========================================= */
@@ -233,7 +221,6 @@
 
   display: block;
 } */
-
 
 /* =========================================
    LEFT / RIGHT ARROWS
@@ -286,7 +273,6 @@
   right: -16px;
 } */
 
-
 /* =========================================
    THUMBNAILS
 ========================================= */
@@ -304,7 +290,6 @@
   padding-bottom: 5px;
   scrollbar-width: thin;
 } */
-
 
 .gallery-arrow {
   position: absolute;
@@ -349,14 +334,11 @@
   right: 8px;
 }
 
-
-
 .gallery__thumb {
   flex: 0 0 100px;
   width: 100px;
   height: 84px;
 }
-
 
 .gallery__thumb {
   width: 100%;
@@ -389,7 +371,6 @@
   display: block;
 }
 
-
 /* =========================================
    PRODUCT INFORMATION
 ========================================= */
@@ -405,18 +386,17 @@
   font-family: "Poppins", sans-serif;
   line-height: 1.2;
   font-weight: 800;
-  color: #1E293B;
+  color: #1e293b;
 }
 
 .product-info__desc {
   margin: 0 0 26px;
-  font-family: "Inter", sans-serif; 
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   line-height: 1.75;
   font-weight: 400;
-  color: #64748B;
+  color: #64748b;
 }
-
 
 /* =========================================
    SPECS BOX
@@ -437,7 +417,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #009B4A;
+  color: #009b4a;
 }
 
 .specs-box__row {
@@ -452,7 +432,7 @@
   font-size: 12px;
   line-height: 1.4;
   font-weight: 400;
-  color: #64748B;
+  color: #64748b;
 }
 
 .specs-box__value {
@@ -460,9 +440,8 @@
   font-size: 15px;
   line-height: 1.5;
   font-weight: 600;
-  color: #1E293B;
+  color: #1e293b;
 }
-
 
 /* =========================================
    BUTTONS
@@ -497,7 +476,7 @@
 
 .btn--solid {
   border: 1px solid #1a9850;
-  background-color: #009B4A;
+  background-color: #009b4a;
   color: #ffffff;
   box-shadow: 0 6px 16px rgba(26, 152, 80, 0.22);
 }
@@ -508,9 +487,9 @@
 }
 
 .btn--outline {
-  border: 2px solid #009B4A;
+  border: 2px solid #009b4a;
   background-color: transparent;
-  color: #009B4A;
+  color: #009b4a;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -519,7 +498,6 @@
 .btn--outline:hover {
   background-color: #eafaf0;
 }
-
 
 /* =========================================
    TAB BAR
@@ -532,10 +510,10 @@
 
 .tab-btn {
   padding: 14px 26px;
-  border: 1.5px solid #009B4A;
+  border: 1.5px solid #009b4a;
   /* border-radius: 8px; */
   background: transparent;
-  color: #009B4A;
+  color: #009b4a;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   line-height: 1.2;
@@ -547,10 +525,9 @@
 }
 
 .tab-btn:hover {
-  background-color: #009B4A;
+  background-color: #009b4a;
   color: #ffffff;
 }
-
 
 /* =========================================
    PARAMETERS MATRIX
@@ -566,7 +543,7 @@
   font-size: 22px;
   line-height: 1.2;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
 }
 
 .matrix-table {
@@ -602,7 +579,7 @@
   font-size: 14px;
   line-height: 1.5;
   font-weight: 600;
-  color: #1E293B;
+  color: #1e293b;
 }
 
 .matrix-row__value {
@@ -610,9 +587,8 @@
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  color: #64748B;
+  color: #64748b;
 }
-
 
 /* =========================================
    PRODUCT NOT FOUND
@@ -643,13 +619,11 @@
   font-weight: 600;
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 1100px) {
-
   .product-hero {
     gap: 35px;
   }
@@ -680,7 +654,6 @@
 ========================================= */
 
 @media (max-width: 900px) {
-
   .container {
     padding-left: 20px;
     padding-right: 20px;
@@ -714,7 +687,6 @@
 }
 
 @media (max-width: 700px) {
-
   .container {
     padding-left: 18px;
     padding-right: 18px;
@@ -818,13 +790,11 @@
   }
 }
 
-
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
 @media (max-width: 420px) {
-
   .container {
     padding-left: 14px;
     padding-right: 14px;
@@ -887,7 +857,6 @@
     font-size: 13px;
   }
 }
-
 
 /* -------------------------------------------------Safety and Comfort Section ----------------*/
 
@@ -964,7 +933,7 @@
   font-size: 18px;
   line-height: 1.4;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
 }
 
 .feature-card__text {
@@ -973,16 +942,14 @@
   font-size: 14px;
   line-height: 1.6;
   font-weight: 400;
-  color: #64748B;
+  color: #64748b;
 }
-
 
 /* =========================================
    TABLET
 ========================================= */
 
 @media (max-width: 900px) {
-
   .safety-section {
     padding: 55px 0;
   }
@@ -1000,16 +967,13 @@
   .feature-card {
     padding: 24px 22px;
   }
-
 }
-
 
 /* =========================================
    MOBILE
 ========================================= */
 
 @media (max-width: 700px) {
-
   .safety-section {
     padding: 48px 0;
   }
@@ -1045,16 +1009,13 @@
     font-size: 13.5px;
     line-height: 1.6;
   }
-
 }
-
 
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
 @media (max-width: 420px) {
-
   .safety-section {
     padding: 42px 0;
   }
@@ -1085,9 +1046,7 @@
   .feature-card__text {
     font-size: 13px;
   }
-
 }
-
 
 /* --------------------------------- Architectural verticals  ---------------------------------- */
 
@@ -1115,7 +1074,7 @@
   font-size: 32px;
   line-height: 1.3;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
 }
 
 .verticals-grid {
@@ -1259,7 +1218,6 @@
   }
 }
 
-
 /* -------------------------------Lifecycle Benefits----------------------------------------- */
 /* ---------- Lifecycle Benefits ---------- */
 
@@ -1282,7 +1240,7 @@
   font-family: "Poppins", sans-serif;
   line-height: 1.25;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
 }
 
 .lifecycle-list {
@@ -1311,8 +1269,8 @@
   justify-content: center;
 
   border-radius: 50%;
-  background-color: #FEF3C7;
-  color: #F59E0B;
+  background-color: #fef3c7;
+  color: #f59e0b;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -1330,7 +1288,7 @@
   font-size: 16px;
   line-height: 1.4;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
 }
 
 .lifecycle-item__text {
@@ -1339,9 +1297,8 @@
   font-size: 14px;
   line-height: 1.6;
   font-weight: 400;
-  color: #64748B;
+  color: #64748b;
 }
-
 
 /* ---------- Tablet ---------- */
 
@@ -1379,7 +1336,6 @@
     line-height: 1.55;
   }
 }
-
 
 /* ---------- Mobile ---------- */
 
@@ -1420,7 +1376,6 @@
     line-height: 1.55;
   }
 }
-
 
 /* ---------- Very Small Devices ---------- */
 
@@ -1475,7 +1430,7 @@
   font-size: 32px;
   line-height: 1.3;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
 }
 
 .related-grid {
@@ -1530,7 +1485,7 @@
   font-size: 16px;
   line-height: 1.4;
   font-weight: 700;
-  color: #1E293B;
+  color: #1e293b;
 }
 
 .related-card__text {
@@ -1538,7 +1493,7 @@
   font-family: "Inter", sans-serif;
   font-size: 13px;
   line-height: 1.6;
-  color: #64748B;
+  color: #64748b;
 }
 
 .related-card__btn {
@@ -1549,11 +1504,11 @@
 
   padding: 12px 14px;
 
-  border: 1.5px solid #009B4A;
+  border: 1.5px solid #009b4a;
   border-radius: 8px;
 
   background-color: transparent;
-  color: #009B4A;
+  color: #009b4a;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -1569,7 +1524,6 @@
 .related-card__btn:hover {
   background-color: #eafaf0;
 }
-
 
 /* ============ TABLET ============ */
 
@@ -1592,7 +1546,6 @@
     height: 200px;
   }
 }
-
 
 /* ============ MOBILE ============ */
 
@@ -1635,7 +1588,6 @@
   }
 }
 
-
 /* ============ SMALL MOBILE ============ */
 
 @media (max-width: 380px) {
@@ -1663,6 +1615,3 @@
     font-size: 13px;
   }
 }
-
-
-
