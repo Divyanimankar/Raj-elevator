@@ -810,7 +810,7 @@ export default function Home(){
         <div className="raj-project-overlay"></div>
 
         <span className="raj-project-badge">
-          Commercial Landmark
+          High-Rise Development
         </span>
 
         <div className="raj-project-content">
@@ -828,11 +828,11 @@ export default function Home(){
               <circle cx="12" cy="10" r="3" />
             </svg>
 
-            <span>Singapore</span>
+            <span>Canada</span>
           </div>
 
           <h3 className="raj-project-name">
-            The Pinnacle Plaza
+            Transit City Tower
           </h3>
 
           <div className="raj-project-divider"></div>
@@ -852,7 +852,7 @@ export default function Home(){
             </svg>
 
             <span>
-              24 High-Speed Smart Elevators
+              67-Floor High-Speed Elevator System
             </span>
           </div>
 
@@ -868,7 +868,7 @@ export default function Home(){
             </svg>
 
             <span>
-              Operating at peak speed of 8.0 m/s with AI dispatch
+              Peak speed: 7.0 m/s
             </span>
           </div>
 
@@ -888,7 +888,7 @@ export default function Home(){
         <div className="raj-project-overlay"></div>
 
         <span className="raj-project-badge">
-          Hospitality &amp; Leisure
+         Iconic Tower
         </span>
 
         <div className="raj-project-content">
@@ -906,11 +906,11 @@ export default function Home(){
               <circle cx="12" cy="10" r="3" />
             </svg>
 
-            <span>Sydney, Australia</span>
+            <span>Mexico</span>
           </div>
 
           <h3 className="raj-project-name">
-            Grand Marina Atrium
+            Rise Tower
           </h3>
 
           <div className="raj-project-divider"></div>
@@ -929,7 +929,7 @@ export default function Home(){
             </svg>
 
             <span>
-              8 Panoramic Glass Observation Lifts
+             86-Floor High-Speed Elevator System
             </span>
           </div>
 
@@ -945,7 +945,7 @@ export default function Home(){
             </svg>
 
             <span>
-              Custom gold-anodized aesthetic steel frames
+              Peak speed: 8.0 m/s
             </span>
           </div>
 
@@ -965,7 +965,7 @@ export default function Home(){
         <div className="raj-project-overlay"></div>
 
         <span className="raj-project-badge">
-          Corporate Campus
+          Corporate Landmark
         </span>
 
         <div className="raj-project-content">
@@ -983,11 +983,11 @@ export default function Home(){
               <circle cx="12" cy="10" r="3" />
             </svg>
 
-            <span>Silicon Valley, USA</span>
+            <span>New York, USA</span>
           </div>
 
           <h3 className="raj-project-name">
-            Nexus Tech Headquarters
+            MacMillan Building
           </h3>
 
           <div className="raj-project-divider"></div>
@@ -1006,7 +1006,7 @@ export default function Home(){
             </svg>
 
             <span>
-              <strong>14</strong> Touchless Smart Transit Elevators
+               High-Speed Elevator System
             </span>
           </div>
 
@@ -1022,7 +1022,7 @@ export default function Home(){
             </svg>
 
             <span>
-              <strong>40%</strong> energy reduction via premium regenerative drives
+              Peak speed : 5.0 m/s
             </span>
           </div>
 
@@ -1294,16 +1294,7 @@ export default function Home(){
 </section>
 
    {/* --------------------------------Done  Ten Section------------------------------------- */}
-  {/* <section className="faqTeaser sectionLight"  >
-    
-    <div className="wrap">
-      <h2>
-        Clearing Your Doubts on Elevator Technology
-      </h2>
-    </div>
-  </section> */}
 
-  {/* style={{ backgroundColor: "#E2E8F0" }}> */}
   <CTASection/>
 </>
 )}

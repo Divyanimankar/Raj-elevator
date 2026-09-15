@@ -2,12 +2,26 @@ import PageHero from '../components/PageHero.jsx';
 import ProjectCard from '../components/ProjectCard.jsx';
 import CTASection from '../components/CTASection.jsx';
 import {IMG,projects} from '../data/siteData.js';
-import './Projects.css'
-export default function Projects(){return (
-<>
-  {/* <PageHero image={IMG.project} eyebrow="★ Engineered with Japanese Nidec Precision Controls" title="Our Completed Projects" text="5000+ successful installations across India. Building ultra-reliable, safe and whisper-quiet vertical mobility solutions for premier infrastructure."/> */}
-  
+import './Projects.css';
 
+import artePlus from "../assets/images/project/arte.jpg";
+import transitCityTower from "../assets/images/project/transitCityToter.jpg";
+import MacMillanBuilding from "../assets/images/project/MacMillanBuilding.jpg";
+
+import arteMk from "../assets/images/project/arteMk.jpg";
+import sanFrancisco from "../assets/images/project/sanFrancisco.jpg";
+import sCOPear from "../assets/images/project/sCOPear.jpg";
+
+import riseTower from "../assets/images/project/riseTower.jpg";
+import afganistan from "../assets/images/project/afganistan.jpg";
+import torre from "../assets/images/project/torre.jpg"
+
+
+
+export default function Projects(){
+  return (
+<>
+  
   {/* -------------------------- First Section ----------------------------------- */}
   <section className="projectHero">
 
@@ -48,19 +62,19 @@ export default function Projects(){return (
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
-          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop"
-          alt="Oberoi Mall Mumbai"
+          src={artePlus}
+          alt="artePlus"
         />
       </div>
 
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
-          <span className="rajProjectBadge">Commercial</span>
-          <span className="rajProjectYear">Year: 2025</span>
+          <span className="rajProjectBadge">Residential Development</span>
+          {/* <span className="rajProjectYear">Year: 2025</span> */}
         </div>
 
         <h2 className="rajProjectTitle">
-          Oberoi Mall Mumbai
+         Arte Plus
         </h2>
 
         <div className="rajProjectLocation">
@@ -84,13 +98,13 @@ export default function Projects(){return (
               />
             </svg>
 
-          Mumbai, Maharashtra
+          Malaysia
         </div>
 
         <hr className="rajProjectDivider" />
 
         <div className="rajProjectUnits">
-          12 Lift Units Installed
+          Speed : 5.0 m/s
         </div>
       </div>
     </article>
@@ -101,19 +115,19 @@ export default function Projects(){return (
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
-          src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=800&auto=format&fit=crop"
-          alt="Max Hospital Delhi"
+          src= {transitCityTower}
+          alt="transitCityTower"
         />
       </div>
 
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
-          <span className="rajProjectBadge">Hospital</span>
-          <span className="rajProjectYear">Year: 2024</span>
+          <span className="rajProjectBadge">High-Rise Residential</span>
+          {/* <span className="rajProjectYear">Year: 2024</span> */}
         </div>
 
         <h2 className="rajProjectTitle">
-          Max Hospital Delhi
+          Transit City Tower
         </h2>
 
         <div className="rajProjectLocation">
@@ -135,13 +149,13 @@ export default function Projects(){return (
     stroke-width="2"
   />
 </svg>
-          New Delhi, NCR
+          Canada
         </div>
 
         <hr className="rajProjectDivider" />
 
         <div className="rajProjectUnits">
-          8 Lift Units Installed
+          Speed : 7.0 m/s
         </div>
       </div>
     </article>
@@ -152,19 +166,19 @@ export default function Projects(){return (
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
-          src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=800&auto=format&fit=crop"
-          alt="DLF CyberCity"
+          src={MacMillanBuilding}
+          alt="MacMillanBuilding"
         />
       </div>
 
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
-          <span className="rajProjectBadge">Commercial</span>
-          <span className="rajProjectYear">Year: 2025</span>
+          <span className="rajProjectBadge">Corporate Landmark</span>
+          {/* <span className="rajProjectYear">Year: 2025</span> */}
         </div>
 
         <h2 className="rajProjectTitle">
-          DLF CyberCity
+          MacMillan Building
         </h2>
 
         <div className="rajProjectLocation">
@@ -186,13 +200,13 @@ export default function Projects(){return (
     stroke-width="2"
   />
 </svg>
-          Gurgaon, Haryana
+          New York, USA
         </div>
 
         <hr className="rajProjectDivider" />
 
         <div className="rajProjectUnits">
-          24 Lift Units Installed
+          Speed : 5.0 m/s
         </div>
       </div>
     </article>
@@ -203,19 +217,19 @@ export default function Projects(){return (
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
-          src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=800&auto=format&fit=crop"
-          alt="Lodha World Towers"
+          src={arteMk}
+          alt="arteMk"
         />
       </div>
 
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
-          <span className="rajProjectBadge">Residential</span>
-          <span className="rajProjectYear">Year: 2024</span>
+          <span className="rajProjectBadge">Luxury Residence</span>
+          {/* <span className="rajProjectYear">Year: 2024</span> */}
         </div>
 
         <h2 className="rajProjectTitle">
-          Lodha World Towers
+          Arte MK
         </h2>
 
         <div className="rajProjectLocation">
@@ -237,13 +251,13 @@ export default function Projects(){return (
     stroke-width="2"
   />
 </svg>
-          Mumbai, Maharashtra
+          Kuala Lumpur, Malaysia
         </div>
 
         <hr className="rajProjectDivider" />
 
         <div className="rajProjectUnits">
-          18 Lift Units Installed
+          Speed : 5.0 m/s
         </div>
       </div>
     </article>
@@ -254,19 +268,19 @@ export default function Projects(){return (
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
-          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop"
-          alt="ITC Grand Chola"
+          src={sanFrancisco}
+          alt="sanFrancisco"
         />
       </div>
 
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
-          <span className="rajProjectBadge">Hospitality</span>
-          <span className="rajProjectYear">Year: 2023</span>
+          <span className="rajProjectBadge">Commercial Landmark</span>
+          {/* <span className="rajProjectYear">Year: 2023</span> */}
         </div>
 
         <h2 className="rajProjectTitle">
-          ITC Grand Chola
+          50 San Francisco
         </h2>
 
         <div className="rajProjectLocation">
@@ -288,13 +302,13 @@ export default function Projects(){return (
     stroke-width="2"
   />
 </svg>
-          Chennai, Tamil Nadu
+          California, USA
         </div>
 
         <hr className="rajProjectDivider" />
 
         <div className="rajProjectUnits">
-          10 Lift Units Installed
+          Speed : 4.0 m/s
         </div>
       </div>
     </article>
@@ -305,19 +319,19 @@ export default function Projects(){return (
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
-          src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?q=80&w=800&auto=format&fit=crop"
-          alt="Tata Steel Plant"
+          src={sCOPear}
+          alt="sCOPear"
         />
       </div>
 
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
-          <span className="rajProjectBadge">Industrial</span>
-          <span className="rajProjectYear">Year: 2025</span>
+          <span className="rajProjectBadge">Exhibition Center</span>
+          {/* <span className="rajProjectYear">Year: 2025</span> */}
         </div>
 
         <h2 className="rajProjectTitle">
-          Tata Steel Plant
+          SCO Pearl International Expo Center
         </h2>
 
         <div className="rajProjectLocation">
@@ -339,16 +353,174 @@ export default function Projects(){return (
     stroke-width="2"
   />
 </svg>
-          Jamshedpur, Jharkhand
+          China
         </div>
 
         <hr className="rajProjectDivider" />
 
         <div className="rajProjectUnits">
-          6 Lift Units Installed
+          Speed : 1.5 m/s
         </div>
       </div>
     </article>
+  {/* ------------------------------------ NEW ------------------------------------------------------------- */}
+
+    {/* Project 7*/}
+    <article className="rajProjectCard">
+      <div className="rajProjectImageWrap">
+        <img
+          className="rajProjectImage"
+          src={riseTower}
+          alt="riseTower"
+        />
+      </div>
+
+      <div className="rajProjectBody">
+        <div className="rajProjectMeta">
+          <span className="rajProjectBadge">Iconic Tower</span>
+          {/* <span className="rajProjectYear">Year: 2025</span> */}
+        </div>
+
+        <h2 className="rajProjectTitle">
+         Rise Tower
+        </h2>
+
+        <div className="rajProjectLocation">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 21s7-6.2 7-11A7 7 0 0 0 5 10c0 4.8 7 11 7 11z"
+                fill="none"
+                stroke="#00A86B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle
+                cx="12"
+                cy="10"
+                r="2.5"
+                fill="none"
+                stroke="#00A86B"
+                stroke-width="2"
+              />
+            </svg>
+
+          Mexico
+        </div>
+
+        <hr className="rajProjectDivider" />
+
+        <div className="rajProjectUnits">
+          Speed : 8.0 m/s
+        </div>
+      </div>
+    </article>
+
+
+    {/* Project 8 */}
+    <article className="rajProjectCard">
+      <div className="rajProjectImageWrap">
+        <img
+          className="rajProjectImage"
+          src= {afganistan}
+          alt="afganistan"
+        />
+      </div>
+
+      <div className="rajProjectBody">
+        <div className="rajProjectMeta">
+          <span className="rajProjectBadge">Diplomatic Facility</span>
+          {/* <span className="rajProjectYear">Year: 2024</span> */}
+        </div>
+
+        <h2 className="rajProjectTitle">
+          Afghanistan American Embassy
+        </h2>
+
+        <div className="rajProjectLocation">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+  <path
+    d="M12 21s7-6.2 7-11A7 7 0 0 0 5 10c0 4.8 7 11 7 11z"
+    fill="none"
+    stroke="#00A86B"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle
+    cx="12"
+    cy="10"
+    r="2.5"
+    fill="none"
+    stroke="#00A86B"
+    stroke-width="2"
+  />
+</svg>
+          Afghanistan
+        </div>
+
+        <hr className="rajProjectDivider" />
+
+        <div className="rajProjectUnits">
+          Speed : 2.5 m/s
+        </div>
+      </div>
+    </article>
+
+
+    {/* Project 9 */}
+    <article className="rajProjectCard">
+      <div className="rajProjectImageWrap">
+        <img
+          className="rajProjectImage"
+          src= {torre}
+          alt="torre"
+        />
+      </div>
+
+      <div className="rajProjectBody">
+        <div className="rajProjectMeta">
+          <span className="rajProjectBadge">Commercial Landmark</span>
+          {/* <span className="rajProjectYear">Year: 2025</span> */}
+        </div>
+
+        <h2 className="rajProjectTitle">
+          T.OP (Torre Obispado)
+        </h2>
+
+        <div className="rajProjectLocation">
+         <svg viewBox="0 0 24 24" aria-hidden="true">
+  <path
+    d="M12 21s7-6.2 7-11A7 7 0 0 0 5 10c0 4.8 7 11 7 11z"
+    fill="none"
+    stroke="#00A86B"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle
+    cx="12"
+    cy="10"
+    r="2.5"
+    fill="none"
+    stroke="#00A86B"
+    stroke-width="2"
+  />
+</svg>
+          Mexico
+        </div>
+
+        <hr className="rajProjectDivider" />
+
+        <div className="rajProjectUnits">
+          Speed : 7.0 m/s
+        </div>
+      </div>
+    </article>
+
+
+
 
   </div>
 </section>
