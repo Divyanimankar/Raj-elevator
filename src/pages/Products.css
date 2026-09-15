@@ -79,10 +79,9 @@
 
 /* ---------- Image ---------- */
 
-.rep-products-image-wrap {
+/* .rep-products-image-wrap {
   width: 100%;
   height: 260px;
-  /* height: 60vh; */
   overflow: hidden;
   background: #f2f4f6;
 }
@@ -91,14 +90,35 @@
   width: 100%;
   height: 100%;
   display: block;
-  /* object-fit: cover; */
   object-position: center;
   transition: transform 0.35s ease;
 }
 
 .rep-products-card:hover .rep-products-image-wrap img {
   transform: scale(1.03);
+} */
+
+.rep-products-image-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
 }
+
+.rep-products-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* .rep-products-card:hover .rep-products-image-wrap img {
+  transform: scale(1.04);
+} */
 
 /* ---------- Content ---------- */
 

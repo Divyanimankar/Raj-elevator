@@ -909,7 +909,7 @@ function ProductDetail() {
 
         <div className="lifecycle-item__content">
           <h3 className="lifecycle-item__title">
-            25+ Years Working Service Life
+            30+ Years Working Service Life
           </h3>
 
           <p className="lifecycle-item__text">
