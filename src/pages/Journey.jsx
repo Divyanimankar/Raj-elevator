@@ -2,21 +2,7 @@ import React, { useEffect } from "react";
 import { Award, Handshake, Rocket, MapPin } from "lucide-react";
 import "./Journey.css";
 
-/**
- * Our Journey Over the Decades — timeline component
- *
- * Usage:
- *   import JourneyTimeline from "./JourneyTimeline";
- *   <JourneyTimeline />
- *
- * Dependencies:
- *   npm install lucide-react
- *
- * Fonts (add once, e.g. in your index.html <head>):
- *   <link rel="preconnect" href="https://fonts.googleapis.com">
- *   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- *   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
- */
+
 
 const MountainFlagIcon = () => (
   <svg viewBox="0 0 24 24" aria-hidden="true">
