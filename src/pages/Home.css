@@ -307,7 +307,7 @@ font-family: "Inter", sans-serif; */
 
 /* ----------------------------------------------------------------------------------- */
 
-.heroFourthSectionCard {
+/* .heroFourthSectionCard {
   background: var(--card-bg, #ffffff);
   border-radius: var(--card-radius, 14px);
   overflow: hidden;
@@ -330,8 +330,8 @@ font-family: "Inter", sans-serif; */
   box-shadow: 0 10px 26px rgba(20, 30, 45, 0.12);
 }
 
-/* Image */
-/* .heroFourthSectionImage {
+
+.heroFourthSectionImage {
   width: 100%;
   height: 160px;
   display: block;
@@ -346,19 +346,139 @@ font-family: "Inter", sans-serif; */
   transform: scale(1.03);
 } */
 
+.heroFourthSectionCard {
+  background: var(--card-bg, #ffffff);
+  border-radius: var(--card-radius, 14px);
+  overflow: hidden;
+
+  box-shadow: 0 4px 16px rgba(20, 30, 45, 0.06);
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  cursor: pointer;
+}
+
+.heroFourthSectionCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(20, 30, 45, 0.12);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
 .heroFourthSectionImage {
   width: 100%;
-  height: 160px;
+  height: 220px;
+
   display: block;
 
-  object-fit: fill;
+  object-fit: contain;
   object-position: center;
+
+  background: #ffffff;
+
+  flex-shrink: 0;
 
   transition: transform 0.6s ease;
 }
 
 .heroFourthSectionCard:hover .heroFourthSectionImage {
   transform: scale(1.03);
+}
+
+/* =========================
+   CARD BODY
+========================= */
+
+.heroFourthSectionBody {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 18px;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.heroFourthSectionTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heroFourthSectionTitleRow h3 {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+/* =========================
+   ICON
+========================= */
+
+.heroFourthSectionIconBox {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+}
+
+.heroFourthSectionIconBox svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.heroFourthSectionDescription {
+  margin: 12px 0 16px;
+
+  line-height: 1.5;
+}
+
+/* =========================
+   EXPLORE
+========================= */
+
+.heroFourthSectionExplore {
+  margin-top: auto;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  text-decoration: none;
+}
+
+.heroFourthSectionExplore svg {
+  width: 18px;
+  height: 18px;
+
+  transition: transform 0.3s ease;
+}
+
+.heroFourthSectionExplore:hover svg {
+  transform: translateX(4px);
 }
 
 /* ------------------------------------------------------------------------------------ */
@@ -1126,15 +1246,15 @@ font-family: "Inter", sans-serif; */
 */
 
 .raj-project-image-tower {
-  background-image: url("../assets/images/project/transitCityToter.jpg");
+  background-image: url("../assets/images/project/sheetalKiara.jpeg");
 }
 
 .raj-project-image-atrium {
-  background-image: url("../assets/images/project/riseTower.jpg");
+  background-image: url("../assets/images/project/sonamOpulence.jpeg");
 }
 
 .raj-project-image-campus {
-  background-image: url("../assets//images/project/MacMillanBuilding.jpg");
+  background-image: url("../assets//images/project/vinayakTower.jpeg");
 }
 
 .raj-project-card:hover .raj-project-image {

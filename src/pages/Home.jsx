@@ -828,11 +828,11 @@ export default function Home(){
               <circle cx="12" cy="10" r="3" />
             </svg>
 
-            <span>Canada</span>
+            <span>Goregaon, Mumbai</span>
           </div>
 
           <h3 className="raj-project-name">
-            Transit City Tower
+             Sheetal Kiara
           </h3>
 
           <div className="raj-project-divider"></div>
@@ -852,7 +852,7 @@ export default function Home(){
             </svg>
 
             <span>
-              67-Floor High-Speed Elevator System
+             42-Stop High-Speed Elevator System
             </span>
           </div>
 
@@ -868,7 +868,7 @@ export default function Home(){
             </svg>
 
             <span>
-              Peak speed: 7.0 m/s
+              Peak speed: 2.5 m/s
             </span>
           </div>
 
@@ -906,11 +906,11 @@ export default function Home(){
               <circle cx="12" cy="10" r="3" />
             </svg>
 
-            <span>Mexico</span>
+            <span>Bhayander, Mumbai</span>
           </div>
 
           <h3 className="raj-project-name">
-            Rise Tower
+            Sonam Opulence
           </h3>
 
           <div className="raj-project-divider"></div>
@@ -929,7 +929,7 @@ export default function Home(){
             </svg>
 
             <span>
-             86-Floor High-Speed Elevator System
+             29 stop High-Speed Elevator System
             </span>
           </div>
 
@@ -945,7 +945,7 @@ export default function Home(){
             </svg>
 
             <span>
-              Peak speed: 8.0 m/s
+              Peak speed: 2 m/s
             </span>
           </div>
 
@@ -983,11 +983,11 @@ export default function Home(){
               <circle cx="12" cy="10" r="3" />
             </svg>
 
-            <span>New York, USA</span>
+            <span>Malad, Mumbai</span>
           </div>
 
           <h3 className="raj-project-name">
-            MacMillan Building
+            Vinayak Tower
           </h3>
 
           <div className="raj-project-divider"></div>
@@ -1006,7 +1006,7 @@ export default function Home(){
             </svg>
 
             <span>
-               High-Speed Elevator System
+              19 stops High-Speed Elevator System
             </span>
           </div>
 
@@ -1022,7 +1022,7 @@ export default function Home(){
             </svg>
 
             <span>
-              Peak speed : 5.0 m/s
+              Peak speed : 1.75 m/s
             </span>
           </div>
 
