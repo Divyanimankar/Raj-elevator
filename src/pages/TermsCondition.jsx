@@ -3,7 +3,7 @@ export default function TermsCondition() {
 return (
 <section className="TermsCondition">
       <h1 className="tc-title">Terms and Conditions</h1>
-      <div className="tc-updated">Last updated: Nov 01, 2023</div>
+      <div className="tc-updated">Last updated: September 17, 2026</div>
  
       <div className="tc-block">
         <p className="tc-text">Please read these terms and conditions carefully before using Our Service.</p>
@@ -20,12 +20,12 @@ return (
       <div className="tc-block">
         <p className="tc-text">For the purposes of these Terms and Conditions:</p>
         <p className="tc-text">Country refers to: India</p>
-        <p className="tc-text">Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to www.trendelectronics.in</p>
+        <p className="tc-text">Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to www.rajelevators.com</p>
         <p className="tc-text">Device means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
         <p className="tc-text">Service refers to the Website.</p>
         <p className="tc-text">Terms and Conditions mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.</p>
         <p className="tc-text">Third-party Social Media Service means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
-        <p className="tc-text">Website refers to Trend Electronics Limited, accessible from www.trendelectronics.in</p>
+        <p className="tc-text">Website refers to Raj Elevators, accessible from www.rajelevators.com</p>
         <p className="tc-text">You mean the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
       </div>
  
@@ -101,7 +101,7 @@ return (
       <h2 className="tc-heading">Contact Us</h2>
       <div className="tc-block">
         <p className="tc-text">If you have any questions about these Terms and Conditions, You can contact us:  
-          <strong> By email: info@trendelectronics.in</strong></p>
+          <strong> By email: contact@rajelevators.com</strong></p>
       </div>
 </section>
 )

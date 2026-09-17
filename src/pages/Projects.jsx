@@ -49,16 +49,34 @@ export default function Projects(){
 </section>
   {/* ------------------------------ Second Section ----------------------------- */}
  <section className="rajProjectSection">
-  <div className="rajProjectHeader">
+  {/* <div className="rajProjectHeader">
     <div className="rajProjectHeaderPill">
       <h1>All Projects</h1>
     </div>
-  </div>
+  </div> */}
 
-  <div className="rajProjectGrid">
+
+{/* ------------------------------------------ Coming Soon----------------------------------- */}
+
+<div className="rajProjectGridUpdated">
+  <div className="comingSoonContent">
+    <span className="comingSoonBadge">Projects</span>
+    <h2>Coming Soon</h2>
+    <p>
+      Exciting new projects are on the way. Stay tuned for updates.
+    </p>
+  </div>
+</div>
+
+
+
+{/* ---------------------------------- Coming Soon-------------------------------------- */}
+
+
+  {/* <div className="rajProjectGrid"> */}
 
     {/* Project 1 */}
-    <article className="rajProjectCard">
+    {/* <article className="rajProjectCard">
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
@@ -70,7 +88,7 @@ export default function Projects(){
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
           <span className="rajProjectBadge">Residential Development</span>
-          {/* <span className="rajProjectYear">Year: 2025</span> */}
+          <span className="rajProjectYear">Year: 2025</span>
         </div>
 
         <h2 className="rajProjectTitle">
@@ -107,11 +125,11 @@ export default function Projects(){
           Speed : 5.0 m/s
         </div>
       </div>
-    </article>
+    </article> */}
 
 
     {/* Project 2 */}
-    <article className="rajProjectCard">
+    {/* <article className="rajProjectCard">
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
@@ -123,7 +141,7 @@ export default function Projects(){
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
           <span className="rajProjectBadge">High-Rise Residential</span>
-          {/* <span className="rajProjectYear">Year: 2024</span> */}
+          <span className="rajProjectYear">Year: 2024</span>
         </div>
 
         <h2 className="rajProjectTitle">
@@ -158,11 +176,11 @@ export default function Projects(){
           Speed : 7.0 m/s
         </div>
       </div>
-    </article>
+    </article> */}
 
 
     {/* Project 3 */}
-    <article className="rajProjectCard">
+    {/* <article className="rajProjectCard">
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
@@ -174,7 +192,7 @@ export default function Projects(){
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
           <span className="rajProjectBadge">Corporate Landmark</span>
-          {/* <span className="rajProjectYear">Year: 2025</span> */}
+          <span className="rajProjectYear">Year: 2025</span>
         </div>
 
         <h2 className="rajProjectTitle">
@@ -209,11 +227,11 @@ export default function Projects(){
           Speed : 5.0 m/s
         </div>
       </div>
-    </article>
+    </article> */}
 
 
     {/* Project 4 */}
-    <article className="rajProjectCard">
+    {/* <article className="rajProjectCard">
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
@@ -225,7 +243,7 @@ export default function Projects(){
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
           <span className="rajProjectBadge">Luxury Residence</span>
-          {/* <span className="rajProjectYear">Year: 2024</span> */}
+          <span className="rajProjectYear">Year: 2024</span>
         </div>
 
         <h2 className="rajProjectTitle">
@@ -260,11 +278,11 @@ export default function Projects(){
           Speed : 5.0 m/s
         </div>
       </div>
-    </article>
+    </article> */}
 
 
     {/* Project 5 */}
-    <article className="rajProjectCard">
+    {/* <article className="rajProjectCard">
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
@@ -276,7 +294,7 @@ export default function Projects(){
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
           <span className="rajProjectBadge">Commercial Landmark</span>
-          {/* <span className="rajProjectYear">Year: 2023</span> */}
+          <span className="rajProjectYear">Year: 2023</span>
         </div>
 
         <h2 className="rajProjectTitle">
@@ -311,11 +329,11 @@ export default function Projects(){
           Speed : 4.0 m/s
         </div>
       </div>
-    </article>
+    </article> */}
 
 
     {/* Project 6 */}
-    <article className="rajProjectCard">
+    {/* <article className="rajProjectCard">
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
@@ -327,7 +345,7 @@ export default function Projects(){
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
           <span className="rajProjectBadge">Exhibition Center</span>
-          {/* <span className="rajProjectYear">Year: 2025</span> */}
+          <span className="rajProjectYear">Year: 2025</span>
         </div>
 
         <h2 className="rajProjectTitle">
@@ -362,11 +380,11 @@ export default function Projects(){
           Speed : 1.5 m/s
         </div>
       </div>
-    </article>
+    </article> */}
   {/* ------------------------------------ NEW ------------------------------------------------------------- */}
 
     {/* Project 7*/}
-    <article className="rajProjectCard">
+    {/* <article className="rajProjectCard">
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
@@ -378,7 +396,7 @@ export default function Projects(){
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
           <span className="rajProjectBadge">Iconic Tower</span>
-          {/* <span className="rajProjectYear">Year: 2025</span> */}
+          <span className="rajProjectYear">Year: 2025</span>
         </div>
 
         <h2 className="rajProjectTitle">
@@ -415,11 +433,11 @@ export default function Projects(){
           Speed : 8.0 m/s
         </div>
       </div>
-    </article>
+    </article> */}
 
 
     {/* Project 8 */}
-    <article className="rajProjectCard">
+    {/* <article className="rajProjectCard">
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
@@ -431,7 +449,7 @@ export default function Projects(){
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
           <span className="rajProjectBadge">Diplomatic Facility</span>
-          {/* <span className="rajProjectYear">Year: 2024</span> */}
+          <span className="rajProjectYear">Year: 2024</span>
         </div>
 
         <h2 className="rajProjectTitle">
@@ -466,11 +484,11 @@ export default function Projects(){
           Speed : 2.5 m/s
         </div>
       </div>
-    </article>
+    </article> */}
 
 
     {/* Project 9 */}
-    <article className="rajProjectCard">
+    {/* <article className="rajProjectCard">
       <div className="rajProjectImageWrap">
         <img
           className="rajProjectImage"
@@ -482,7 +500,7 @@ export default function Projects(){
       <div className="rajProjectBody">
         <div className="rajProjectMeta">
           <span className="rajProjectBadge">Commercial Landmark</span>
-          {/* <span className="rajProjectYear">Year: 2025</span> */}
+          <span className="rajProjectYear">Year: 2025</span>
         </div>
 
         <h2 className="rajProjectTitle">
@@ -517,12 +535,12 @@ export default function Projects(){
           Speed : 7.0 m/s
         </div>
       </div>
-    </article>
+    </article> */}
 
 
 
 
-  </div>
+  {/* </div> */}
 </section>
 
   {/* ---------------------------------- Third Section------------------------------ */}

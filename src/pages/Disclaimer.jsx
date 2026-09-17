@@ -5,7 +5,7 @@ return (
   
   
       <h1 className="dc-title">Disclaimer</h1>
-      <div className="dc-updated">Last updated: Nov 01, 2023</div>
+      <div className="dc-updated">Last updated: September 17, 2026</div>
  
       <h2 className="dc-heading">Interpretation and Definitions</h2>
  
@@ -17,10 +17,10 @@ return (
       <h3 className="dc-subheading">Definitions</h3>
       <div className="dc-block">
         <p className="dc-text">For the purposes of this Disclaimer:</p>
-        <p className="dc-text">Company (referred to as either "the Company", "We", "Us" or "Our" in this Disclaimer) refers to Trend Electronics Limited</p>
+        <p className="dc-text">Company (referred to as either "the Company", "We", "Us" or "Our" in this Disclaimer) refers to Raj Elevators</p>
         <p className="dc-text">Service refers to the Website.</p>
         <p className="dc-text">You means the individual accessing the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
-        <p className="dc-text">Website refers to www.trendelectronics.in, accessible from www.trendelectronics.in</p>
+        <p className="dc-text">Website refers to www.rajelevators.com, accessible from www.rajelevators.com</p>
       </div>
  
       <h2 className="dc-heading">Disclaimer</h2>
@@ -72,7 +72,7 @@ return (
       <div className="dc-block">
         <p className="dc-text">If you have any questions about this Disclaimer, You can contact Us:</p>
         <p className="dc-text">
-          <strong>By email: info@trendelectronics.in</strong>
+          <strong>By email: contact@rajelevators.com</strong>
           </p>
       </div>
 

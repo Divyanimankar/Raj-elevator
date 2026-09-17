@@ -85,6 +85,19 @@ export default function Footer() {
               </Link>
             </li>
 
+             <li>
+              <Link to="/products">
+                Products
+              </Link>
+            </li>
+
+             <li>
+              <Link to="/services">
+                Services
+
+              </Link>
+            </li>
+
             <li>
               <Link to="/projects">
                 Project
@@ -188,7 +201,13 @@ export default function Footer() {
             {/* <span>
               info@rajelevators.com
             </span> */}
-            <div>
+            {/* <div > */}
+            <div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+  }}
+>
                 <a href="mailto:info@rajelevators.com"> info@rajelevators.com </a>
                 <a href="mailto:contact@rajelevators.com"> contact@rajelevators.com </a>
             </div>

@@ -270,7 +270,7 @@ export default function Contact() {
 
         <div className="contactCard">
           <div className="contactCardTop">
-            <div className="contactCardTitle">Email Inquiries</div>
+            <div className="contactCardTitle">Email Enquiries</div>
 
             <a
               href="mailto:contact@rajelevators.com"
@@ -575,7 +575,7 @@ export default function Contact() {
 
           {/* MUMBAI MAP */}
 
-          <div className="contactUsMapCard">
+          {/* <div className="contactUsMapCard">
             <iframe
               title="Mumbai Headquarters Map"
               src="https://www.openstreetmap.org/export/embed.html?bbox=72.82%2C19.20%2C72.89%2C19.27&layer=mapnik&marker=19.2307%2C72.8567"
@@ -604,7 +604,44 @@ export default function Contact() {
             >
               Open in Google Maps
             </a>
-          </div>
+          </div> */}
+
+
+          <div className="contactUsMapCard">
+  <iframe
+    title="Mumbai Headquarters Map"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=72.82%2C19.20%2C72.89%2C19.27&layer=mapnik&marker=19.2307%2C72.8567"
+    loading="lazy"
+  />
+
+  <div className="contactUsMapOverlay"></div>
+
+  <div className="contactUsMapPin">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 7.05 11.34 7.35 11.6a1 1 0 0 0 1.3 0C13 21.34 20 15.25 20 10c0-4.42-3.58-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+    </svg>
+  </div>
+
+  <div className="contactUsMapInfo">
+    <div className="contactUsMapTitle">
+      Mumbai Headquarters
+    </div>
+
+    <div className="contactUsMapAddress">
+      205, Hari Om Plaza, M.G. Road, Borivali East, Mumbai 400066
+    </div>
+  </div>
+
+  <a
+    href="https://www.google.com/maps/search/?api=1&query=205%2C%20Hari%20Om%20Plaza%2C%20M.G.%20Road%2C%20Borivali%20East%2C%20Mumbai%20400066"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="contactUsMapButton"
+  >
+    Open in Google Maps
+  </a>
+</div>
+
         </div>
       </div>
 

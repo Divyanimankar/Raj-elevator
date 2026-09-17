@@ -5,7 +5,7 @@ return (
       <h1 className="policy-title">Privacy Policy</h1>
 
       <div className="policy-updated">
-        Last updated: Feb 07, 2023
+        Last updated: September 17, 2026
       </div>
 
       <div className="policy-block">
@@ -52,7 +52,7 @@ return (
 
         <p className="policy-text">
           <strong>Company</strong> (referred to as either "the Company", "We",
-          "Us" or "Our" in this Agreement) refers to Trend Electronics Limited.
+          "Us" or "Our" in this Agreement) refers to Raj Elevators.
         </p>
 
         <p className="policy-text">
@@ -96,8 +96,8 @@ return (
         </p>
 
         <p className="policy-text">
-          <strong>Website</strong> refers to www.trendelectronics.in,
-          accessible from www.trendelectronics.in
+          <strong>Website</strong> refers to www.rajelevators.com,
+          accessible from www.rajelevators.com
         </p>
 
         <p className="policy-text">
@@ -389,7 +389,7 @@ return (
         <p className="policy-text">
           If you have any questions about this Privacy Policy, You can contact
           us: <strong>By email: 
-            info@trendelectronics.in
+            contact@rajelevators.com
             </strong>
         </p>
       </div>

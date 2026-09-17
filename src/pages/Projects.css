@@ -249,6 +249,104 @@
   color: #000000;
 }
 
+/* --------------------------------------------------------------- Coming Soon---------------------------------------- */
+
+.rajProjectGridUpdated {
+  width: 100%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  background: #f4f8f5;
+  border: 1px solid rgba(0, 155, 74, 0.18);
+  border-radius: 18px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative green accent */
+.rajProjectGridUpdated::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  /* background: #009b4a; */
+}
+
+.comingSoonContent {
+  max-width: 560px;
+  position: relative;
+  z-index: 1;
+}
+
+.comingSoonBadge {
+  display: inline-block;
+  padding: 8px 18px;
+  margin-bottom: 18px;
+  border-radius: 50px;
+  background: #009b4a;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.comingSoonContent h2 {
+  margin: 0 0 14px;
+  color: #0d1b2a;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.comingSoonContent p {
+  margin: 0;
+  color: #0d1b2a;
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .rajProjectGridUpdated {
+    min-height: 260px;
+    padding: 45px 20px;
+    border-radius: 14px;
+  }
+
+  .comingSoonContent h2 {
+    font-size: 34px;
+  }
+
+  .comingSoonContent p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rajProjectGridUpdated {
+    min-height: 230px;
+    padding: 35px 16px;
+  }
+
+  .comingSoonBadge {
+    font-size: 10px;
+    padding: 7px 14px;
+  }
+
+  .comingSoonContent h2 {
+    font-size: 30px;
+  }
+}
+
+/* --------------------------------------------------------------- End Coming Soon---------------------------------------- */
 /* ================================
    PROJECT GRID
 ================================ */
