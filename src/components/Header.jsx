@@ -4,7 +4,8 @@ import './Header.css';
 import rajLogo from "../assets/images/rajBlack1.png";
 import nidecLogo from "../assets/images/nidec1.png";
 
-import quotationPdf from "../assets/images/rajNidec.pdf";
+// import quotationPdf from "../assets/images/rajNidec.pdf";
+
 
 const links=[['/','Home'],['/about','About Us'],['/products','Products'],['/services','Services'],['/projects','Projects'],['/contact','Contact Us']]
 
@@ -30,7 +31,9 @@ return (
       )}
     </nav>
 
-    <a className="quoteBtn" href={quotationPdf}
+    <a className="quoteBtn" 
+    // href={quotationPdf}
+    href="/rajNidec.pdf"
   download="Raj-Elevators-Quotation.pdf">
       Get Free Quote
     </a>

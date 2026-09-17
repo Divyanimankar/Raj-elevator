@@ -29,7 +29,7 @@ import homeLift from "../assets/images/home.png";
 import panoramicLift from "../assets/images/panoramic.png";
 import highSpeedLift  from "../assets/images/highSpeed.png";
 
-import quotationPdf from "../assets/images/rajNidec.pdf";
+// import quotationPdf from "../assets/images/rajNidec.pdf";
 
 import carLift from "../assets/images/car.png";
 import capsuleLift from "../assets/images/capsule.png";
@@ -135,7 +135,9 @@ export default function Home(){
       {/* <Link to="/contact" className="secondary">
         Get Free Quote
       </Link> */}
-       <a className="secondary" href={quotationPdf}
+       <a className="secondary" 
+      //  href={quotationPdf}
+      href="/rajNidec.pdf"
   download="Raj-Elevators-Quotation.pdf">
       Get Free Quote
     </a>
