@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import "./CTASection.css";
 
@@ -49,12 +50,16 @@ export default function CTA() {
 
         </div>
 
-        <a
+        {/* <a
           href="/contact"
           className="cta-button"
         >
           Send Inquiry Message
-        </a>
+        </a> */}
+
+        <Link to="/contact" className="cta-button">
+  Send Inquiry Message
+</Link>
 
       </div>
 

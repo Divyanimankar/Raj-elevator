@@ -289,7 +289,7 @@ export default function Home(){
          Residential Buildings, Commercial Buildings, High Rise Buildings.
         </p>
 
-        <a href="/products/passenger-elevator" className="heroFourthSectionExplore">
+        <a className="heroFourthSectionExplore">
           Explore Specs
           <svg
             viewBox="0 0 24 24"
@@ -339,7 +339,7 @@ export default function Home(){
          Factories, Industrial Buildings, Warehouses, Showrooms.
         </p>
 
-        <a href="/products/freight-elevator" className="heroFourthSectionExplore">
+        <a className="heroFourthSectionExplore">
           Explore Specs
           <svg
             viewBox="0 0 24 24"
@@ -386,7 +386,7 @@ export default function Home(){
            Stretcher Lifts for Hospitals, Nursing Homes.
         </p>
 
-        <a href="/products/hospital-elevator" className="heroFourthSectionExplore">
+        <a className="heroFourthSectionExplore">
           Explore Specs
           <svg
             viewBox="0 0 24 24"
@@ -434,7 +434,7 @@ export default function Home(){
            Homes, Bungalows, Duplex pent houses, low pit and low overhead constraints.
         </p>
 
-        <a href="/products/home-lift" className="heroFourthSectionExplore">
+        <a className="heroFourthSectionExplore">
           Explore Specs
           <svg
             viewBox="0 0 24 24"
@@ -481,7 +481,7 @@ export default function Home(){
          Residential and Commercial Buildings, Car Parking Buildings.
         </p>
 
-         <a href="/products/car-lift" className="heroFourthSectionExplore">
+         <a className="heroFourthSectionExplore">
           Explore Specs
           <svg
             viewBox="0 0 24 24"
@@ -529,7 +529,7 @@ export default function Home(){
           Commercial Buildings, Hotels, Malls, Showrooms.
         </p>
 
-        <a href="/products/panoramic-elevator" className="heroFourthSectionExplore">
+        <a className="heroFourthSectionExplore">
           Explore Specs
           <svg
             viewBox="0 0 24 24"
@@ -576,7 +576,7 @@ export default function Home(){
          Residential and Commercial Buildings, Heavy Duty requirements.
         </p>
 
-        <a href="/products/high-speed-elevator" className="heroFourthSectionExplore">
+        <a className="heroFourthSectionExplore">
           Explore Specs
           <svg
             viewBox="0 0 24 24"
