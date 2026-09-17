@@ -4,17 +4,17 @@ import CTASection from '../components/CTASection.jsx';
 import {IMG,projects} from '../data/siteData.js';
 import './Projects.css';
 
-import artePlus from "../assets/images/project/arte.jpg";
-import transitCityTower from "../assets/images/project/transitCityToter.jpg";
-import MacMillanBuilding from "../assets/images/project/MacMillanBuilding.jpg";
+// import artePlus from "../assets/images/project/arte.jpg";
+// import transitCityTower from "../assets/images/project/transitCityToter.jpg";
+// import MacMillanBuilding from "../assets/images/project/MacMillanBuilding.jpg";
 
-import arteMk from "../assets/images/project/arteMk.jpg";
-import sanFrancisco from "../assets/images/project/sanFrancisco.jpg";
-import sCOPear from "../assets/images/project/sCOPear.jpg";
+// import arteMk from "../assets/images/project/arteMk.jpg";
+// import sanFrancisco from "../assets/images/project/sanFrancisco.jpg";
+// import sCOPear from "../assets/images/project/sCOPear.jpg";
 
-import riseTower from "../assets/images/project/riseTower.jpg";
-import afganistan from "../assets/images/project/afganistan.jpg";
-import torre from "../assets/images/project/torre.jpg"
+// import riseTower from "../assets/images/project/riseTower.jpg";
+// import afganistan from "../assets/images/project/afganistan.jpg";
+// import torre from "../assets/images/project/torre.jpg"
 
 
 

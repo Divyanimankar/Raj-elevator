@@ -37,7 +37,7 @@ export default function CTA() {
 
           <div className="cta-contact-item">
             <div className="cta-contact-label">
-              EMAIL INQUIRIES
+              EMAIL ENQUIRIES
             </div>
 
             <a
@@ -58,7 +58,7 @@ export default function CTA() {
         </a> */}
 
         <Link to="/contact" className="cta-button">
-  Send Inquiry Message
+  Send Enquiry Message
 </Link>
 
       </div>

@@ -223,9 +223,20 @@ export default function Footer() {
       {/* Footer Bottom */}
       <div className="footer-bottom">
 
-        <p>
+        {/* <p>
           © 2026 Raj Elevators Private Limited. All Rights Reserved.
-        </p>
+        </p> */}
+
+        <p>
+  Site designed by{" "}
+  <a
+    href="https://www.senseware.net"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Senseware
+  </a>
+</p>
 
         <div className="footer-links">
 

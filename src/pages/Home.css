@@ -1246,15 +1246,15 @@ font-family: "Inter", sans-serif; */
 */
 
 .raj-project-image-tower {
-  background-image: url("../assets/images/project/sheetalKiara.jpeg");
+  background-image: url("../assets/images/client/sheetalKiara.jpeg");
 }
 
 .raj-project-image-atrium {
-  background-image: url("../assets/images/project/sonamOpulence.jpeg");
+  background-image: url("../assets/images/client/sonamOpulence.jpeg");
 }
 
 .raj-project-image-campus {
-  background-image: url("../assets//images/project/vinayakTower.jpeg");
+  background-image: url("../assets//images/client/vinayakTower.jpeg");
 }
 
 .raj-project-card:hover .raj-project-image {
@@ -1790,7 +1790,8 @@ font-family: "Inter", sans-serif; */
 
 .clients-section {
   width: 100%;
-  background: #009b4a;
+  /* background: #009b4a; */
+  background-color: #eef0f2;
   padding: 25px 0;
   overflow: hidden;
 }

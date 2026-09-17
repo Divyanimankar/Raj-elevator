@@ -35,7 +35,7 @@ return (
     // href={quotationPdf}
     href="/rajNidec.pdf"
   download="Raj-Elevators-Quotation.pdf">
-      Get Free Quote
+      Download Brochure
     </a>
   </div>
 </header>

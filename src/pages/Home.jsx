@@ -14,11 +14,18 @@ import firstImage from "../assets/images/one.png";
 
 // import quotationPdf  from "../assets/images/rajNidec.pdf";
 
-import client1 from "../assets/images/client1.png";
-import client2 from "../assets/images/client2.png";
-import client3 from "../assets/images/client3.png";
-import client4 from "../assets/images/client4.png";
-import client5 from "../assets/images/client5.png";
+
+import cli1 from "../assets/images/client/cli1.png";
+import cli2 from "../assets/images/client/cli2.png";
+import cli3 from "../assets/images/client/cli3.png";
+import cli4 from "../assets/images/client/cli4.png";
+import cli5 from "../assets/images/client/cli5.png";
+import cli6 from "../assets/images/client/cli6.png";
+import cli7 from "../assets/images/client/cli7.png";
+import cli8 from "../assets/images/client/cli8.png";
+import cli9 from "../assets/images/client/cli9.png";
+import cli10 from "../assets/images/client/cli10.png";
+import cli11 from "../assets/images/client/cli11.png";
 
 import passengerLift from "../assets/images/passenger.png";
 import freightLift from "../assets/images/freight.png";
@@ -87,11 +94,23 @@ const steps = [
 ];
 
 const clientLogos = [
- client1,
-  client2,
-  client3,
-  client4,
-  client5,
+//  client1,
+//   client2,
+//   client3,
+//   client4,
+//   client5,
+cli1,
+cli2,
+cli3,
+cli4,
+cli5,
+cli6,
+cli7,
+cli8,
+cli9,
+cli10,
+cli11,
+
 ];
 
 
@@ -139,7 +158,7 @@ export default function Home(){
       //  href={quotationPdf}
       href="/rajNidec.pdf"
   download="Raj-Elevators-Quotation.pdf">
-      Get Free Quote
+      Download Brochure
     </a>
     </div>
   </div>
@@ -967,7 +986,7 @@ export default function Home(){
         <div className="raj-project-overlay"></div>
 
         <span className="raj-project-badge">
-          Corporate Landmark
+          Residential Landmark
         </span>
 
         <div className="raj-project-content">

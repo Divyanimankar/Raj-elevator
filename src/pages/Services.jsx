@@ -108,7 +108,7 @@ export default function Services(){
 
     <div className="serviceHero__actions">
       <a href="#CtaSection" className="serviceHero__btn serviceHero__btn--primary">
-        Inquire Service Visit
+        Enquire Service Visit
       </a>
 
       <a href="#emergency-bar" className="serviceHero__btn serviceHero__btn--outline">
@@ -356,11 +356,9 @@ export default function Services(){
           </li>
         </ul>
 
-        {/* <button className="raj-pricing-btn">
-          Inquire Plan Quotation
-        </button> */}
+       
         <Link to="/contact" className="raj-pricing-btn">
-  Inquire Plan Quotation
+  Enquire Plan Quotation
 </Link>
       </div>
 
@@ -412,12 +410,9 @@ export default function Services(){
             Annual certified elevator load test validation
           </li>
         </ul>
-{/* 
-        <button className="raj-pricing-btn">
-          Inquire Plan Quotation
-        </button> */}
+
         <Link to="/contact" className="raj-pricing-btn">
-  Inquire Plan Quotation
+  Enquire Plan Quotation
 </Link>
       </div>
 
@@ -470,11 +465,8 @@ export default function Services(){
           </li>
         </ul>
 
-        {/* <button className="raj-pricing-btn">
-          Inquire Plan Quotation
-        </button> */}
-        <Link to="/contact" className="raj-pricing-btn">
-  Inquire Plan Quotation
+             <Link to="/contact" className="raj-pricing-btn">
+  Enquire Plan Quotation
 </Link>
       </div>
 
